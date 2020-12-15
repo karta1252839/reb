@@ -1,0 +1,310 @@
+/*  -------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+}
+body {
+    font-family: '微軟正黑體', 'Microsoft JhengHei', Arial, Helvetica, sans-serif;
+    -ms-overflow-style: none;
+    height: 100%;
+	width: calc(100vw + 18px);
+	overflow: auto;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+
+}
+
+:before , :after {
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input, textarea, ul, li, img, span, font, strong, b, a, i{ text-align: left; vertical-align: middle; margin: 0; padding: 0; line-height: 170%; border-width: 0; font-family: 'Noto Sans', 'Noto Sans TC', 'Noto Sans SC', sans-serif; font-size: 16px; word-wrap: break-word; word-break: break-word; -webkit-transition: all .3s ease-out; -moz-transition: all .3s ease-out; -ms-transition: all .3s ease-out; -o-transition: all .3s ease-out; transition: all .3s ease-out; }
+
+header .header_menu #logo #menu_btn span , header #close_menu span { position: absolute; width: 100%; height: 2px; background: #fff; display: block; top: 0; right: 0; transition: transform .4s cubic-bezier(.215,.61,.355,1),opacity .4s cubic-bezier(.215,.61,.355,1), -webkit-transform .4s cubic-bezier(.215,.61,.355,1); }
+
+/* body -------------------------------------------------------- */
+
+.xxx img {
+    width: 100%;
+    height: auto;
+}
+
+/* navbar becomes mobile sidebar under lg breakpoint */
+@media (max-width: 992px) {
+    .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 10%;
+        bottom: 0;
+        left: 0;
+        /* transition: 0 0s ease-in-out; */
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 10%;
+        bottom: 0;
+        left: 0;
+        z-index: 999;
+        background-color: #1754A7;
+        flex-direction: column;
+        height: auto;
+        width: 39%;
+        /* transition: left 0s ease;
+        box-shadow: 0 0rem 0rem rgb(23, 82, 166, 0.5); */
+    }
+}
+@media (max-width: 575.98px) {
+    .h-list{
+        background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
+        min-height: 90px;
+    }
+}
+
+@media (min-width: 575.98px){
+    .h-list{
+        background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
+        min-height: 110px;
+    }
+    .r-logo{
+        width: 120%;
+    }
+    .game-size{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0%;
+        transform: translateY(-10%);
+
+    }
+}
+@media (min-width: 767.98px){
+    .h-list{
+        background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
+        min-height: 110px;
+    }
+    .r-logo{
+        width: 160%;
+    }
+    .game-size{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0%;
+        transform: translateY(-13%);
+    }
+}
+/* 電腦大小圖 */
+@media (min-width:991.98px){
+    .game-size{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0%;
+        transform: translateY(-13%);
+    }
+}
+@media (min-width:1199.98px){
+    .game-size{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0%;
+        transform: translateY(-10%);
+    }
+}
+@media (min-width:1600px){
+    .game-size{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0%;
+        transform: translateY(3%);
+    }
+}
+
+/* ------------------------------------login------------------------------------ */
+/* 帳號密碼輸入表單 */
+.input-style {
+    color: #fff;
+    background-color: #4d4d4d;
+    width: 33%;
+    /* height: 30px; */
+    padding-top: 1px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border-color: #00ffff;
+    border-width: 2px;
+    font-style: italic;
+    font-style: 11px;
+}
+
+/* 登入按鈕 */
+.button-login {
+    width: 11%;
+    color: #fff;
+    border-color: #fbb03b;
+    background: linear-gradient(180deg, #fff365 0%, #f4b83f 100%);
+    margin-left: 5px;
+    font-size: 15px;
+    /* text-align: center; */
+}
+
+/* 註冊按鈕 */
+.button-registered {
+    width: 11%;
+    color: #fff;
+    border-color: #9e005d;
+    background: linear-gradient(180deg, #ed1e79 0%, #c1272d 100%);
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+/* fs-15 字體大小 */
+/* .fs-15{
+    font-size: px;
+    padding: 0;
+} */
+
+
+/* ------------------------------------login------------------------------------ */
+
+/* ------------------------------------logo & list------------------------------------ */
+.navbar-toggler1{
+    width: 40px;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.navbar-toggler-icon {
+    color: #fff !important;
+}
+.inner-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* ------------------------------------logo & list------------------------------------ */
+
+/* ------------------------------------金色顏色條------------------------------------ */
+.border {
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(180deg, #fffd70 0%, #f7bb3e 100%);
+}
+
+/* ------------------------------------金色顏色條------------------------------------ */
+
+
+
+
+
+/* /////////////////////////////////////// 手機板 ///////////////////////////////////// */
+
+
+/* ------------------------------------遊戲大廳------------------------------------ */
+
+/* .game{
+    width: 50%;
+    height: auto;
+} */
+/* ------------------------------------遊戲大廳------------------------------------ */
+
+/* ------------------------------------文章方框區塊------------------------------------ */
+/* .article-box {
+    width: 100%;
+    height: 95%;
+    background-color: #0061bf;
+    border: 2px #0061bf solid;
+    border-radius: 10px;
+    ;
+
+} */
+/* ------------------------------------文章方框區塊------------------------------------ */
+
+/* ------------------------------------blog------------------------------------ */
+.blog-t-color{
+    color: #1959b2;
+    font-size: 1rem;
+}
+.blog-btn{
+    width: 195px;
+    height: 40px;
+    background: linear-gradient(180deg, #fffabd 0%, #fbe18a 50%, #dec75f 100%);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* ------------------------------------blog------------------------------------ */
+
+/* ------------------------------------footer------------------------------------ */
+
+#menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+    background-color: #fff;
+  }
+
+.md-footer-flex{
+    background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
+    min-height: 75px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .md-footer-item{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  /* ------------------------------------footer------------------------------------ */
+
+
+/* /////////////////////////////////////// 手機板 ///////////////////////////////////// */
+
+
+
+
+
+
+/* /////////////////////////////////////// 電腦版 ///////////////////////////////////// */
+
+/* ------------------------------------遊戲大廳------------------------------------ */
+.btn-game{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 1%;
+    right: 1%; 
+    top: 50%;
+    transform: translateY(-15%);
+    min-height: 244px;
+}
+
+/* ------------------------------------遊戲大廳------------------------------------ */
+
+
+/* ------------------------------------文章方框區塊------------------------------------ */
+/* ------------------------------------blog------------------------------------ */
+/* ------------------------------------footer------------------------------------ */
+
+
+
+/* /////////////////////////////////////// 電腦版 ///////////////////////////////////// */
