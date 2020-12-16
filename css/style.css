@@ -86,7 +86,9 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
         right: 0;
         top: 0%;
         transform: translateY(-10%);
-
+    }
+    .title-7{
+        
     }
 }
 @media (min-width: 767.98px){
@@ -301,10 +303,48 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 /* ------------------------------------遊戲大廳------------------------------------ */
 
 
-/* ------------------------------------文章方框區塊------------------------------------ */
-/* ------------------------------------blog------------------------------------ */
-/* ------------------------------------footer------------------------------------ */
-
-
-
 /* /////////////////////////////////////// 電腦版 ///////////////////////////////////// */
+
+/* /////////////////////////////////////// 其他分頁 ///////////////////////////////////// */
+
+/* ------------------------------------電腦版------------------------------------  */
+
+/* 背景 */
+#bgc-flex {
+    position: relative;
+    background: no-repeat;
+    display: flex;
+    background-size: cover;
+}
+
+
+#bgc-flex-v {
+    position: relative;
+    background: no-repeat fixed center;
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-size: cover;
+}
+
+/* 遊戲背景 */
+#game-flex{
+    position: relative;
+    background: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* 顏色背景漸層 */
+#bgc-color{
+    background: linear-gradient(180deg, #224dc9 0%, #a7cbef 100%);
+}
+
+/* ------------------------------------電腦版------------------------------------  */
+
+/* ------------------------------------手機版------------------------------------  */
+/* 顏色背景漸層 */
+#m-bgc-color{
+    background: #dce9ff;
+}
+/* ------------------------------------手機版------------------------------------  */
+/* /////////////////////////////////////// 其他分頁 ///////////////////////////////////// */
