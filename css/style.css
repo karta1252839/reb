@@ -346,5 +346,12 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 #m-bgc-color{
     background: #dce9ff;
 }
+#btn-input{
+    width: 85%;
+    background: #13458a;
+    color: #4984d6;
+    border-radius: 5px;
+    height: 5vh;
+}
 /* ------------------------------------手機版------------------------------------  */
 /* /////////////////////////////////////// 其他分頁 ///////////////////////////////////// */
