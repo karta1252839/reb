@@ -18,39 +18,40 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>Movie</title>
+    <title>App下載_AppDownload</title>
     <style>
 
     </style>
 </head>
 
 <body>
-    <!-- ------------------------------------login------------------------------------ -->
-    <div class="container-fluid d-none d-sm-block"
-        style="background-color: #3fa9f5; min-height: 56px;overflow: hidden;">
-        <div class="container">
-            <div class="row float-right" style="padding-top: 10px;">
-                <div class="col-7" style="padding: 0;">
-                    <form class="" action="#" method="POST">
-                        <input class="mx-1 input-style" type="text" name="text" id="text" value="用戶名(ID)">
-                        <input class="mx-1 input-style" type="password" name="password" id="password" value="密碼">
-                        <input class="mx-1 button-login" type="button" value="登入">
-                        <input class="mx-1 button-registered" type="button" value="註冊">
-                    </form>
-                </div>
-                <!-- fs-15 字體大小 -->
-                <div class="col-5 fs-15" style="margin-top: 3px; padding: 0; clear: both;">
-                    <a class="text-light mx-1" href="#">公告</a>
-                    <a class="text-light mx-1" href="#">APP下載</a>
-                    <a class="text-light mx-1" href="#">常見問題</a>
-                    <a class="text-light mx-1" href="#">合作代理</a>
+    <header>
+        <!-- ------------------------------------login------------------------------------ -->
+        <div class="container-fluid d-none d-sm-block"
+            style="background-color: #3fa9f5; min-height: 56px;overflow: hidden;">
+            <div class="container">
+                <div class="row float-right" style="padding-top: 10px;">
+                    <div class="col-7" style="padding: 0;">
+                        <form class="" action="#" method="POST">
+                            <input class="mx-1 input-style" type="text" name="text" id="text" value="用戶名(ID)">
+                            <input class="mx-1 input-style" type="password" name="password" id="password" value="密碼">
+                            <input class="mx-1 button-login" type="button" value="登入">
+                            <a href="../header page/Signup.html" target="_blank"><input class="mx-1 button-registered"
+                                    type="button" value="註冊"></a>
+                        </form>
+                    </div>
+                    <!-- fs-15 字體大小 -->
+                    <div class="col-5 fs-15" style="margin-top: 3px; padding: 0; clear: both;">
+                        <a class="text-light mx-1" href="#">公告</a>
+                        <a class="text-light mx-1" href="../header page/AppDownload.html">APP下載</a>
+                        <a class="text-light mx-1" href="../header page/FAQ.html">常見問題</a>
+                        <a class="text-light mx-1" href="../header page/Agent.html">合作代理</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- ------------------------------------login------------------------------------ -->
+        <!-- ------------------------------------login------------------------------------ -->
     </header>
-
     <!-- ------------------------------------logo & list-------------------------------------->
     <header>
         <div class="h-list">
@@ -183,33 +184,45 @@
     </div>
     <!-- ------------------------------------跑馬燈------------------------------------ -->
     <!-- ------------------------------------電腦版------------------------------------ -->
-    <div class="container-fluid d-none d-sm-block" id="bgc-flex"
-        style="background-image: url(../img/桌機各分頁img/賽事影城Movie/BGC.png);">
+    <div class="container-fluid d-none d-sm-block" id="bgc-color">
         <div class="container">
-            <p class="text-center" style="padding-top: 10%;"><img class="w-100"
-                    src="../img/桌機各分頁img/賽事影城Movie/Title 01.png" alt="">
+            <p class="text-center pb-3" style="padding-top: 6%;"><img class="w-100"
+                    src="../img/headerpage/FAQ/Title 01.png" alt="">
             </p>
-            <div class="row d-flex justify-content-between" style="padding-top: 10%;">
-                <div class="col-6">
-                    <a href=""><img class="w-100" src="../img/桌機各分頁img/賽事影城Movie/Group 1.png" alt=""></a>
-                </div>
-                <div class="col-6" style="padding-bottom: 20%;">
-                    <a href=""><img class="w-100" src="../img/桌機各分頁img/賽事影城Movie/Group 2.png" alt=""></a>
+            <!--  -->
+            <div class="row justify-content-center pt-3 ">
+                <input type="button" value="任你博網站的取款規定" id="home" class="px-3 FAQ-btn">
+                <div class="FAQ-btn-items" id="homeitems" style="display: none;">
+                    <ul>
+                        <li>1. 無搭配優惠活動的存款，達到1倍流水即可出款。</li>
+                        <li>2. 一天最多可以提領兩次免手續費，第三次需要收取1%，未滿6000需要收取手續費60(每日00:00重置)。</li>
+                        <li>3. PS: 同時使用VIP儲值及網銀存款的會員，第一次提款免手續費，第二次以上需要收取3%+35的手續費</li>
+                        <li>4. 第一次出款需提供雙證件(身分證+駕照或健保卡)，以及存摺依照客服指示放置物品，且不做任何遮擋及塗改動作，並傳送圖片檔案給客服確認。</li>
+                        <li>5. 若使用非本人帳戶入款將影響後續出款權益，相關損失需自行承擔風險</li>
+                        <li>6. 有任何相關疑問請洽客服聯</li>
+                    </ul>
                 </div>
             </div>
+            <script>
+                var a = document.getElementsByClassName("FAQ-btn");
+                var b = document.getElementsByClassName("FAQ-btn-items");
+
+            </script>
         </div>
     </div>
     <img class="d-none d-sm-block w-100" src="../img/桌機各分頁img/footer.png" alt="">
+
     <!-- ------------------------------------電腦版------------------------------------ -->
+
 
 
 
     <!-- ------------------------------------手機版------------------------------------ -->
     <div class="container-fluid d-sm-none" id="m-bgc-color">
         <div class="text-center">
-            <img class="w-100 p-4" src="../img/手機各分頁img/賽事影城Movie/Title.png" alt=""></a>
-            <a href="#"><img src="../img/手機各分頁img/賽事影城Movie/Group 1.png" class="w-100 px-3" alt=""></a>
-            <a href="#"><img src="../img/手機各分頁img/賽事影城Movie/Group 2.png" class="w-100 px-3 pb-5" alt=""></a>
+            <img class="w-100 p-4" src="../img/手機各分頁img/賓果彩票Bingo/Title.png" alt=""></a>
+            <a href="#"><img src="../img/手機各分頁img/賓果彩票Bingo/Group 1.png" class="w-100 px-3" alt=""></a>
+            <a href="#"><img src="../img/手機各分頁img/賓果彩票Bingo/Group 2.png" class="w-100 px-3 pb-5" alt=""></a>
 
         </div>
     </div>
@@ -276,7 +289,6 @@
 
 
 
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -290,8 +302,8 @@
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
