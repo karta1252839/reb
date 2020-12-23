@@ -68,17 +68,17 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 @media (max-width: 575.98px) {
     .h-list{
         background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
-        min-height: 90px;
+        /* min-height: 10px; */
     }
 }
 
 @media (min-width: 575.98px){
     .h-list{
         background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
-        min-height: 110px;
+        /* min-height: 110px; */
     }
     .r-logo{
-        width: 120%;
+        width: 90%;
     }
     .game-size{
         position: absolute;
@@ -92,10 +92,10 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 @media (min-width: 767.98px){
     .h-list{
         background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
-        min-height: 110px;
+        /* min-height: 110px; */
     }
     .r-logo{
-        width: 160%;
+        width: 120%;
     }
     .game-size{
         position: absolute;
@@ -110,6 +110,9 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 }
 /* 電腦大小圖 */
 @media (min-width:991.98px){
+    .r-logo{
+        width: 160%;
+    }
     .game-size{
         position: absolute;
         left: 0;
@@ -146,14 +149,15 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 /* ------------------------------------login------------------------------------ */
 /* 帳號密碼輸入表單 */
 .input-style {
+    width: 5%;
     color: #fff;
     background-color: #4d4d4d;
     width: 33%;
     /* height: 30px; */
-    padding-top: 1px;
-    padding-left: 5px;
+    /* padding-top: 1px;
+    padding-left: 5px; */
     border-radius: 5px;
-    border-color: #00ffff;
+    border: 1px solid #00ffff;
     border-width: 2px;
     font-style: italic;
     font-style: 11px;
@@ -167,7 +171,8 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     background: linear-gradient(180deg, #fff365 0%, #f4b83f 100%);
     margin-left: 5px;
     font-size: 15px;
-    /* text-align: center; */
+    text-align: center;
+    /* padding: 0.3% 1.5%; */
 }
 
 /* 註冊按鈕 */
@@ -178,6 +183,8 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     background: linear-gradient(180deg, #ed1e79 0%, #c1272d 100%);
     margin-left: 5px;
     font-size: 15px;
+    text-align: center;
+    /* padding: 0.3% 1.5%; */
 }
 
 /* fs-15 字體大小 */
