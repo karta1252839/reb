@@ -278,11 +278,7 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 
 .md-footer-flex{
     background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
-    min-height: 75px;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    /* min-height: 75px; */
   }
   .md-footer-item{
     display: flex;
