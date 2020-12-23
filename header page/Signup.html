@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>App下載_AppDownload</title>
+    <title>註冊_Signup</title>
     <style>
 
     </style>
@@ -184,23 +184,70 @@
     </div>
     <!-- ------------------------------------跑馬燈------------------------------------ -->
     <!-- ------------------------------------電腦版------------------------------------ -->
-    <div class="container-fluid d-none d-sm-block" id="bgc-flex"
-        style="background-image: url(../img/桌機各分頁img/賓果彩票Bingo/BGC.png);">
+    <div class="container-fluid d-none d-sm-block p-0" id="bgc-color">
         <div class="container">
-            <p class="text-center" style="padding-top: 10%;"><img class="w-100"
-                    src="../img/桌機各分頁img/賓果彩票Bingo/Title 01.png" alt="">
+            <p class="text-center" style="padding-top: 5%;"><img class="w-100"
+                    src="../img/headerpage/Signup/Title 01.png" alt="">
             </p>
-            <div class="row d-flex justify-content-between" style="padding-top: 10%;">
-                <div class="col-6">
-                    <a href=""><img class="w-100" src="../img/桌機各分頁img/賓果彩票Bingo/Group 1.png" alt=""></a>
-                </div>
-                <div class="col-6" style="padding-bottom: 20%;">
-                    <a href=""><img class="w-100" src="../img/桌機各分頁img/賓果彩票Bingo/Group 2.png" alt=""></a>
+
+            <div class="row">
+                <div class="col-12 my-5 signupbgc" id="game-v-flex"
+                    style="background-image: url(../img/headerpage/Signup/BGC.png);">
+                    <div class="" style="margin-left: 65%;padding-top: 5%;">
+                        <div class="">
+                            <input type="text" class="signup-input"
+                                style="background-image: url(../img/headerpage/Signup/btnImg/Group\ 12.png);"
+                                placeholder="用戶名*" onfocus="this.placeholder = ''" onblur="this.placeholder = '用戶名*'" />
+                        </div>
+                        <div class="pt-3">
+                            <input type="password" class="signup-input"
+                                style="background-image: url(../img/headerpage/Signup/btnImg/Group\ 13.png);"
+                                placeholder="密碼*" onfocus="this.placeholder = ''" onblur="this.placeholder = '密碼*'" />
+                        </div>
+                        <div class="pt-3">
+                            <input type="password" class="signup-input"
+                                style="background-image: url(../img/headerpage/Signup/btnImg/Group\ 14.png);"
+                                placeholder="確認密碼*" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = '確認密碼*'" />
+                        </div>
+                        <div class="pt-3">
+                            <input type="text" class="signup-input"
+                                style="background-image: url(../img/headerpage/Signup/btnImg/Group\ 15.png);"
+                                placeholder="Line ID" onfocus="this.placeholder = ''"
+                                onblur="this.placeholder = 'Line ID'" />
+                        </div>
+                        <div class="pt-3">
+                            <input type="text" class="signup-input"
+                                style="background-image: url(../img/headerpage/Signup/btnImg/Group\ 16.png);"
+                                placeholder="推薦碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '推薦碼'" />
+                        </div>
+                        <div class="pt-3">
+                            <input type="text" class="signup-input col-6"
+                                style="background-image: url(../img/headerpage/Signup/btnImg/Group\ 17.png);"
+                                placeholder="手機號碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '手機號碼'" />
+                            <div class="col-6 float-right pl-2">
+                                <input type="button" value="發送驗證碼" class="signup-btn">
+                            </div>
+                            <div class="pt-3">
+                                <input type="text" class="signup-input"
+                                    style="background-image: url(../img/headerpage/Signup/btnImg/Group\ 18.png);"
+                                    placeholder="驗證碼" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = '驗證碼'" />
+                            </div>
+                            <div class="pt-3 col-12 pl-0 pr-0">
+                                <input type="submit" value="一鍵註冊" class="signup-submitBtn">
+                            </div>
+                            <div class="pt-3 col-12">
+                                <span class="text-light pl-3 signup-text">已是任你博的會員？</span><a href="#"><span style="color: #f0ec34;" class="signup-text">登入</span></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <img class="d-none d-sm-block w-100" src="../img/桌機各分頁img/footer.png" alt="">
     </div>
-    <img class="d-none d-sm-block w-100" src="../img/桌機各分頁img/footer.png" alt="">
+    <script src="../js/Signup.js"></script>
     <!-- ------------------------------------電腦版------------------------------------ -->
 
 

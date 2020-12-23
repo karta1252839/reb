@@ -104,6 +104,9 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
         top: 0%;
         transform: translateY(-13%);
     }
+    .signupbgc{
+        min-height: 10px;
+    }
 }
 /* 電腦大小圖 */
 @media (min-width:991.98px){
@@ -114,6 +117,9 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
         top: 0%;
         transform: translateY(-13%);
     }
+    .signupbgc{
+        min-height: 610px;
+    }
 }
 @media (min-width:1199.98px){
     .game-size{
@@ -122,6 +128,9 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
         right: 0;
         top: 0%;
         transform: translateY(-10%);
+    }
+    .signupbgc{
+        min-height: 800px;
     }
 }
 @media (min-width:1600px){
@@ -342,12 +351,16 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 #bgc-color{
     background: linear-gradient(180deg, #224dc9 0%, #a7cbef 100%);
 }
-#FAQ-btn{
+.FAQ-btn{
     width: 100%;
     background:linear-gradient(180deg,#2278e0 0%, #1754a7 100%);
     color: #ffffff;
     border-radius: 5px;
     height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 .FAQ-btn:hover{
     background:linear-gradient(180deg,#fceabb 0%, #f8b500 100%);
@@ -359,6 +372,60 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     background:linear-gradient(180deg,#1c63ba 0%, #124080 100%);
     color: #ffffff;
     padding: 5vh;
+
+}
+.blogh1{
+    color: #fff62c;
+    font-size: 1.3rem;
+}
+.signup-input{
+    width: 100%;
+    height: auto;
+    background-color: #13458a;
+    color: #3373cc;
+    border-radius: 5px;
+    padding: 2%;
+    /* background-size: 100% auto; */
+    background: no-repeat;
+    text-indent: 2.5rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    outline-style: none;
+    
+}
+.signup-input::placeholder{
+    color: #3373cc;
+}
+.signup-btn{
+    background:linear-gradient(180deg,#eaeeef 0%, #92a2ae 100%);
+    color: #13458a;
+    border-radius: 5px;
+    /* height: 5vh; */
+    padding: 7% 20%;
+    font-size: 0.8rem;
+    /* outline-style:none; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* cursor: pointer; */
+}
+.signup-submitBtn{
+    background:linear-gradient(180deg,#fcfa6d 0%, #f5b73b 100%);
+    color: #000000;
+    border-radius: 5px;
+    width: 80%;
+    /* height: 5vh; */
+    padding: 3%;
+    font-size: 0.8rem;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.signup-text{
+    font-size: 1rem;
+    text-indent: 2.5rem;
+}
+.gameintro-card-w{
+    width: 19%;
 }
 
 /* ------------------------------------電腦版------------------------------------  */
