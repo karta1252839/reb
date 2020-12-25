@@ -54,6 +54,16 @@
             width: 52px;
             height: 50px;
         }
+        .HamburgColor {
+            /* background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#da1b60)); */
+            background: linear-gradient(180deg, #a2a8b0 0%, #fff 30%, #a2a8b0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* -webkit-box-decoration-break: clone; */
+            /* box-decoration-break: clone; */
+            /* text-shadow: none; */
+            /* font-weight: 700; */
+        }
     </style>
 </head>
 
@@ -119,12 +129,14 @@
     <!-- /////////////////////////////////////// 手機板header ///////////////////////////////////// -->
     <div class="container-fluid p-0 d-lg-none " style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
         <div class="container">
-            <div class="row py-3" style="align-items: center;">
+            <div class="row py-2" style="align-items: center;">
                 <div class="col-4">
-                    <div class="text-light"><i class="fas fa-bars fa-2x"></i></div>
+                    <div class="HamburgColor"><i class="fas fa-bars fa-2x"></i></div>
+                    <!-- <div style="color: #e0e2e5;"><i class="fas fa-bars fa-2x"></i></div> -->
                 </div>
                 <div class="col-4 text-center">
-                    <div class="text-center"><img src="../reb/img/桌機index_img/logo.png" alt="" class="w-100"></div>
+                    <div class="text-center" style="margin-left: -5%;"><img src="../reb/img/桌機index_img/logo.png" alt=""
+                            class="w-100"></div>
                 </div>
                 <div class="col-4">
                     <div class="float-right" style="margin-right: 10%;"><img src="../reb/img/手機index_img/24-service.png"
@@ -561,12 +573,12 @@
     <header class="inner-container">
         <div class="container-fluid d-md-none"
             style="background-color:#bcd5ee;min-height: 690px;max-height: 2000px;overflow-y: scroll;">
-            <div class="container my-2">
+            <div class="container mb-2">
                 <div class="col-12" style="position: relative;">
                     <a href="#"><img src="./img/手機index_img/真人.png" alt="" class=""
                             style="width: 60%;height: auto;position: absolute; top: 0;left: 0;"></a>
                     <a href="#"><img src="./img/手機index_img/體育.png" alt="" class=""
-                            style="width: 53.9%;height: auto;position: absolute; top: 0;right: 0; transform: translateY(1%);" ></a>
+                            style="width: 53.9%;height: auto;position: absolute; top: 0;right: 0; transform: translateY(1%);"></a>
                     <a href="#"><img src="./img/手機index_img/電子.png" alt="" class=""
                             style="width: 70.5%;height: auto;position: absolute; right: 0; transform: translateY(105%);"></a>
                     <a href="#"><img src="./img/手機index_img/賓果.png" alt="" class=""
@@ -735,7 +747,6 @@
     <!-- ------------------------------------footer h------------------------------------ -->
 
     <!-- ------------------------------------footer------------------------------------ -->
-
     <!-- <div class="container-fluid p-0 d-sm-none md-footer-color fixed-bottom">
         <div class="row py-2">
             <div class="col-3 text-center">
