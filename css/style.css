@@ -222,6 +222,7 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 }
 .GoldenBorder-md{
     width: 100%;
+    height: 0.1vh;
     background: linear-gradient(180deg, #fffd70 0%, #f7bb3e 100%);
 }
 /* ------------------------------------金色顏色條------------------------------------ */
