@@ -221,7 +221,6 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     background: linear-gradient(180deg, #fffd70 0%, #f7bb3e 100%);
 }
 .GoldenBorder-md{
-    height: 1px;
     width: 100%;
     background: linear-gradient(180deg, #fffd70 0%, #f7bb3e 100%);
 }
@@ -279,9 +278,8 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     background-color: #fff;
   }
 
-.md-footer-flex{
+.md-footer-color{
     background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
-    /* min-height: 75px; */
   }
   .md-footer-item{
     display: flex;
