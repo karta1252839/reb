@@ -66,37 +66,25 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     }
 }
 @media (max-width: 575.98px) {
-    .h-list{
-        background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
-        /* min-height: 10px; */
-    }
+    
 }
 
 @media (min-width: 575.98px){
-    .h-list{
-        background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
-        /* min-height: 110px; */
-    }
-    .r-logo{
-        width: 90%;
-    }
-    .game-size{
+        .game-size{
         position: absolute;
         left: 0;
         right: 0;
         top: 0%;
         transform: translateY(-10%);
     }
+    .index_GamesLobby_bgh{
+        min-height: 56vh;
+        overflow: hidden;
+    }
     
 }
 @media (min-width: 767.98px){
-    .h-list{
-        background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);
-        /* min-height: 110px; */
-    }
-    .r-logo{
-        width: 120%;
-    }
+    
     .game-size{
         position: absolute;
         left: 0;
@@ -107,12 +95,14 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     .signupbgc{
         min-height: 10px;
     }
+    .index_GamesLobby_bgh{
+        min-height: 74.5vh;
+        overflow: hidden;
+    }
 }
 /* 電腦大小圖 */
 @media (min-width:991.98px){
-    .r-logo{
-        width: 160%;
-    }
+    
     .game-size{
         position: absolute;
         left: 0;
@@ -122,6 +112,10 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     }
     .signupbgc{
         min-height: 610px;
+    }
+    .index_GamesLobby_bgh{
+        min-height: 98vh;
+        overflow: hidden;
     }
 }
 @media (min-width:1199.98px){
@@ -135,6 +129,10 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     .signupbgc{
         min-height: 800px;
     }
+    .index_GamesLobby_bgh{
+        min-height: 116vh;
+        overflow: hidden;
+    }
 }
 @media (min-width:1600px){
     .game-size{
@@ -144,15 +142,18 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
         top: 0%;
         transform: translateY(3%);
     }
+    .index_GamesLobby_bgh{
+        min-height: 116.5vh;
+        overflow: hidden;
+    }
 }
 
 /* ------------------------------------login------------------------------------ */
 /* 帳號密碼輸入表單 */
 .input-style {
-    width: 5%;
     color: #fff;
     background-color: #4d4d4d;
-    width: 33%;
+    width: 200px;
     /* height: 30px; */
     /* padding-top: 1px;
     padding-left: 5px; */
@@ -165,26 +166,26 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 
 /* 登入按鈕 */
 .button-login {
-    width: 11%;
+    width: 70px;
     color: #fff;
     border-color: #fbb03b;
     background: linear-gradient(180deg, #fff365 0%, #f4b83f 100%);
     margin-left: 5px;
     font-size: 15px;
     text-align: center;
-    /* padding: 0.3% 1.5%; */
+    padding: 0.3% 0;
 }
 
 /* 註冊按鈕 */
 .button-registered {
-    width: 11%;
+    width: 70px;
     color: #fff;
     border-color: #9e005d;
     background: linear-gradient(180deg, #ed1e79 0%, #c1272d 100%);
     margin-left: 5px;
     font-size: 15px;
     text-align: center;
-    /* padding: 0.3% 1.5%; */
+    padding: 0.3% 0;
 }
 
 /* fs-15 字體大小 */
@@ -214,15 +215,13 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 /* ------------------------------------logo & list------------------------------------ */
 
 /* ------------------------------------金色顏色條------------------------------------ */
-.border {
+.GoldenBorder {
     height: 5px;
     width: 100%;
     background: linear-gradient(180deg, #fffd70 0%, #f7bb3e 100%);
 }
 
 /* ------------------------------------金色顏色條------------------------------------ */
-
-
 
 
 
@@ -297,6 +296,7 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 
 
 /* /////////////////////////////////////// 電腦版 ///////////////////////////////////// */
+
 
 /* ------------------------------------遊戲大廳------------------------------------ */
 .btn-game{
