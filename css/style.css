@@ -78,7 +78,7 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
         transform: translateY(-10%);
     }
     .index_GamesLobby_bgh{
-        min-height: 56vh;
+        min-height: 523px;
         overflow: hidden;
     }
     
@@ -96,7 +96,7 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
         min-height: 10px;
     }
     .index_GamesLobby_bgh{
-        min-height: 74.5vh;
+        min-height: 690px;
         overflow: hidden;
     }
 }
@@ -114,7 +114,7 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
         min-height: 610px;
     }
     .index_GamesLobby_bgh{
-        min-height: 98vh;
+        min-height: 910px;
         overflow: hidden;
     }
 }
@@ -130,7 +130,7 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
         min-height: 800px;
     }
     .index_GamesLobby_bgh{
-        min-height: 116vh;
+        min-height: 1080px;
         overflow: hidden;
     }
 }
@@ -143,7 +143,7 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
         transform: translateY(3%);
     }
     .index_GamesLobby_bgh{
-        min-height: 116.5vh;
+        min-height: 1080px;
         overflow: hidden;
     }
 }
@@ -220,7 +220,11 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     width: 100%;
     background: linear-gradient(180deg, #fffd70 0%, #f7bb3e 100%);
 }
-
+.GoldenBorder-md{
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(180deg, #fffd70 0%, #f7bb3e 100%);
+}
 /* ------------------------------------金色顏色條------------------------------------ */
 
 

@@ -65,9 +65,9 @@
             <div class="row py-3">
                 <div class="col-4"></div>
                 <div class="col-4">
-                    <input type="text" class="mx-1 input-style" placeholder="用戶名(ID)" onfocus="this.placeholder = ''"
+                    <input type="text" class="px-2 input-style" placeholder="用戶名(ID)" onfocus="this.placeholder = ''"
                         onblur="this.placeholder = '用戶名(ID)'" />
-                    <input type="password" class="mx-1 input-style" placeholder="密碼" onfocus="this.placeholder = ''"
+                    <input type="password" class="px-2 input-style" placeholder="密碼" onfocus="this.placeholder = ''"
                         onblur="this.placeholder = '密碼'" />
                     <input class="mx-1 button-login" type="button" value="登入">
                     <input class="mx-1 button-registered" type="button" value="註冊">
@@ -123,12 +123,12 @@
                 <div class="col-4">
                     <div class="text-light"><i class="fas fa-bars fa-2x"></i></div>
                 </div>
-                <div class="col-4" style="justify-content: center;">
+                <div class="col-4 text-center">
                     <div class="text-center"><img src="../reb/img/桌機index_img/logo.png" alt="" class="w-100"></div>
                 </div>
                 <div class="col-4">
                     <div class="float-right" style="margin-right: 10%;"><img src="../reb/img/手機index_img/24-service.png"
-                            alt="" class="w-100"></div>
+                            alt="" style="width: 90%;"></div>
                 </div>
             </div>
         </div>
@@ -137,7 +137,8 @@
 
     <!-- ------------------------------------金色顏色條-------------------------------------->
     <div class="container-fluid p-0">
-        <div class="GoldenBorder"></div>
+        <div class="GoldenBorder d-none d-md-block"></div>
+        <div class="GoldenBorder-md d-md-none"></div>
     </div>
     <!-- ------------------------------------金色顏色條-------------------------------------->
 
@@ -179,18 +180,12 @@
     <!-- ------------------------------------金色顏色條------------------------------------ -->
 
     <!-- ------------------------------------跑馬燈------------------------------------ -->
-    <div class="container-fluid p-0"
-        style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);min-height: 38px;">
+    <div class="container-fluid p-0 d-none d-md-block"
+        style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
         <div class="container" style="position: relative;">
             <div class="" style="z-index: 999; position: absolute;top: 0;left: 0;">
                 <a href="#" id="btnHome1"><img src="../reb/img/桌機index_img/維修公告-01.png" alt=""
                         style="background-size: 100%;"></a>
-                <!-- <div id="btnHomeItems1" style="display: ;" class="FAQ-btn-items">
-                    <ul>
-                        <a href="#"><li class="text-light">維修1</li></a>
-                        <a href="#"><li class="text-light">維修2</li></a>
-                    </ul>
-                </div> -->
             </div>
             <div class="" style="z-index: 1;">
                 <marquee direction="left" height="30" scrollamount="5" behavior="left"
@@ -205,7 +200,31 @@
         </div>
         <!-- <script src="../js/FAQlist.js"></script> -->
     </div>
+
+    <!-- /////////////////////////////////////// 手機板 ///////////////////////////////////// -->
+    <div class="container-fluid p-0 d-md-none" style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
+        <div class="container" style="position: relative;">
+            <div class="" style="z-index: 999; position: absolute;top: 0;left: 0;">
+                <a href="#" id="btnHome1"><img src="../reb/img/手機index_img/維修公告-01.png" alt=""
+                        style="background-size: 100%;"></a>
+            </div>
+            <div class="" style="z-index: 1;">
+                <marquee direction="left" height="30" scrollamount="5" behavior="left"
+                    style="height: 100%;width: 100%; color: cornsilk;">
+                    【維護公告】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】
+                    開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】
+                    敬愛的卡利會員您好，卡利娛樂城為防堵詐騙氾濫、保障會員資金安全，在此提醒：信用卡、ATM轉帳、VIP專用帳戶存款等服務，務必使用「本人帳戶」！若使用非本人帳戶存款，將一律扣除處理費用後退還本金，感謝您的配合。    【維護公告】
+                    親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。    【取款公告】
+                    親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。
+                </marquee>
+            </div>
+        </div>
+        <!-- <script src="../js/FAQlist.js"></script> -->
+    </div>
+    <!-- /////////////////////////////////////// 手機板 ///////////////////////////////////// -->
+
     <!-- ------------------------------------跑馬燈------------------------------------ -->
+
     <!-- ------------------------------------遊戲大廳------------------------------------ -->
     <div class="container-fluid d-none d-sm-block p-0" style="background-color: #a7cbef;">
         <div class="index_GamesLobby_bgh" id="game-v-flex"
@@ -512,34 +531,29 @@
 
 
     <!-- ------------------------------------遊戲大廳------------------------------------ -->
-    <header class="inner-container">
-        <div class="container-fluid d-sm-none"
-            style="background-color:#bcd5ee;min-height: 690px;max-height: 2000px;overflow-y: scroll;">
-            <div class="container my-2">
-                <div class="col-12" style="position: relative;">
-                    <a href="#"><img src="./img/手機index_img/真人.png" alt="" class=""
-                            style="width: 60%;height: auto;position: absolute; top: 0;left: 0;"></a>
-                    <a href="#"><img src="./img/手機index_img/體育.png" alt="" class=""
-                            style="width: 53%;height: auto;position: absolute; top: 0;right: 0;"></a>
-                    <a href="#"><img src="./img/手機index_img/電子.png" alt="" class=""
-                            style="width: 70%;height: auto;position: absolute; right: 0; transform: translateY(105%);"></a>
-                    <a href="#"><img src="./img/手機index_img/賓果.png" alt="" class=""
-                            style="width: 50%;height: auto;position: absolute; left : 0; transform: translateY(215%);"></a>
-                    <a href="#"><img src="./img/手機index_img/棋牌.png" alt="" class=""
-                            style="width: 50%;height: auto;position: absolute; right : 0; transform: translateY(215%);"></a>
-                    <a href="#"><img src="./img/手機index_img/捕魚.png" alt="" class=""
-                            style="width: 50%;height: auto;position: absolute; left : 0; transform: translateY(314%);"></a>
-                    <a href="#"><img src="./img/手機index_img/影城.png" alt="" class=""
-                            style="width: 50%;height: auto;position: absolute; right : 0; transform: translateY(314%);"></a>
-                    <a href="#"><img src="./img/手機index_img/轉盤.png" alt="" class=""
-                            style="width: 100%;height: auto;position: absolute; left : 0; transform: translateY(524%);"></a>
-                    <a href="#"><img src="./img/手機index_img/拉霸.png" alt="" class=""
-                            style="width: 100%;height: auto;position: absolute; left : 0; transform: translateY(659%);"></a>
-                </div>
-            </div>
+    <div class="container-fluid d-sm-none" style="background-color: #bcd5ee;min-height: 750px;position: relative;">
+        <div class="col-12">
+            <a href="#"><img src="./img/手機index_img/真人.png" alt="" class=""
+                    style="width: 59%;height: auto;position: absolute; top: 0;left: 0;"></a>
+            <a href="#"><img src="./img/手機index_img/體育.png" alt="" class=""
+                    style="width: 53%;height: auto;position: absolute; top: 0;right: 2%;"></a>
+            <a href="#"><img src="./img/手機index_img/電子.png" alt="" class=""
+                    style="width: 69.5%;height: auto;position: absolute; right: 2%; transform: translateY(105%);"></a>
+            <a href="#"><img src="./img/手機index_img/賓果.png" alt="" class=""
+                    style="width: 50%;height: auto;position: absolute; left : 0; transform: translateY(206%);"></a>
+            <a href="#"><img src="./img/手機index_img/棋牌.png" alt="" class=""
+                    style="width: 50%;height: auto;position: absolute; right : 2%; transform: translateY(206%);"></a>
+            <a href="#"><img src="./img/手機index_img/捕魚.png" alt="" class=""
+                    style="width: 50%;height: auto;position: absolute; left : 0; transform: translateY(300%);"></a>
+            <a href="#"><img src="./img/手機index_img/影城.png" alt="" class=""
+                    style="width: 50%;height: auto;position: absolute; right : 2%; transform: translateY(300%);"></a>
+            <a href="#"><img src="./img/手機index_img/轉盤.png" alt="" class=""
+                    style="width: 100%;height: auto;position: absolute; left : 0; transform: translateY(500%);"></a>
+            <a href="#"><img src="./img/手機index_img/拉霸.png" alt="" class=""
+                    style="width: 100%;height: auto;position: absolute; left : 0; transform: translateY(630%);"></a>
         </div>
-    </header>
-
+        <div class="" style="clear: both;"></div>
+    </div>
     <!-- ------------------------------------遊戲大廳-------------------------------------->
 
     <!-- ------------------------------------加入桌面-------------------------------------->
