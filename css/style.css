@@ -66,10 +66,32 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     }
 }
 /* 手機版大小圖 */
-@media (max-width: 575.98px) {
-    
+@media (min-width: 300px) {
+    .md-gameH{
+        min-height: 630px;
+    }
 }
-
+@media (min-width: 350px) {
+    .md-gameH{
+        min-height: 730px;
+    }
+}
+@media (min-width: 400px) {
+    .md-gameH{
+        min-height: 830px;
+    }
+}
+@media (min-width: 450px) {
+    .md-gameH{
+        min-height: 930px;
+    }
+}
+@media (min-width: 500px){
+    .md-gameH{
+        min-height: 1090px;
+    }
+}
+/* 手機版大小圖 */
 @media (min-width: 575.98px){
         .game-size{
         position: absolute;
