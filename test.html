@@ -1,68 +1,346 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" style='font-family: "Microsoft YaHei", sans-serif;'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>漢堡按鈕</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- IE兼容 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Rennibo mobile</title>
+
     <style>
-        #showMenu {
-            background-color: rgb(0, 0, 0, 50%);
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            display: none;
-            width: 75%;
-        }
-
-        .showMenulist {
-            background-color: rgb(13, 13, 90);
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 350px;
-            line-height: 60px;
-        }
-
-        .showMenulist ul li {
+        * {
+            margin: 0;
+            padding: 0;
             list-style: none;
-            color: #fff;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <div class="container-fluid" style="background-image: url(./桌機img/背景圖-01.png);min-height: 1500px;">
-        <input type="button" value="顯示按鈕鍵" id="btn">
-        <div id="showMenu">
-            <div class="showMenulist">
-                <ul>
-                    <li style="text-align: center;"><img src="./img/USER.png" alt=""></li>
-                    <li style="text-align: center;"><img src="./img/mb-list-btn.png" alt=""></li>
-                    <li style="text-align: left;"><a href="#"
-                            style="color: blanchedalmond;text-decoration: none;font-size: 1rem;"><img
-                                style="vertical-align:middle;margin-right: 5px;" src="./img/賓果彩票icon.png" alt="">賓果</a>
-                    </li>
-                </ul>
+    <div class="container-fluid m-0 p-0" style="background-color: blueviolet;margin: 0;padding: 0;">
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-4">123</div>
+                <div class="col-4">123</div>
+                <div class="col-4">123</div>
             </div>
         </div>
     </div>
 
+    <!-- /////////////////////////////////////// 手機板header ///////////////////////////////////// -->
 
-    <script>
-        document.getElementById("btn").onclick = function () {
-            var showMenu = document.getElementById("showMenu");
-            var btn = document.getElementById("btn");
-            if (showMenu.style.display == "none") {
-                showMenu.style.display = "block";
-                btn.value = "隱藏按鈕鍵";
-            } else {
-                showMenu.style.display = "none";
-            }
-        }
-    </script>
+
+
+    <!-- /////////////////////////////////////// 手機板 ///////////////////////////////////// -->
+    <!-- <div class="container-fluid p-0 d-md-none" style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
+        <div class="container" style="position: relative;">
+            <div class="" style="z-index: 999; position: absolute;top: 0;left: 0;">
+                <a href="#" id="btnHome2"><img src="../reb/img/手機index_img/維修公告-01.png" alt=""
+                        style="background-size: 100%;"></a>
+                <ul class="px-3 py-2" style="background-color: #1754A7;display: none;" id="btnHome_items1">
+                    <li><a href="../reb/page/404.html" class="btnHome-bgc">維修公告1</a></li>
+                    <li><a href="#" class="pt-1 btnHome-bgc">維修公告2</a></li>
+                </ul>
+            </div>
+            <div class="" style="z-index: 1;">
+                <marquee direction="left" height="30" scrollamount="5" behavior="left"
+                    style="height: 100%;width: 100%; color: cornsilk;">
+                    【維護公告】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】
+                    開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】
+                    敬愛的卡利會員您好，卡利娛樂城為防堵詐騙氾濫、保障會員資金安全，在此提醒：信用卡、ATM轉帳、VIP專用帳戶存款等服務，務必使用「本人帳戶」！若使用非本人帳戶存款，將一律扣除處理費用後退還本金，感謝您的配合。    【維護公告】
+                    親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。    【取款公告】
+                    親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。
+                </marquee>
+            </div>
+        </div>
+        <script src="../reb/js/index.js"></script>
+    </div> -->
+    <!-- /////////////////////////////////////// 手機板 ///////////////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="container-fluid d-md-none p-0" style="background-color:#bcd5ee;min-height: 1090px;margin-top: -7px;">
+        <div class="container mb-2">
+            <div class="col-12" style="position: relative;">
+                <a href="#"><img src="./img/手機index_img/真人.png" alt="" class=""
+                        style="width: 60%;height: auto;position: absolute; top: 0;left: 0;"></a>
+                <a href="#"><img src="./img/手機index_img/體育.png" alt="" class=""
+                        style="width: 53.9%;height: auto;position: absolute; top: 0;right: 0; transform: translateY(1%);"></a>
+                <a href="#"><img src="./img/手機index_img/電子.png" alt="" class=""
+                        style="width: 70.5%;height: auto;position: absolute; right: 0; transform: translateY(105%);"></a>
+                <a href="#"><img src="./img/手機index_img/賓果.png" alt="" class=""
+                        style="width: 50%;height: auto;position: absolute; left : 0; transform: translateY(210%);"></a>
+                <a href="#"><img src="./img/手機index_img/棋牌.png" alt="" class=""
+                        style="width: 50%;height: auto;position: absolute; right : 0; transform: translateY(210%);"></a>
+                <a href="#"><img src="./img/手機index_img/捕魚.png" alt="" class=""
+                        style="width: 50%;height: auto;position: absolute; left : 0; transform: translateY(309%);"></a>
+                <a href="#"><img src="./img/手機index_img/影城.png" alt="" class=""
+                        style="width: 50%;height: auto;position: absolute; right : 0; transform: translateY(309%);"></a>
+                <a href="#"><img src="./img/手機index_img/轉盤.png" alt="" class=""
+                        style="width: 100%;height: auto;position: absolute; left : 0; transform: translateY(511%);"></a>
+                <a href="#"><img src="./img/手機index_img/拉霸.png" alt="" class=""
+                        style="width: 100%;height: auto;position: absolute; left : 0; transform: translateY(639%);"></a>
+            </div>
+        </div>
+    </div> -->
+    <!-- ------------------------------------遊戲大廳-------------------------------------->
+
+    <!-- ------------------------------------加入桌面-------------------------------------->
+    <!-- <div class="container-fluid p-0 d-sm-none">
+        <a href="#"><img src="./img/手機index_img/加入頁面.png" alt="" style="width: 100%;"></a>
+    </div> -->
+    <!-- ------------------------------------加入桌面-------------------------------------->
+
+    <!-- ------------------------------------為何選擇我們-------------------------------------->
+    <!-- <div class="container-fluid p-0 d-sm-none" style="background-color:#bcd5ee;">
+        <div class="">
+            <div class="w-100">
+                <img src="./img/手機index_img/為何選擇我們區塊.png" alt="" class="my-4" style="min-height: 300px;width: 100%;">
+            </div>
+        </div>
+    </div> -->
+    <!-- ------------------------------------為何選擇我們-------------------------------------->
+
+    <!-- ------------------------------------娛樂城文章-------------------------------------->
+
+    <!-- <div class="container-fluid d-sm-none" style="background-color:#dce9ff;">
+        <div class="container text-center">
+            <div class="col-12 py-3">
+                <img src="./img/手機index_img/文章TITLE.png" alt="" class="w-100">
+            </div>
+            <div class="col-12 pb-3">
+                <div class="card" style="width: 100%;background-color: #0061bf;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #fff62c;">歐博app下載教學</h5>
+                        <p class="card-text" style="color: #eee;">想用手機玩歐博百家樂但不知道如何下載
+                            歐博app嗎？本篇内容給您最詳盡的下載...</p>
+                        <p class="float-left" style="color: #bebebe;">2020-09-17</p>
+                        <a href="#" class="btn float-right" style="color: #bebebe;">更多詳情 ></a>
+                    </div>
+                </div>
+                <div class="card mt-1" style="width: 100%;background-color: #0061bf;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #fff62c;">歐博app下載教學</h5>
+                        <p class="card-text" style="color: #eee;">想用手機玩歐博百家樂但不知道如何下載
+                            歐博app嗎？本篇内容給您最詳盡的下載...</p>
+                        <p class="float-left" style="color: #bebebe;">2020-09-17</p>
+                        <a href="#" class="btn float-right" style="color: #bebebe;">更多詳情 ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="container-fluid d-sm-none" style="background-color:#dce9ff; min-height: 115px;">
+        <div class="container">
+            <div class="col-12">
+                <img src="./img/手機index_img/文章TITLE.png" alt="" class="my-4" style="min-height: 18px;width: 100%;">
+            </div>
+            <div class="col-12 pb-3" style="overflow: inherit;">
+                <div class="card pt-2 mb-3" style="width: 100%;background-color: #0061bf;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #fff62c;">歐博app下載教學</h5>
+                        <p class="card-text" style="color: #eee;">想用手機玩歐博百家樂但不知道如何下載
+                            歐博app嗎？本篇内容給您最詳盡的下載...</p>
+                        <p class="float-left" style="color: #bebebe;">2020-09-17</p>
+                        <a href="#" class="btn float-right" style="color: #bebebe;">更多詳情 ></a>
+                    </div>
+                </div>
+                <div class="card" style="width: 100%;background-color: #0061bf;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #fff62c;">歐博app下載教學</h5>
+                        <p class="card-text" style="color: #eee;">想用手機玩歐博百家樂但不知道如何下載
+                            歐博app嗎？本篇内容給您最詳盡的下載...</p>
+                        <p class="float-left" style="color: #bebebe;">2020-09-17</p>
+                        <a href="#" class="btn float-right" style="color: #bebebe;">更多詳情 ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ------------------------------------娛樂城文章-------------------------------------->
+
+    <!-- ------------------------------------blog------------------------------------ -->
+    <!-- <div class="container-fluid d-sm-none" style="background-color:#bcd5ee;">
+        <div class="container">
+            <div class="row py-5 " style="justify-content: space-between;">
+                <div class="col-3 text-center">
+                    <a class="blog-t-color" href="#">娛樂城</a>
+                </div>
+                <div class="col-3 text-center">
+                    <a class="blog-t-color" href="#">百家樂</a>
+                </div>
+                <div class="col-3 text-center">
+                    <a class="blog-t-color" href="#">娛樂城優惠</a>
+                </div>
+                <div class="col-3 text-center">
+                    <a class="blog-t-color" href="#">百家樂技巧</a>
+                </div>
+                <div class="col-12 py-5">
+                    <a href="#">
+                        <p class="blog-t-color text-center">任你博娛樂城-線上賭場百家樂推薦</p>
+                    </a>
+                </div>
+                <div class="col-12 text-center">
+                    <input type="button" value="前往電腦版" class="blog-btn">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="container-fluid d-sm-none" style="background-color:#bcd5ee; min-height: 150px;">
+        <div class="row pt-5 px-2" style="clear: both;">
+            <div class="col-3">
+                <a class="blog-t-color" href="#">娛樂城</a>
+            </div>
+            <div class="col-3">
+                <a class="blog-t-color" href="#">百家樂</a>
+            </div>
+            <div class="col-3">
+                <a class="blog-t-color" href="#">娛樂城優惠</a>
+            </div>
+            <div class="col-3">
+                <a class="blog-t-color" href="#">百家樂技巧</a>
+            </div>
+        </div>
+        <div class="row pt-5 pb-3">
+            <div class="col-12">
+                <a href="#">
+                    <p class="blog-t-color text-center">任你博娛樂城-線上賭場百家樂推薦</p>
+                </a>
+            </div>
+        </div>
+        <div class="row pt-2 pb-5">
+            <div class="col-12" style="display: flex;justify-content: center;">
+                <input type="button" value="前往電腦版" class="blog-btn">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ------------------------------------blog-------------------------------------->
+
+    <!-- ------------------------------------footer h------------------------------------ -->
+
+    <!-- <div class="container-fluid p-0 d-md-none" style="height: 5vh;"></div> -->
+    <!-- ------------------------------------footer h------------------------------------ -->
+
+    <!-- ------------------------------------footer------------------------------------ -->
+    <!-- <div class="container-fluid p-0 d-sm-none md-footer-color fixed-bottom">
+        <div class="row py-2">
+            <div class="col-3 text-center">
+                <a href="#"><img src="./img/手機index_img/手機最下方/包裝/首頁.png" alt="" alt=""></a>
+            </div>
+            <div class="col-3 text-center">
+                <a href="#"><img src="./img/手機index_img/手機最下方/包裝/登入.png" alt="" alt=""></a>
+            </div>
+            <div class="col-3 text-center">
+                <a href="#"><img src="./img/手機index_img/手機最下方/包裝/註冊.png" alt="" alt=""></a>
+            </div>
+            <div class="col-3 text-center">
+                <a href="#"><img src="./img/手機index_img/手機最下方/包裝/優惠活動.png" alt="" alt=""></a>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div class="container-fluid d-sm-none  md-footer-color fixed-bottom">
+        <div class="row">
+            <div class="w-100 p-2 md-footer-item">
+                <p class="col-3 text-center">
+                    <a href="#"><img src="./img/手機index_img/手機最下方/包裝/首頁.png" alt=""></a>
+                </p>
+                <p class="col-3 text-center">
+                    <a href="#"><img src="./img/手機index_img/手機最下方/包裝/登入.png" alt=""></a>
+                </p>
+                <p class="col-3 text-center">
+                    <a href="#"><img src="./img/手機index_img/手機最下方/包裝/註冊.png" alt=""></a>
+                </p>
+                <p class="col-3 text-center">
+                    <a href="#"><img src="./img/手機index_img/手機最下方/包裝/優惠活動.png" alt=""></a>
+                </p>
+            </div>
+        </div>
+    </div> -->
+    <!-- ------------------------------------footer------------------------------------ -->
+
+    <!-- /////////////////////////////////////// 手機板 ///////////////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script> -->
+
+
 </body>
 
 </html>
