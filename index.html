@@ -54,6 +54,7 @@
             width: 52px;
             height: 50px;
         }
+
         .HamburgColor {
             /* background: -webkit-gradient(linear, left top, right top, from(#ff8a00), to(#da1b60)); */
             background: linear-gradient(180deg, #a2a8b0 0%, #fff 30%, #a2a8b0 100%);
@@ -63,6 +64,15 @@
             /* box-decoration-break: clone; */
             /* text-shadow: none; */
             /* font-weight: 700; */
+        }
+
+        .btnHome-bgc {
+            color: #fff;
+        }
+
+        .btnHome-bgc:hover {
+            color: #fff62c;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -79,14 +89,16 @@
                         onblur="this.placeholder = '用戶名(ID)'" />
                     <input type="password" class="px-2 input-style" placeholder="密碼" onfocus="this.placeholder = ''"
                         onblur="this.placeholder = '密碼'" />
-                    <input class="mx-1 button-login" type="button" value="登入">
-                    <input class="mx-1 button-registered" type="button" value="註冊">
+                    <input class="mx-1 button-login" type="submit" value="登入">
+                    <a href="./header page/Signup.html" target="_blank">
+                        <input class="mx-1 button-registered" type="button" value="註冊">
+                    </a>
                 </div>
                 <div class="col-4" style="justify-content: space-between;margin-left: -2%;">
                     <a class="text-light mx-1" href="#">公告</a>
-                    <a class="text-light mx-1" href="#">APP下載</a>
-                    <a class="text-light mx-1" href="#">常見問題</a>
-                    <a class="text-light mx-1" href="#">合作代理</a>
+                    <a class="text-light mx-1" href="./header page/AppDownload.html">APP下載</a>
+                    <a class="text-light mx-1" href="./header page/FAQ.html">常見問題</a>
+                    <a class="text-light mx-1" href="./header page/Agent.html">合作代理</a>
                 </div>
             </div>
         </div>
@@ -99,26 +111,34 @@
         <div class="container py-3">
             <div class="row" style="align-items:center;">
                 <div class="col-3">
-                    <a class="" href="#"><img class="w-100" src="../reb/img/桌機index_img/logo.png">
+                    <a class="" href="./index.html"><img class="w-100" src="../reb/img/桌機index_img/logo.png">
                 </div>
                 <ul class="col-7 d-flex">
-                    <li class="col col-lg-2"><a href="#"><img src="../reb/img/桌機index_img/list/1LIVE-01.png" alt=""
+                    <li class="col col-lg-2"><a href="./page/LiveCasino.html"><img
+                                src="../reb/img/桌機index_img/list/1LIVE-01.png" alt=""
                                 style="background-size: 100% auto;"></a></li>
-                    <li class="col col-lg-2"><a href="#"><img src="../reb/img/桌機index_img/list/sport-01.png" alt=""
+                    <li class="col col-lg-2"><a href="./page/Sport.html"><img
+                                src="../reb/img/桌機index_img/list/sport-01.png" alt=""
                                 style="background-size: 100% auto;"></a></li>
-                    <li class="col col-lg-2"><a href="#"><img src="../reb/img/桌機index_img/list/chess-01.png" alt=""
+                    <li class="col col-lg-2"><a href="./page/Chess.html"><img
+                                src="../reb/img/桌機index_img/list/chess-01.png" alt=""
                                 style="background-size: 100% auto;"></a></li>
-                    <li class="col col-lg-2"><a href="#"><img src="../reb/img/桌機index_img/list/電子-01.png" alt=""
+                    <li class="col col-lg-2"><a href="./page/Slot.html"><img src="../reb/img/桌機index_img/list/電子-01.png"
+                                alt="" style="background-size: 100% auto;"></a></li>
+                    <li class="col col-lg-2"><a href="./page/Bingo.html"><img
+                                src="../reb/img/桌機index_img/list/bingo-01.png" alt=""
                                 style="background-size: 100% auto;"></a></li>
-                    <li class="col col-lg-2"><a href="#"><img src="../reb/img/桌機index_img/list/bingo-01.png" alt=""
+                    <li class="col col-lg-2"><a href="./page/Fish.html"><img
+                                src="../reb/img/桌機index_img/list/fish-01.png" alt=""
                                 style="background-size: 100% auto;"></a></li>
-                    <li class="col col-lg-2"><a href="#"><img src="../reb/img/桌機index_img/list/fish-01.png" alt=""
+                    <li class="col col-lg-2"><a href="./page/MainPages.html"><img
+                                src="../reb/img/桌機index_img/list/pr-01.png" alt=""
                                 style="background-size: 100% auto;"></a></li>
-                    <li class="col col-lg-2"><a href="#"><img src="../reb/img/桌機index_img/list/pr-01.png" alt=""
+                    <li class="col col-lg-2"><a href="./page/Promotion.html"><img
+                                src="../reb/img/桌機index_img/list/sale-01.png" alt=""
                                 style="background-size: 100% auto;"></a></li>
-                    <li class="col col-lg-2"><a href="#"><img src="../reb/img/桌機index_img/list/sale-01.png" alt=""
-                                style="background-size: 100% auto;"></a></li>
-                    <li class="col col-lg-2"><a href="#"><img src="../reb/img/桌機index_img/list/movie-01.png" alt=""
+                    <li class="col col-lg-2"><a href="./page/Movie.html"><img
+                                src="../reb/img/桌機index_img/list/movie-01.png" alt=""
                                 style="background-size: 100% auto;"></a></li>
                 </ul>
             </div>
@@ -196,8 +216,14 @@
         style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
         <div class="container" style="position: relative;">
             <div class="" style="z-index: 999; position: absolute;top: 0;left: 0;">
-                <a href="#" id="btnHome1"><img src="../reb/img/桌機index_img/維修公告-01.png" alt=""
-                        style="background-size: 100%;"></a>
+                <!-- <a href="#" id="btnHome1"><img src="../reb/img/桌機index_img/維修公告-01.png" alt=""
+                        style="background-size: 100%;"></a> -->
+                <button id="btnHome1" class="Maintenance"></button>
+                <ul class="px-3 py-2" style="background-color: #1754A7;display: none;margin-top: -6px;"
+                    id="btnHome_items">
+                    <li><a href="../reb/page/404.html" class="btnHome-bgc">維修公告1</a></li>
+                    <li><a href="#" class="pt-1 btnHome-bgc">維修公告2</a></li>
+                </ul>
             </div>
             <div class="" style="z-index: 1;">
                 <marquee direction="left" height="30" scrollamount="5" behavior="left"
@@ -210,15 +236,19 @@
                 </marquee>
             </div>
         </div>
-        <!-- <script src="../js/FAQlist.js"></script> -->
+        <script src="../reb/js/index.js"></script>
     </div>
 
     <!-- /////////////////////////////////////// 手機板 ///////////////////////////////////// -->
     <div class="container-fluid p-0 d-md-none" style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
         <div class="container" style="position: relative;">
             <div class="" style="z-index: 999; position: absolute;top: 0;left: 0;">
-                <a href="#" id="btnHome1"><img src="../reb/img/手機index_img/維修公告-01.png" alt=""
+                <a href="#" id="btnHome2"><img src="../reb/img/手機index_img/維修公告-01.png" alt=""
                         style="background-size: 100%;"></a>
+                <ul class="px-3 py-2" style="background-color: #1754A7;display: none;" id="btnHome_items1">
+                    <li><a href="../reb/page/404.html" class="btnHome-bgc">維修公告1</a></li>
+                    <li><a href="#" class="pt-1 btnHome-bgc">維修公告2</a></li>
+                </ul>
             </div>
             <div class="" style="z-index: 1;">
                 <marquee direction="left" height="30" scrollamount="5" behavior="left"
@@ -231,7 +261,7 @@
                 </marquee>
             </div>
         </div>
-        <!-- <script src="../js/FAQlist.js"></script> -->
+        <script src="../reb/js/index.js"></script>
     </div>
     <!-- /////////////////////////////////////// 手機板 ///////////////////////////////////// -->
 
@@ -244,29 +274,31 @@
             <div class="container">
                 <div class="row pt-4">
                     <div class="col-6" style="position: relative;">
-                        <a href="#"><img src="./img/手機index_img/真人.png" alt="" class=""
+                        <a href="./page/LiveCasino.html"><img src="./img/手機index_img/真人.png" alt="" class=""
                                 style="width: 60%;height: auto;position: absolute; top: 0;left: 0;"></a>
-                        <a href="#"><img src="./img/手機index_img/體育.png" alt="" class=""
+                        <a href="./page/Sport.html"><img src="./img/手機index_img/體育.png" alt="" class=""
                                 style="width: 53%;height: auto;position: absolute; top: 0;right: 0;"></a>
-                        <a href="#"><img src="./img/手機index_img/電子.png" alt="" class=""
+                        <a href="./page/Slot.html"><img src="./img/手機index_img/電子.png" alt="" class=""
                                 style="width: 70%;height: auto;position: absolute; right: 0; transform: translateY(105%);"></a>
                     </div>
                     <div class="col-6">
-                        <a href="#"><img src="./img/手機index_img/賓果.png" alt="" class=""
+                        <a href="./page/Bingo.html"><img src="./img/手機index_img/賓果.png" alt="" class=""
                                 style="width: 50%;height: auto;position: absolute; left : 0; transform: translateY(6%);"></a>
-                        <a href="#"><img src="./img/手機index_img/棋牌.png" alt="" class=""
+                        <a href="./page/Chess.html"><img src="./img/手機index_img/棋牌.png" alt="" class=""
                                 style="width: 50%;height: auto;position: absolute; right : 0; transform: translateY(6%);"></a>
-                        <a href="#"><img src="./img/手機index_img/捕魚.png" alt="" class=""
+                        <a href="./page/Fish.html"><img src="./img/手機index_img/捕魚.png" alt="" class=""
                                 style="width: 50%;height: auto;position: absolute; left : 0; transform: translateY(109%);"></a>
-                        <a href="#"><img src="./img/手機index_img/影城.png" alt="" class=""
+                        <a href="./page/Movie.html"><img src="./img/手機index_img/影城.png" alt="" class=""
                                 style="width: 50%;height: auto;position: absolute; right : 0; transform: translateY(107%);"></a>
                     </div>
                     <div class="col-6">
-                        <a href="#"><img src="./img/手機index_img/轉盤.png" alt="" class=""
+                        <a href="https://999xc.net/event/roulette" target="_blank"><img src="./img/手機index_img/轉盤.png"
+                                alt="" class=""
                                 style="width: 100%;height: auto;position: absolute; left : 0; transform: translateY(269%);"></a>
                     </div>
                     <div class="col-6">
-                        <a href="#"><img src="./img/手機index_img/拉霸.png" alt="" class=""
+                        <a href="https://999xc.net/event/slot" target="__blank"><img src="./img/手機index_img/拉霸.png"
+                                alt="" class=""
                                 style="width: 100%;height: auto;position: absolute; left : 0; transform: translateY(285%);"></a>
                     </div>
                     <div class="col-12">
@@ -291,16 +323,46 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-3">
-                    <a href="#"><img src="../reb/img/桌機index_img/存取/定版1-01.png" alt=""></a>
+                    <div class="pt-3 pb-2" style="float: left;">
+                        <img class="w-75" src="../reb/img/桌機index_img/存取/存.png" alt="">
+                    </div>
+                    <div style="margin-top: 5%;">
+                        <span style="color: #fff62c;">xx分xx秒</span>
+                        <p class="text-light">存款平均到帳時間</p>
+                    </div>
+                    <!-- <img src="../reb/img/桌機index_img/存取/存-01.jpg" alt=""> -->
+                    <!-- <div class="" style="float: right;">
+                        <div class="col-6">xxx</div>
+                        <div class="col-6">xxx</div>
+                    </div> -->
                 </div>
                 <div class="col-3">
-                    <a href="#"><img src="../reb/img/桌機index_img/存取/2-01.png" alt=""></a>
+                    <!-- <img src="../reb/img/桌機index_img/存取/2-01.png" alt=""> -->
+                    <div class="pt-3" style="float: left;">
+                        <img class="w-75" src="../reb/img/桌機index_img/存取/取-01.png" alt="">
+                    </div>
+                    <div style="margin-top: 5%;">
+                        <span style="color: #fff62c;">xx分xx秒</span>
+                        <p class="text-light">取款平均到帳時間</p>
+                    </div>
                 </div>
                 <div class="col-3">
-                    <a href="#"><img src="../reb/img/桌機index_img/存取/3-01.png" alt=""></a>
+                    <div class="pt-3" style="float: left;">
+                        <img class="w-75" src="../reb/img/桌機index_img/存取/33-01.png" alt="">
+                    </div>
+                    <div style="margin-top: 5%;">
+                        <span style="color: #fff62c;">xxxxx</span>
+                        <p class="text-light">NTD$ 45000</p>
+                    </div>
                 </div>
                 <div class="col-3">
-                    <a href="#"><img src="../reb/img/桌機index_img/存取/4-01.png" alt=""></a>
+                    <div class="pt-3" style="float: left;">
+                        <img class="w-75" src="../reb/img/桌機index_img/存取/55-01.png" alt="">
+                    </div>
+                    <div style="margin-top: 5%;">
+                        <span style="color: #fff62c;">xx</span>
+                        <p class="text-light">累計送出回贈</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -331,7 +393,7 @@
                             盡的下載步驟教學,讓您輕鬆使用手機在歐博娛樂城大殺四方!..</p>
                         <div class="pt-2">
                             <span>2020.09.17</span>
-                            <a href="#"><span style="float: right;color: rgba(255, 255, 255, 0.8);" id="MoreBtn">更多詳情
+                            <a href="./Features page/Blog.html"><span style="float: right;color: rgba(255, 255, 255, 0.8);" id="MoreBtn">更多詳情
                                     》</span></a>
                         </div>
                     </div>
@@ -341,7 +403,7 @@
                             盡的下載步驟教學,讓您輕鬆使用手機在歐博娛樂城大殺四方!..</p>
                         <div class="pt-2">
                             <span>2020.09.17</span>
-                            <a href="#"><span style="float: right;color: rgba(255, 255, 255, 0.8);" id="MoreBtn">更多詳情
+                            <a href="./Features page/Blog.html"><span style="float: right;color: rgba(255, 255, 255, 0.8);" id="MoreBtn">更多詳情
                                     》</span></a>
                         </div>
                     </div>
@@ -353,7 +415,7 @@
                             盡的下載步驟教學,讓您輕鬆使用手機在歐博娛樂城大殺四方!..</p>
                         <div class="pt-2">
                             <span>2020.09.17</span>
-                            <a href="#"><span style="float: right;color: rgba(255, 255, 255, 0.8);" id="MoreBtn">更多詳情
+                            <a href="./Features page/Blog.html"><span style="float: right;color: rgba(255, 255, 255, 0.8);" id="MoreBtn">更多詳情
                                     》</span></a>
                         </div>
                     </div>
@@ -363,7 +425,7 @@
                             盡的下載步驟教學,讓您輕鬆使用手機在歐博娛樂城大殺四方!..</p>
                         <div class="pt-2">
                             <span>2020.09.17</span>
-                            <a href="#"><span style="float: right;color: rgba(255, 255, 255, 0.8);" id="MoreBtn">更多詳情
+                            <a href="./Features page/Blog.html"><span style="float: right;color: rgba(255, 255, 255, 0.8);" id="MoreBtn">更多詳情
                                     》</span></a>
                         </div>
                     </div>
@@ -503,8 +565,28 @@
                     <div class="col-12 pt-5">
                         <div class="indexHr"></div>
                     </div>
-                    <div class="col-12 pt-5">
+                    <!-- <div class="col-12 pt-5">
                         <img src="../reb/img/桌機index_img/各廠商-01.png" alt="" class="w-100">
+                    </div> -->
+                    <div class="col-12 pt-5 px-0" style="display: flex;justify-content: space-between;">
+                        <a href="https://999xc.net/product/allbet-livecasino" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-01.png" alt=""></a>    
+                        <a href="https://999xc.net/product/wm-livecasino" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-02.png" alt=""></a>    
+                        <a href="https://999xc.net/product/super-lottery" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-03.png" alt=""></a>    
+                        <a href="https://999xc.net/product/rtg-slot" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-04.png" alt=""></a>    
+                        <a href="#" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-05.png" alt=""></a>    
+                        <a href="https://999xc.net/product/simpleplay-slot" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-06.png" alt=""></a>    
+                        <a href="https://999xc.net/product/sa-livecasino" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-07.png" alt=""></a>    
+                        <a href="https://999xc.net/product/9k-lottery" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-08.png" alt=""></a>    
+                    </div>
+                    <div class="col-12 pt-5 px-0" style="display: flex;justify-content: space-between;">
+                        <a href="https://999xc.net/product/bwin-slot" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-09.png" alt=""></a>    
+                        <a href="https://999xc.net/product/dg-livecasino" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-10.png" alt=""></a>    
+                        <a href="https://999xc.net/product/super-sports" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-11.png" alt=""></a>    
+                        <a href="#" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-12.png" alt=""></a>    
+                        <a href="#" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-13.png" alt=""></a>    
+                        <a href="#" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-14.png" alt=""></a>    
+                        <a href="#" target="_blank"><img class="h-100 pl-3" src="./img/桌機index_img/各廠商/1-15.png" alt=""></a>    
+                        <a href="#" target="_blank"><img class="h-100" src="./img/桌機index_img/各廠商/1-16.png" alt=""></a>    
                     </div>
                     <div class="col-12 pt-5">
                         <p class="text-center" style="color: #1668db;">【任你博】所有版權未經本公司合法授權任意復制版權必究</p>
@@ -517,6 +599,12 @@
     <!-- <a href="#" class="topBtn"></a> -->
 
     <!-- /////////////////////////////////////// 電腦板 ///////////////////////////////////// -->
+
+
+
+
+
+
 
 
 

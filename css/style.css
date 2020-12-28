@@ -315,6 +315,17 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 
 /* ------------------------------------遊戲大廳------------------------------------ */
 
+/* ------------------------------------跑馬燈------------------------------------ */
+.Maintenance{
+    background: url(../img/桌機index_img/維修公告-01.png);
+    background-size: 100%;width: 132px;height: 33.9px;background-repeat: no-repeat;
+    border: 0px solid;
+}
+.Maintenance:focus{
+    outline-style: none;
+}
+/* ------------------------------------跑馬燈------------------------------------ */
+
 
 /* /////////////////////////////////////// 電腦版 ///////////////////////////////////// */
 
