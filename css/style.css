@@ -1,4 +1,4 @@
-Qqqqqqqqqqqq/*  -------------------------------------------------------- */
+/*  -------------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -9,10 +9,10 @@ Qqqqqqqqqqqq/*  -------------------------------------------------------- */
 }
 body {
     font-family: '微軟正黑體', 'Microsoft JhengHei', Arial, Helvetica, sans-serif;
-    -ms-overflow-style: none;
+    /* -ms-overflow-style: none; */
     height: 100%;
-	width: calc(100vw + 18px);
-	overflow: auto;
+	/* width: calc(100vw + 18px); */
+	/* overflow: auto; */
 
 }
 
