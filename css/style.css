@@ -68,32 +68,67 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 /* 手機版大小圖 */
 @media (min-width: 250px) {
     .md-gameH{
+        min-height: 480px;
+    }
+}
+@media (min-width: 275px) {
+    .md-gameH{
         min-height: 530px;
     }
 }
 @media (min-width: 300px) {
+    .md-gameH{
+        min-height: 580px;
+    }
+}
+@media (min-width: 325px) {
     .md-gameH{
         min-height: 630px;
     }
 }
 @media (min-width: 350px) {
     .md-gameH{
+        min-height: 680px;
+    }
+}
+@media (min-width: 375px) {
+    .md-gameH{
         min-height: 730px;
     }
 }
 @media (min-width: 400px) {
+    .md-gameH{
+        min-height: 780px;
+    }
+}
+@media (min-width: 425px) {
     .md-gameH{
         min-height: 830px;
     }
 }
 @media (min-width: 450px) {
     .md-gameH{
+        min-height: 880px;
+    }
+}
+@media (min-width: 475px) {
+    .md-gameH{
         min-height: 930px;
     }
 }
 @media (min-width: 500px){
     .md-gameH{
-        min-height: 1090px;
+        min-height: 980px;
+    }
+}
+@media (min-width: 525px){
+    .md-gameH{
+        min-height: 1030px;
+    }
+}
+@media (min-width: 550px){
+    .md-gameH{
+        min-height: 1080px;
     }
 }
 /* 手機版大小圖 */
