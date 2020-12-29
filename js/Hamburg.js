@@ -18,3 +18,7 @@ HamburgBtn.onclick = function () {
         showMenu.style.display = "none";
     }
 }
+var H_close = document.getElementById("H_close");
+H_close.onclick = function(){
+    showMenu.style.display = "none";
+}

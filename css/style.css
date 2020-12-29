@@ -234,6 +234,24 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 .inner-container::-webkit-scrollbar {
     display: none;
 }
+/* .AnimaTion:hover{
+    transform: translateY(-10%);
+    background-image: url(../img/桌機index_img/list/2sport-01.png);
+    
+} */
+.AnimaTion:hover{
+    animation:AnimaTion_1 0.8s infinite ease-in-out;
+    animation-duration: alternate;
+}
+.AnimaTion:active{
+    animation:AnimaTion_1 0.8s infinite ease-in-out;
+    animation-duration: alternate;
+}
+@keyframes AnimaTion_1{
+    0%{transform: translateY(-10%);}
+    50%{transform: translateY(10%);}
+    100%{transform: translateY(-10%);}
+}
 
 /* ------------------------------------logo & list------------------------------------ */
 
