@@ -84,58 +84,57 @@
 </head>
 
 <body>
-    <!--  -->
-    <div class="container-fluid p-0 d-md-none" style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
-        <div class="container" style="position: relative;">
-            <div class="" style="z-index: 999; position: absolute;top: 0;left: 0;">
-                <a href="#" id="btnHome2"><img src="../reb/img/手機index_img/維修公告-01.png" alt=""
-                        style="background-size: 100%;"></a>
-                <ul class="px-3 py-2" style="background-color: #1754A7;display: none;" id="btnHome_items1">
-                    <li><a href="../reb/page/404.html" class="btnHome-bgc">維修公告1</a></li>
-                    <li><a href="#" class="pt-1 btnHome-bgc">維修公告2</a></li>
-                </ul>
+    <!-- <div class="col-4">
+        <div class="text-right" style="margin-right: 10%;"><img id="hrServiceBtn"
+                src="../reb/img/手機index_img/24-service.png" alt="" class="h-100" data-toggle="modal"
+                data-target="#exampleModal0"></div>
+    </div> -->
+    <button class="" data-toggle="modal" data-target="#exampleModal">123</button>
+
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+        <div id="showMenu p-0" class="modal-dialog" role="document">
+            <div class="showMenuList modal-content" id="exampleModalLabel">
+                <div class="w-100 ">
+                    <div class="pb-2 pt-1 pr-3 text-light text-right" data-dismiss="modal"><i
+                            class="fas fa-times text-light"></i></div>
+                </div>
+                <div class="col-12 text-center">
+                    <img src="./img/手機index_img/sidebar/user.png" alt="" class="w-100">
+                    <p class="text-center text-light pt-1" style="font-size: 1.2rem;">admin</p>
+                </div>
             </div>
-            <div class="" style="z-index: 1;">
-                <marquee direction="left" height="30" scrollamount="5" behavior="left"
-                    style="height: 100%;width: 100%; color: cornsilk;">
-                    【維護公告】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】
-                    開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】
-                    敬愛的卡利會員您好，卡利娛樂城為防堵詐騙氾濫、保障會員資金安全，在此提醒：信用卡、ATM轉帳、VIP專用帳戶存款等服務，務必使用「本人帳戶」！若使用非本人帳戶存款，將一律扣除處理費用後退還本金，感謝您的配合。    【維護公告】
-                    親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。    【取款公告】
-                    親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。
-                </marquee>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal0" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content mx-auto w-75"
+                style="position: fixed !important;top: 6% !important; left: 10% !important;right: 10% !important;">
+                <div class="modal-header" style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
+                    <h2 class="modal-title text-light m-auto" id="exampleModalLabel"
+                        style="font-size: 1.2rem !important;">聯繫我們
+                    </h2>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                    <!-- <span aria-hidden="true">&times;</span> -->
+                    <!-- <i class="fas fa-times text-light"></i> -->
+                    <!-- </button> -->
+                </div>
+                <div class="modal-body p-0">
+                    <img src="./img/手機index_img/24HR客服.png" alt="" class="w-100">
+                </div>
+                <!-- <div class="modal-footer"> -->
+                <div class="w-100 " style="background: #555;">
+                    <div class="py-2 text-light text-center" data-dismiss="modal">Close</div>
+                </div>
+                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                <!-- </div> -->
             </div>
         </div>
-        <script src="../reb/js/index.js"></script>
     </div>
-    <!--  -->
-    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content w-50 m-auto">
-        <div class="modal-header" style="background-color: blueviolet;">
-          <!-- <h2 class="modal-title" id="exampleModalLabel">Modal title</h2> -->
-          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <!-- <span aria-hidden="true">&times;</span> -->
-            <i class="fas fa-times text-light"></i>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 

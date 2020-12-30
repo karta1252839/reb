@@ -349,7 +349,7 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     top: 0;
     right: 0;
     bottom: 0;
-    display: none;
+    /* display: none; */
     width: 100%;
     z-index: 99999;
 }
@@ -382,9 +382,9 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 .hrServiceList {
     /* background-color: #1754A7; */
     position: fixed;
-    top: 20%;
-    left: 20%;
-    right: 20%;
+    top: 15%;
+    left: 10%;
+    right: 10%;
     /* width: 50%; */
     line-height: 60px;
 }
