@@ -80,61 +80,99 @@
             color: #fff62c;
             text-decoration: none;
         }
+
+        /* ----------------------------------------------------------- */
+        html {
+            --scrollbarBG: #CFD8DC;
+            --thumbBG: #90A4AE;
+        }
+
+        body::-webkit-scrollbar {
+            width: 11px;
+        }
+
+        body {
+            scrollbar-width: thin;
+            scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+        }
+
+        body::-webkit-scrollbar-track {
+            background: var(--scrollbarBG);
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: var(--thumbBG);
+            border-radius: 6px;
+            border: 3px solid var(--scrollbarBG);
+        }
+
+
+        html {
+            background: lightgrey;
+            overflow: hidden;
+        }
+
+        body {
+            height: 100vh;
+            background: whitesmoke;
+            overflow-y: auto;
+            max-width: 310px;
+            margin: 0 auto;
+            padding: 2rem;
+            font: 100%/1.4 serif;
+            border: 1px solid rgba(0, 0, 0, 0.25)
+        }
+
+        p {
+            margin: 0 0 1.5em;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
     </style>
 </head>
 
 <body>
-    <!-- <div class="col-4">
-        <div class="text-right" style="margin-right: 10%;"><img id="hrServiceBtn"
-                src="../reb/img/手機index_img/24-service.png" alt="" class="h-100" data-toggle="modal"
-                data-target="#exampleModal0"></div>
-    </div> -->
-    <button class="" data-toggle="modal" data-target="#exampleModal">123</button>
-
-    <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-        <div id="showMenu p-0" class="modal-dialog" role="document">
-            <div class="showMenuList modal-content" id="exampleModalLabel">
-                <div class="w-100 ">
-                    <div class="pb-2 pt-1 pr-3 text-light text-right" data-dismiss="modal"><i
-                            class="fas fa-times text-light"></i></div>
-                </div>
-                <div class="col-12 text-center">
-                    <img src="./img/手機index_img/sidebar/user.png" alt="" class="w-100">
-                    <p class="text-center text-light pt-1" style="font-size: 1.2rem;">admin</p>
-                </div>
-            </div>
-        </div>
+    <div class="" style="overflow: hidden; height: 500px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem deleniti accusantium quasi ab ad officia
+            cupiditate sed aliquam nobis expedita velit dolorum perspiciatis pariatur nam vero et magnam soluta tempora!
+        </p>
+        <p>Eveniet deserunt consequatur porro molestiae nulla optio quis totam libero iste nemo odit eum facilis
+            sapiente.
+            Harum similique cupiditate voluptas ea optio sunt molestias eius ab qui obcaecati nesciunt id?</p>
+        <p>Necessitatibus delectus sint vitae eos quasi optio esse dignissimos enim laborum ipsum harum perspiciatis
+            eaque.
+            Magnam fugiat delectus neque laboriosam in accusamus a veniam inventore asperiores consequatur nihil quae
+            quo.
+        </p>
+        <p>Eligendi quaerat nesciunt sint nobis qui? Temporibus maiores esse molestiae hic cum culpa sed recusandae
+            dolore
+            sequi modi. Quos illum debitis odio consequatur voluptatum error aliquam rem similique officia recusandae.
+        </p>
+        <p>Ex suscipit earum reiciendis eaque dolorem inventore accusantium modi voluptatum saepe cum quam tempora autem
+            corrupti illum deleniti iure rerum mollitia quo ducimus soluta ea! Illum aliquid consectetur vitae quod?</p>
+        <p>Minus rem tempora quo. Deleniti mollitia dignissimos laborum quis quos facilis dolore soluta error provident
+            recusandae veniam minus consequatur blanditiis. Facere tempore praesentium soluta fugiat quia eligendi
+            dolores
+            ullam doloribus!</p>
+        <p>Aut nulla perferendis officiis accusamus ut aspernatur hic possimus amet blanditiis incidunt repudiandae
+            ullam
+            inventore ipsam recusandae nihil provident facilis totam quibusdam natus eligendi optio quia sapiente rerum
+            quos
+            illo?</p>
+        <p>Porro soluta nisi impedit voluptatem ex accusantium facilis amet quod blanditiis quia similique totam enim id
+            ratione minus quo modi sequi nam dicta iste aliquid itaque velit accusamus quibusdam consequuntur.</p>
+        <p>Ab assumenda in ad nesciunt recusandae labore voluptates vero suscipit tenetur ullam sint beatae odio harum
+            quo
+            aperiam quas temporibus pariatur consectetur saepe eveniet minus voluptatem atque iusto similique
+            repudiandae?
+        </p>
+        <p>In enim odit repellat maxime harum eum expedita fuga vel eaque quaerat optio hic sapiente eveniet neque
+            dolorum
+            eligendi pariatur possimus aliquid minus officiis mollitia quia voluptates sunt nulla est!</p>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal0" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content mx-auto w-75"
-                style="position: fixed !important;top: 6% !important; left: 10% !important;right: 10% !important;">
-                <div class="modal-header" style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
-                    <h2 class="modal-title text-light m-auto" id="exampleModalLabel"
-                        style="font-size: 1.2rem !important;">聯繫我們
-                    </h2>
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
-                    <!-- <span aria-hidden="true">&times;</span> -->
-                    <!-- <i class="fas fa-times text-light"></i> -->
-                    <!-- </button> -->
-                </div>
-                <div class="modal-body p-0">
-                    <img src="./img/手機index_img/24HR客服.png" alt="" class="w-100">
-                </div>
-                <!-- <div class="modal-footer"> -->
-                <div class="w-100 " style="background: #555;">
-                    <div class="py-2 text-light text-center" data-dismiss="modal">Close</div>
-                </div>
-                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                <!-- </div> -->
-            </div>
-        </div>
-    </div>
 
 
 

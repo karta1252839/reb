@@ -231,8 +231,10 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 .button-login {
     width: 70px;
     color: #fff;
-    border-color: #fbb03b;
-    background: linear-gradient(180deg, #fff365 0%, #f4b83f 100%);
+    border: 1px solid;
+    border-color: #4e0181;
+    background: linear-gradient(180deg, #b71ae7  0%, #7d2fb1 100%);
+    /* background: linear-gradient(180deg, #e2703b  0%, #f8420a 100%); */
     margin-left: 5px;
     font-size: 15px;
     text-align: center;
@@ -243,6 +245,7 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 .button-registered {
     width: 70px;
     color: #fff;
+    border: 1px solid;
     border-color: #9e005d;
     background: linear-gradient(180deg, #ed1e79 0%, #c1272d 100%);
     margin-left: 5px;
@@ -308,8 +311,38 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
 }
 /* ------------------------------------金色顏色條------------------------------------ */
 
-
-
+/* ------------------------------------banner------------------------------------ */
+.BMaintenanceTime{
+    width: 39px;
+    height: 144px;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateY(205%);
+}
+.BMaintenanceTime:focus{
+    outline: none;
+    border-color: transparent;
+    box-shadow:none;
+    border: 1px solid;
+}
+.contactUs{
+    width: 39px;
+    height: 165px;
+    z-index: 999;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateY(178%);
+}
+.contactUs:focus{
+    outline: none;
+    border-color: transparent;
+    box-shadow:none;
+    border: 1px solid;
+}
+/* ------------------------------------banner------------------------------------ */
 
 
 
