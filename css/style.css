@@ -283,11 +283,11 @@ header .header_menu #logo #menu_btn span , header #close_menu span { position: a
     
 } */
 .AnimaTion:hover{
-    animation:AnimaTion_1 0.8s infinite ease-in-out;
+    animation:AnimaTion_1 1s infinite ease-in-out;
     animation-duration: alternate;
 }
 .AnimaTion:active{
-    animation:AnimaTion_1 0.8s infinite ease-in-out;
+    animation:AnimaTion_1 1s infinite ease-in-out;
     animation-duration: alternate;
 }
 @keyframes AnimaTion_1{
