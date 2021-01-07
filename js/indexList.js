@@ -1,7 +1,6 @@
 $('.AnimaTion1').mousemove(
     function () {
         $('.AnimaTion1').attr('src', './img/桌機index_img/list/list1remove.png')
-        $('.AnimaTion1').addClass()
     }
 )
 $('.AnimaTion1').mouseout(
@@ -13,7 +12,6 @@ $('.AnimaTion1').mouseout(
 $('.AnimaTion2').mousemove(
     function () {
         $('.AnimaTion2').attr('src', './img/桌機index_img/list/list2remove.png')
-        $('.AnimaTion2').addClass()
     }
 )
 $('.AnimaTion2').mouseout(
@@ -25,7 +23,6 @@ $('.AnimaTion2').mouseout(
 $('.AnimaTion3').mousemove(
     function () {
         $('.AnimaTion3').attr('src', './img/桌機index_img/list/list3remove.png')
-        $('.AnimaTion3').addClass()
     }
 )
 $('.AnimaTion3').mouseout(
@@ -37,7 +34,6 @@ $('.AnimaTion3').mouseout(
 $('.AnimaTion4').mousemove(
     function () {
         $('.AnimaTion4').attr('src', './img/桌機index_img/list/list4remove.png')
-        $('.AnimaTion4').addClass()
     }
 )
 $('.AnimaTion4').mouseout(
@@ -49,7 +45,6 @@ $('.AnimaTion4').mouseout(
 $('.AnimaTion5').mousemove(
     function () {
         $('.AnimaTion5').attr('src', './img/桌機index_img/list/list5remove.png')
-        $('.AnimaTion5').addClass()
     }
 )
 $('.AnimaTion5').mouseout(
@@ -61,7 +56,6 @@ $('.AnimaTion5').mouseout(
 $('.AnimaTion6').mousemove(
     function () {
         $('.AnimaTion6').attr('src', './img/桌機index_img/list/list6remove.png')
-        $('.AnimaTion6').addClass()
     }
 )
 $('.AnimaTion6').mouseout(
@@ -73,7 +67,6 @@ $('.AnimaTion6').mouseout(
 $('.AnimaTion7').mousemove(
     function () {
         $('.AnimaTion7').attr('src', './img/桌機index_img/list/list7remove.png')
-        $('.AnimaTion7').addClass()
     }
 )
 $('.AnimaTion7').mouseout(
@@ -85,7 +78,6 @@ $('.AnimaTion7').mouseout(
 $('.AnimaTion8').mousemove(
     function () {
         $('.AnimaTion8').attr('src', './img/桌機index_img/list/list8remove.png')
-        $('.AnimaTion8').addClass()
     }
 )
 $('.AnimaTion8').mouseout(
@@ -97,7 +89,6 @@ $('.AnimaTion8').mouseout(
 $('.AnimaTion9').mousemove(
     function () {
         $('.AnimaTion9').attr('src', './img/桌機index_img/list/list9remove.png')
-        $('.AnimaTion9').addClass()
     }
 )
 $('.AnimaTion9').mouseout(
