@@ -96,7 +96,7 @@ function headerPageHeader() {
     document.writeln("                                            <div class=\'col-12 pt-3\'><a href=\'../page/Promotion.html\'><img");
     document.writeln("                                                        src=\'../img/手機index_img/sidebar/Group 2/1gift.png\' alt=\'\'");
     document.writeln("                                                        class=\'pl-3\'><span class=\'text-light pl-3\'>優惠活動</span></a></div>");
-    document.writeln("                                            <div class=\'col-12  pt-3\'><a href=\'#\'><img");
+    document.writeln("                                            <div class=\'col-12  pt-3\'><a href=\'./Announcement.html\'><img");
     document.writeln("                                                        src=\'../img/手機index_img/sidebar/Group 2/2Shape.png\' alt=\'\'");
     document.writeln("                                                        class=\'pl-3\'><span class=\'text-light pl-3\'>公告</span></a></div>");
     document.writeln("                                            <div class=\'col-12  pt-3\'><a href=\'../header page/FAQ.html\'><img");
