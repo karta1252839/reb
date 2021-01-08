@@ -13,8 +13,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- JQ -->
+    <!-- <script src="./jquery/jquery-1.10.js"></script> -->
+    <script src="./jquery/jquery-3.5.1.min.js"></script>
+    <script src="../js/Addhtml.js"></script>
 
     <link rel="stylesheet" href="../css/style.css">
 
@@ -25,164 +30,9 @@
 </head>
 
 <body>
-    <!-- ------------------------------------login------------------------------------ -->
-    <div class="container-fluid d-none d-sm-block"
-        style="background-color: #3fa9f5; min-height: 56px;overflow: hidden;">
-        <div class="container">
-            <div class="row float-right" style="padding-top: 10px;">
-                <div class="col-7" style="padding: 0;">
-                    <form class="" action="#" method="POST">
-                        <input class="mx-1 input-style" type="text" name="text" id="text" value="用戶名(ID)">
-                        <input class="mx-1 input-style" type="password" name="password" id="password" value="密碼">
-                        <input class="mx-1 button-login" type="button" value="登入">
-                        <input class="mx-1 button-registered" type="button" value="註冊">
-                    </form>
-                </div>
-                <!-- fs-15 字體大小 -->
-                <div class="col-5 fs-15" style="margin-top: 3px; padding: 0; clear: both;">
-                    <a class="text-light mx-1" href="#">公告</a>
-                    <a class="text-light mx-1" href="#">APP下載</a>
-                    <a class="text-light mx-1" href="#">常見問題</a>
-                    <a class="text-light mx-1" href="#">合作代理</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ------------------------------------login------------------------------------ -->
-    </header>
-
-    <!-- ------------------------------------logo & list-------------------------------------->
-    <header>
-        <div class="h-list">
-            <div class="container">
-                <nav class="navbar navbar-expand-sm navbar-dark">
-                    <button class="navbar-toggler d-sm-none" type="button" data-toggle="collapse"
-                        data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="true"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon" id=""></span>
-                    </button>
-                    <a class="navbar-brand" href="../index.html"><img class="r-logo w-auto"
-                            src="../image/header/logo.png"></a>
-                    <a class="navbar-brand d-sm-none" href="#"><img src="../img/手機index_img/_24-service.png" alt=""></a>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <!-- par-0 僅在手機以上顯示style -->
-                        <div class="col-8 px-1 pt-3" style="position:absolute;right:0px;">
-                            <ul class="navbar-nav mr-auto ">
-                                <li class="nav-item active">
-                                    <a href="../page/LiveCasino.html"><img src="../img/手機index_img/真人百家樂icon.png" alt=""
-                                            style="display:block; margin:auto;" class="d-none d-md-block"></a>
-                                    <a class="nav-link text-light t-center" href="../page/LiveCasino.html"><span
-                                            class="d-md-none" id=""><img src="../img/手機index_img/真人百家樂icon.png"
-                                                alt=""></span>
-                                        <span class="pl-2">真人娛樂</span>
-                                        <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../page/Sport.html"><img src="../img/手機index_img/體育博彩icon.png" alt=""
-                                            style="display:block; margin:auto;" class="d-none d-md-block"></a>
-                                    <a class="nav-link text-light" href="../page/Sport.html"> <span class="d-md-none"
-                                            id=""><img src="../img/手機index_img/體育博彩icon.png" alt=""></span>
-                                        <span class="pl-2">體育博彩</span></a>
-                                </li>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../page/Chess.html"><img src="../img/手機index_img/棋牌icon.png" alt=""
-                                            style="display:block; margin:auto;" class="d-none d-md-block"></a>
-                                    <a class="nav-link text-light" href="../page/Chess.html"> <span class="d-md-none"
-                                            id=""><img src="../img/手機index_img/棋牌icon.png" alt=""></span>
-                                        <span class="pl-2">棋牌</span></a>
-                                </li>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../page/Slot.html"><img src="../img/手機index_img/電子遊戲icon.png" alt=""
-                                            style="display:block; margin:auto;" class="d-none d-md-block"></a>
-                                    <a class="nav-link text-light" href="../page/Slot.html"> <span class="d-md-none"
-                                            id=""><img src="../img/手機index_img/電子遊戲icon.png" alt=""></span>
-                                        <span class="pl-2">電子遊戲</span></a>
-                                </li>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../page/Bingo.html"><img src="../img/手機index_img/賓果彩票icon.png" alt=""
-                                            style="display:block; margin:auto;" class="d-none d-md-block"></a>
-                                    <a class="nav-link text-light" href="../page/Bingo.html"> <span class="d-md-none"
-                                            id=""><img src="../img/手機index_img/賓果彩票icon.png" alt=""></span>
-                                        <span class="pl-2">賓果彩票</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../page/Fish.html"><img src="../img/手機index_img/捕魚王icon.png" alt=""
-                                            style="display:block; margin:auto;" class="d-none d-md-block"></a>
-                                    <a class="nav-link text-light" href="../page/Fish.html"> <span class="d-md-none"
-                                            id=""><img src="../img/手機index_img/捕魚王icon.png" alt=""></span>
-                                        <span class="pl-2">捕魚街機</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../page/MainPages.html"><img src="../img/手機index_img/推薦icon.png" alt=""
-                                            style="display:block; margin:auto;" class="d-none d-md-block"></a>
-                                    <a class="nav-link text-light" href="../page/MainPages.html"> <span
-                                            class="d-md-none" id=""><img src="../img/手機index_img/推薦icon.png"
-                                                alt=""></span>
-                                        <span class="pl-2">推薦</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../page/Promotion.html"><img src="../img/手機index_img/優惠說明icon.png" alt=""
-                                            style="display:block; margin:auto;" class="d-none d-md-block"></a>
-                                    <a class="nav-link text-light" href="../page/Promotion.html"> <span
-                                            class="d-md-none" id=""><img src="../img/手機index_img/捕魚王icon.png"
-                                                alt=""></span>
-                                        <span class="pl-2">優惠說明</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="../page/Movie.html"><img src="../img/手機index_img/賽事影城icon.png" alt=""
-                                            style="display:block; margin:auto;" class="d-none d-md-block"></a>
-                                    <a class="nav-link text-light" href="../page/Movie.html"> <span class="d-md-none"
-                                            id=""><img src="../img/手機index_img/賽事影城icon.png" alt=""></span>
-                                        <span class="pl-2">賽事影城</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- ------------------------------------logo & list-------------------------------------->
-
-        <!-- ------------------------------------金色顏色條-------------------------------------->
-        <div class="border"></div>
-        <!-- ------------------------------------金色顏色條-------------------------------------->
-    </header>
-    <!-- ------------------------------------logo & list------------------------------------ -->
-
-    <!-- ------------------------------------跑馬燈------------------------------------ -->
-    <div class="container-fluid" style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
-        <div class="container">
-            <div class="row">
-                <div class="dropdown open">
-                    <button class="btn btn-secondary dropdown-toggle"
-                        style="background: linear-gradient(180deg, #507cb3 0%, #3f5b80 100%);" type="button"
-                        id="triggerId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        維修公告
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="triggerId">
-                        <button class="dropdown-item disabled" href="#">遊戲廳維修公告</button>
-                        <button class="dropdown-item disabled" href="#">維修公告2</button>
-                        <button class="dropdown-item disabled" href="#">維修公告3</button>
-                    </div>
-                </div>
-                <div class="col-8 my-1">
-                    <marquee direction="left" height="30" scrollamount="10" behavior="left"
-                        style="height: 100%;width: 100%; color: cornsilk; ">
-                        【維護公告】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】
-                        開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】
-                        敬愛的卡利會員您好，卡利娛樂城為防堵詐騙氾濫、保障會員資金安全，在此提醒：信用卡、ATM轉帳、VIP專用帳戶存款等服務，務必使用「本人帳戶」！若使用非本人帳戶存款，將一律扣除處理費用後退還本金，感謝您的配合。    【維護公告】
-                        親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。    【取款公告】
-                        親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。
-                    </marquee>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ------------------------------------跑馬燈------------------------------------ -->
+    <script>PageHeader();</script>
     <!-- ------------------------------------電腦版------------------------------------ -->
+    <!-- 遊戲大廳 -->
     <div class="container-fluid d-none d-sm-block" id="bgc-color">
         <div class="container">
             <p class="text-center" style="padding-top: 6%;"><img class="w-100"
@@ -199,12 +49,12 @@
             </div>
         </div>
     </div>
-    <img class="w-100 d-none d-sm-block" src="../img/桌機各分頁img/footer.png" alt="">
+    <!-- footer -->
+    <script>PCFooter();</script>
     <!-- ------------------------------------電腦版------------------------------------ -->
 
-
-
     <!-- ------------------------------------手機版------------------------------------ -->
+    <!-- 遊戲大廳 -->
     <div class="container-fluid d-sm-none" id="m-bgc-color">
         <div class="text-center">
             <img class="w-100 p-4" src="../img/手機各分頁img/優惠說明_Promotion/Title.png" alt=""></a>
@@ -239,73 +89,9 @@
                 </div>
             </div>
         </div>
-
     </div>
-    </div>
+    <script>MDFooter();</script>
     <!-- ------------------------------------手機版------------------------------------ -->
-
-
-    <!-- ------------------------------------blog------------------------------------ -->
-    <div class="container-fluid d-sm-none" style="background-color:#bdd5ef; min-height: 150px;">
-        <div class="row pt-5 px-2" style="clear: both;">
-            <div class="col-3">
-                <a class="blog-t-color" href="#">娛樂城</a>
-            </div>
-            <div class="col-3">
-                <a class="blog-t-color" href="#">百家樂</a>
-            </div>
-            <div class="col-3">
-                <a class="blog-t-color" href="#">娛樂城優惠</a>
-            </div>
-            <div class="col-3">
-                <a class="blog-t-color" href="#">百家樂技巧</a>
-            </div>
-        </div>
-        <div class="row pt-5 pb-3">
-            <div class="col-12">
-                <a href="#">
-                    <p class="blog-t-color text-center">任你博娛樂城-線上賭場百家樂推薦</p>
-                </a>
-            </div>
-        </div>
-        <div class="row pt-2 pb-5">
-            <div class="col-12" style="display: flex;justify-content: center;">
-                <input type="button" value="前往電腦版" class="blog-btn">
-            </div>
-        </div>
-    </div>
-    <!-- ------------------------------------blog-------------------------------------->
-
-
-    <!-- ------------------------------------footer h------------------------------------ -->
-    <div class="container-fluid d-sm-none" style="min-height: 75px;"></div>
-    <!-- ------------------------------------footer h------------------------------------ -->
-
-    <!-- ------------------------------------footer------------------------------------ -->
-    <div class="container-fluid d-sm-none md-footer-flex">
-        <div class="row">
-            <div class="w-100 pt-3 md-footer-item">
-                <p class="col-3 text-center">
-                    <a href="../index.html"><img src="../img/手機index_img/手機最下方/包裝/首頁.png" alt=""></a>
-                </p>
-                <p class="col-3 text-center">
-                    <a href="#"><img src="../img/手機index_img/手機最下方/包裝/登入.png" alt=""></a>
-                </p>
-                <p class="col-3 text-center">
-                    <a href="#"><img src="../img/手機index_img/手機最下方/包裝/註冊.png" alt=""></a>
-                </p>
-                <p class="col-3 text-center">
-                    <a href="#"><img src="../img/手機index_img/手機最下方/包裝/優惠活動.png" alt=""></a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- ------------------------------------footer------------------------------------ -->
-
-
-
-
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
