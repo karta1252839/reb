@@ -1,151 +1,20 @@
-<!doctype html>
-<html lang="en" style='font-family: "Microsoft YaHei", sans-serif;'>
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <!-- IE兼容 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-    <!-- JQ -->
-    <!-- <script src="./jquery/jquery-1.10.js"></script> -->
-    <script src="./jquery/jquery-3.5.1.min.js"></script>
-
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- <link href="./css/main.css" rel="stylesheet">
-    <link href="./css/index.css" rel="stylesheet"> -->
-
-    <title>Slot</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* button title */
-        .slot {
-            width: 11%;
-        }
-
-        /* game button */
-        .slot1 {
-            width: 17%;
-        }
-
-        .btn-active:hover {
-            background-color: #f7b500;
-            color: #fff;
-            font-size: 0.5rem;
-
+        video {
+            width: 100%;
+            height: auto;
+            background-image: attr();
         }
     </style>
 </head>
 
 <body>
-    <!-- 跑馬燈 + 下拉選單(彈開視窗) -->
-    <div class="container-fluid p-0 md-footer-color">
-        <div class="container" style="position: relative;">
-            <!-- 跑燈 -->
-            <div class="" style="z-index: 1;">
-                <marquee direction="left" height="30" scrollamount="5" behavior="left"
-                    style="height: 100%;width: 100%; color: cornsilk;">
-                    【維護公告】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】
-                    開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】
-                    敬愛的卡利會員您好，卡利娛樂城為防堵詐騙氾濫、保障會員資金安全，在此提醒：信用卡、ATM轉帳、VIP專用帳戶存款等服務，務必使用「本人帳戶」！若使用非本人帳戶存款，將一律扣除處理費用後退還本金，感謝您的配合。    【維護公告】
-                    親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。    【取款公告】
-                    親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。
-                </marquee>
-            </div>
-            <!-- BTN -->
-            <div class="" style="z-index: 999;position: absolute;top: 0;left: 0;bottom: 0;">
-                <button class="btn p-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false">
-                    <img src="./img/桌機index_img/維修公告-01.png" alt="">
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="background-color: #1668db;">
-                    <button type="button" class="btn text-light" data-toggle="modal"
-                        data-target="#marqueeBtn1">維修公告1</button>
-                    <button type="button" class="btn text-light" data-toggle="modal"
-                        data-target="#marqueeBtn2">維修公告2</button>
-                </div>
-            </div>
-            <!-- marqueeBtn1 -->
-            <div class="modal fade" id="marqueeBtn1" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header text-light md-footer-color">
-                            <h2 class="mx-auto">維護公告</h2>
-                        </div>
-                        <div class="modal-body" style="background: rgb(52, 96, 177);">
-                            <p class="mx-5 my-3 text-light">親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒
-                                親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒</p>
-                        </div>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-            <!-- marqueeBtn2 -->
-            <div class="modal fade" id="marqueeBtn2" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header text-light md-footer-color">
-                            <h2 class="mx-auto">維護公告</h2>
-                        </div>
-                        <div class="modal-body" style="background: rgb(52, 96, 177);">
-                            <p class="mx-5 my-3 text-light">親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒
-                                親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒</p>
-                        </div>
-                        <div class="w-100 p-0" style="background: #555;">
-                            <div class="py-2 text-light text-center" data-dismiss="modal">Close</div>
-                        </div>
-                        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script> -->
-
+    <address>123</address>
+    <audio src="" controls>123</audio>
 
 </body>
 
