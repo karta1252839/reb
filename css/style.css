@@ -1,4 +1,5 @@
 /*  -------------------------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -89,6 +90,28 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
         width: 39%;
         /* transition: left 0s ease;
         box-shadow: 0 0rem 0rem rgb(23, 82, 166, 0.5); */
+    }
+}
+
+.bgc {
+    background: #dce9ff;
+}
+.AboutUSBorderBottom{
+    border-bottom: transparent;
+}
+.AboutUSTextBg1{
+    background-image: url(../img/Featurespage/AboutUs/MD/BGT1.png);
+    background-size: 100% 100%;
+}
+@media (min-width: 768px) {
+    .bgc {
+        background: linear-gradient(180deg, #224dc9 0%, #a7cbef 100%);
+    }
+    .AboutUSBorderBottom{
+        border-bottom: 1.5px solid #124080;
+    }
+    .AboutUSTextBg1{
+        background: transparent;
     }
 }
 
