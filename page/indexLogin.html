@@ -18,6 +18,13 @@
     <!-- w3 -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+    <!-- UK CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
+
+    <!-- UK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
+
     <!-- JQ -->
     <!-- <script src="./jquery/jquery-1.10.js"></script> -->
     <script src="./jquery/jquery-3.5.1.min.js"></script>
@@ -31,26 +38,101 @@
 </head>
 
 <body>
-    <header class="w3-container w3-teal">
-        <h1>Header</h1>
-    </header>
-
-    <img src="img_car.jpg" alt="Nice car" style="width:100%">
-
-    <div class="w3-container">
-        <p>A car is a wheeled, self-powered motor vehicle used for transportation.
-            Most definitions of the term specify that cars are designed to run primarily on roads,
-            to have seating for one to eight people, to typically have four wheels. (Wikipedia)</p>
-    </div>
     <!-- 電腦版------------------------------------------------------------------- -->
-    <div class="container-fluid d-none d-md-block p-0 m-0">
-        <div class="container">
-            <a href="#" class="btn"><img src="../img/Featurespage/BaccaratTechniques/img1.png" alt=""></a>
+    <header>
+        <div class="container-fluid d-none d-md-block p-0" style="background-color:#3fa9f5;">
+            <div class="row py-3 align-items-center">
+                <ul class="list-inline flex-grow-1 text-right mr-5 text-light">
+                    <!-- 1 -->
+                    <a href="#" class="btn list-inline-item p-1">
+                        <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/1_名廰流水.png" alt="">
+                        </li>
+                        <p class="text-light w3-hover-text-amber">名廰流水</p>
+                    </a>
+                    <!-- 2 -->
+                    <a href="#" class="btn list-inline-item p-1">
+                        <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/2_存_提款.png" alt="" class="">
+                        </li>
+                        <p class="text-light w3-hover-text-amber">存_提款</p>
+                    </a>
+                    <!-- 3 -->
+                    <a href="#" class="btn list-inline-item p-1">
+                        <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/3_平台轉帳.png" alt="" class="">
+                        </li>
+                        <p class="text-light w3-hover-text-amber">平台轉帳</p>
+                    </a>
+                    <!-- 4 -->
+                    <a href="#" class="btn list-inline-item p-1">
+                        <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/4_交易記錄.png" alt="" class="">
+                        </li>
+                        <p class="text-light w3-hover-text-amber">交易記錄</p>
+                    </a>
+                    <!-- 5 -->
+                    <a href="#" class="btn list-inline-item p-1">
+                        <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/5_變更資料.png" alt="" class="">
+                        </li>
+                        <p class="text-light w3-hover-text-amber">變更資料</p>
+                    </a>
+                    <!-- 6 -->
+                    <a href="#" class="btn list-inline-item p-1">
+                        <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/6_更改密碼.png" alt="" class="">
+                        </li>
+                        <p class="text-light w3-hover-text-amber">更改密碼</p>
+                    </a>
+                    <!-- 7 -->
+                    <a href="#" class="btn list-inline-item p-1">
+                        <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/7_我的最愛.png" alt="" class="">
+                        </li>
+                        <p class="text-light w3-hover-text-amber">我的最愛</p>
+                    </a>
+                    <!-- user -->
+                    <div class="list-inline-item pl-2">
+                        <div class="list-inline text-center" style="font-size: 18px;">
+                            <p class="list-inline-item">您好,</p>
+                            <p class="list-inline-item">user</p>
+                        </div>
+                        <i class="fas fa-star text-warning"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                            class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                    </div>
+                    <!-- btn -->
+                    <a href="#" class="btn"><img src="../img/桌機各分頁img/indexLogin_登入條/群組 1.png" alt=""
+                            class="p-0 m-0 img-fluid"></a>
+                </ul>
+                <!-- </div> -->
+                <div class="col-lg-4 col-md-12 text-md-right text-lg-left pl-md-5"
+                    style="justify-content: space-between;margin-left: -2%;">
+                    <a class="btn text-light mx-1 px-0" href="../header page/Announcement.html">公告</a>
+                    <a class="btn text-light mx-1 px-0" href="../header page/AppDownload.html">APP下載</a>
+                    <a class="btn text-light mx-1 px-0" href="../header page/FAQ.html">常見問題</a>
+                    <a class="btn text-light mx-1 px-0" href="../header page/Agent.html">合作代理</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
     <!-- 手機版------------------------------------------------------------------- -->
-    <div class="container-fluid d-md-none" id="m-bgc-color">
+    <div class="container-fluid d-md-none p-0 m-0" style="background-color: #3fa9f5;">
+        <div class="row">
+            <div class="col-6 py-2 pl-5">
+                <div class="list-inline">
+                    <div class="list-inline-item text-center text-light" style="font-size: 18px;">
+                        <p class="list-inline-item">您好,</p>
+                        <p class="list-inline-item">user</p>
+                    </div>
+                    <i class="fas fa-star text-warning"></i><i class="far fa-star text-light"></i><i
+                        class="far fa-star text-light"></i><i class="far fa-star text-light"></i><i
+                        class="far fa-star text-light"></i><i class="far fa-star text-light"></i>
 
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="list-inline">
+                    <div class="list-inline-item text-center text-light p-1" style="font-size: 18px;">
+                        <p class="list-inline-item">您好,</p>
+                        <p class="list-inline-item">user</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

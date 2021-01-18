@@ -30,10 +30,8 @@
 </head>
 
 <body>
-
     <script>PageHeader();</script>
-    <!-- ------------------------------------電腦版------------------------------------ -->
-    <!-- 遊戲大廳 -->
+    <!-- 電腦版------------------------------------ -->
     <div class="container-fluid d-none d-md-block p-0" id="bgc-color">
         <div class="container">
             <p class="text-center" style="padding-top: 5%;"><img class="w-100"
@@ -87,28 +85,18 @@
                             <div class="pt-3 col-12 pl-0 pr-0">
                                 <input type="submit" value="一鍵註冊" class="signup-submitBtn">
                             </div>
-                            <div class="pt-3 col-12">
-                                <span class="text-light pl-3 signup-text">已是任你博的會員？</span><a href="#"><span
-                                        style="color: #f0ec34;" class="signup-text">登入</span></a>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- footer -->
-    <script>PCFooter();</script>
-
     <script src="../js/Signup.js"></script>
-    <!-- ------------------------------------電腦版------------------------------------ -->
 
-    <!-- ------------------------------------手機版------------------------------------ -->
-    <!-- 遊戲大廳 -->
+    <!-- 手機版------------------------------------ -->
     <div class="container-fluid d-md-none" id="m-bgc-color">
         <div class="container">
-            <div class="p-4">
+            <div class="py-4">
                 <img class="w-100" src="../img/headerpage/MD手機區/Signup/Title加入會員.png" alt="">
             </div>
             <!-- 用戶名 -->
@@ -136,27 +124,25 @@
                 <input type="tel" class="signup-input col-8"
                     style="background-image: url(../img/headerpage/MD手機區/Signup/Group6.png);" placeholder="手機號碼"
                     onfocus="this.placeholder = ''" onblur="this.placeholder = '手機號碼'" />
-                <button class="col-3 btn ml-3 signupPhoneText"><p class="text-center font-weight-bold" style="font-size: 0.8rem;">發送驗證碼</p></button>
+                <button class="col-3 btn ml-3 signupPhoneText">
+                    <p class="text-center font-weight-bold" style="font-size: 0.8rem;">發送驗證碼</p>
+                </button>
             </div>
             <!-- 驗證碼 -->
             <input type="text" class="signup-input mt-3"
                 style="background-image: url(../img/headerpage/MD手機區/Signup/Group7.png);" placeholder="驗證碼"
                 onfocus="this.placeholder = ''" onblur="this.placeholder = '驗證碼'" />
             <!-- 一鍵註冊 -->
-            <button class="btn OneClickRegistration w-100 mt-3 py-3"><p class="text-center font-weight-bold" style="font-size: 1.1rem;">一鍵註冊</p></button>
-
-            <!-- text -->
-            <div class="row justify-content-center pt-3 pb-5" style="letter-spacing: 2px;">
-                <p style="color: #0e3366;">已是任你博的會員？</p>
-                <p class="text-danger">登入</p>
-            </div>
+            <button class="btn OneClickRegistration w-100 mt-3 py-3 mb-5">
+                <p class="text-center font-weight-bold" style="font-size: 1.1rem;">一鍵註冊</p>
+            </button>
         </div>
     </div>
 
     <!-- footer -->
+    <script>PCFooter();</script>
     <script>MDFooter();</script>
 
-    <!-- ------------------------------------手機版------------------------------------ -->
 
 
     <!-- Optional JavaScript; choose one of the two! -->

@@ -25,20 +25,21 @@
 
     <title>Announcement_公告專區</title>
     <style>
-
+        
     </style>
 </head>
 
 <body>
     <script>PageHeader();</script>
     <!-- ------------------------------------電腦版------------------------------------ -->
-    <!-- 遊戲大廳 -->
-    <div class="container-fluid d-none d-sm-block" id="bgc-color">
+    <div class="container-fluid" id="bgc-color">
         <div class="container">
-            <p class="text-center pb-3" style="padding-top: 5%;"><img class="w-100"
+            <div class="text-center p-3 d-md-none">
+                <img src="../img/headerpage/MD手機區/Announcement/Title公告專區.png" alt="" class="w-100">
+            </div>
+            <p class="text-center pb-3 d-none d-md-block" style="padding-top: 5%;"><img class="w-100"
                     src="../img/headerpage/Announcement/Title公告專區.png" alt="">
             </p>
-            <!--  -->
             <div class="row justify-content-center pt-3 Announcement">
                 <div class="FAQ-btn px-3">
                     <p>【存款公告】</p>
@@ -78,99 +79,29 @@
             </div>
         </div>
     </div>
-
     <!-- footer -->
     <script>PCFooter();</script>
-
-    <script src="../js/Signup.js"></script>
-    <!-- ------------------------------------電腦版------------------------------------ -->
-
-    <!-- ------------------------------------手機版------------------------------------ -->
-    <!-- 遊戲大廳 -->
-    <div class="container-fluid d-sm-none" id="m-bgc-color">
-        <div class="p-4">
-            <img class="w-100" src="../img/headerpage/MD手機區/Announcement/Title公告專區.png" alt="">
-        </div>
-        <!-- <p class="text-center pb-3" style="padding-top: 5%;"><img class="w-100"
-                src="../img/headerpage/Announcement/Title公告專區.png" alt="">
-        </p> -->
-        <!--  -->
-        <div class="container">
-            <div class="row justify-content-center pt-3 Announcement">
-                <div class="FAQ-btn px-3">
-                    <p>【存款公告】</p>
-                    <i class="fas fa-arrows-alt-v"></i>
-                </div>
-                <div class="FAQ-btn-items">
-                    <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可</p>
-                </div>
-            </div>
-            <div class="row justify-content-center pt-2 Announcement">
-                <div class="FAQ-btn px-3">
-                    <p>【存款公告】</p>
-                    <i class="fas fa-arrows-alt-v"></i>
-                </div>
-                <div class="FAQ-btn-items">
-                    <p>親愛的會員您好，為了保障會員資金安全性，使用信用卡、ATM轉帳以及VIP專用帳戶存款，請務必使用本人帳戶，若使用非本人帳戶存款將一律扣除營利退本金處理，相關損失需自行承擔風險，請見諒。</p>
-                </div>
-            </div>
-            <div class="row justify-content-center pt-2 Announcement">
-                <div class="FAQ-btn px-3">
-                    <p>【維護公告】</p>
-                    <i class="fas fa-arrows-alt-v"></i>
-                </div>
-                <div class="FAQ-btn-items">
-                    <p>親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。</p>
-                </div>
-            </div>
-            <div class="row justify-content-center pt-2 pb-5 Announcement">
-                <div class="FAQ-btn px-3">
-                    <p>【取款公告】</p>
-                    <i class="fas fa-arrows-alt-v"></i>
-                </div>
-                <div class="FAQ-btn-items">
-                    <p>親愛的娛樂城會員您好，由於體育注單會有因改判賽事等因素而進行注單重新結算，即日起，任你博網站出款時，體育相關注單須全數派彩完畢才可處理支付款項，若有未派彩注單請耐心等候派彩完畢，如有相關取款問題歡迎詢問24H在線客服，謝謝！
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- footer -->
     <script>MDFooter();</script>
 
-    <!-- ------------------------------------手機版------------------------------------ -->
     <!-- toggle -->
     <script>
-        $('.Announcement div').click(
+        $(document).ready(
             function () {
-                $(this).next().toggle();
+                $('.Announcement div').click(
+                    function () {
+                        $(this).next().toggle();
+                    }
+                )
             }
         )
     </script>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
-
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script> -->
-
-
 </body>
 
 </html>
