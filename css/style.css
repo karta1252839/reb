@@ -816,3 +816,17 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+.ty{
+    font-size: 1.35em;
+    color: #fff62c;
+}
+
+.modalBg {
+    background: linear-gradient(180deg, #1c63ba 0%, #124080 100%);
+    color: #ffffff;
+}
+.modalBtn {
+    background: linear-gradient(180deg, #fee682 0%, #d69724 100%);
+    color: #ffffff;
+}
