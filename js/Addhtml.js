@@ -518,5 +518,4 @@ function indexLoginHeader() {
 }
 // 登入頁面 Footer
 function indexLoginFooter() {
-
 }

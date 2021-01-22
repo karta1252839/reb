@@ -1,5 +1,4 @@
 /*  -------------------------------------------------------- */
-
 * {
     margin: 0;
     padding: 0;
@@ -827,6 +826,18 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     color: #ffffff;
 }
 .modalBtn {
-    background: linear-gradient(180deg, #fee682 0%, #d69724 100%);
+    background: #103971;
     color: #ffffff;
+}
+.modalBtn:hover {
+    background: linear-gradient(180deg, #fee682 0%, #d69724 100%);
+    color: #103971;
+}
+.modalSBtn {
+    background: #103971;
+    color: #ffffff;
+}
+.modalSBtn:hover {
+    background: #fff;
+    color: #103971;
 }
