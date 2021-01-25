@@ -827,7 +827,12 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
 }
 .modalBtn {
     background: #103971;
-    color: #ffffff;
+    color: rgb(255, 255, 255,.5);
+    height: 32px;
+}
+.modalBtn-active {
+    background: linear-gradient(180deg, #fee682 0%, #d69724 100%);
+    color: #103971;
 }
 .modalBtn:hover {
     background: linear-gradient(180deg, #fee682 0%, #d69724 100%);
@@ -835,7 +840,12 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
 }
 .modalSBtn {
     background: #103971;
-    color: #ffffff;
+    color: rgb(255, 255, 255,.5);
+    height: 32px;
+}
+.modalSBtn-active {
+    background: #fff;
+    color: #103971;
 }
 .modalSBtn:hover {
     background: #fff;

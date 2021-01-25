@@ -54,11 +54,320 @@
             <div class="row py-3 align-items-center">
                 <ul class="list-inline flex-grow-1 text-right mr-5 text-light">
                     <!-- 1 -->
-                    <a href="#" class="btn list-inline-item p-1 w3-hover-shadow w3-hover-blue-gray">
+                    <a href="#modal-example1"  class="btn list-inline-item p-1 w3-hover-shadow w3-hover-blue-gray" uk-toggle>
                         <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/1_名廰流水.png" alt="">
                         </li>
                         <p class="text-light">名廰流水</p>
                     </a>
+
+                    <div id="modal-example1" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <div class="border-bottom border-dark modalBg px-3 py-1"
+                                style="border-width: 2px !important;">
+                                <h2 class="uk-modal-title ty py-2 text-center display-4">存_提款</h2>
+                                <button class="uk-modal-close-default text-light" type="button" uk-close></button>
+                            </div>
+                            <div class="modalBg">
+                                <div class="p-3">
+                                    <div class="row mx-1 modalBtn-c" uk-switcher>
+                                        <div class="btn col mx-1 modalBtn py-1 modalBtn-active">
+                                            <p class="text-center">存款</p>
+                                        </div>
+                                        <div class="btn col mx-1 modalBtn py-1">
+                                            <p class="text-center">提款</p>
+                                        </div>
+                                        <div class="btn col mx-1 modalBtn py-1">
+                                            <p class="text-center">綁定銀行帳戶</p>
+                                        </div>
+                                    </div>
+
+
+                                    <ul class="uk-switcher uk-margin">
+                                        <!-- 存款 -->
+                                        <li>
+                                            <ul class="row mx-1 w3-round-xxlarge modalBtn-e"
+                                                style="background-color: #103971;" uk-switcher>
+                                                <div class="btn w3-round-xxlarge col modalSBtn modalSBtn-active">
+                                                    <p class=" text-center w3-small">線上轉帳</p>
+                                                </div>
+                                                <div class="btn w3-round-xxlarge col modalSBtn">
+                                                    <p class=" text-center w3-small">線上刷卡</p>
+                                                </div>
+                                                <div class="btn w3-round-xxlarge col modalSBtn">
+                                                    <p class=" text-center w3-small">VIP存款區</p>
+                                                </div>
+                                                <div class="btn w3-round-xxlarge col modalSBtn">
+                                                    <p class=" text-center w3-small">超商存款</p>
+                                                </div>
+                                            </ul>
+
+                                            <ul class="uk-switcher uk-margin">
+                                                <!-- 線上轉帳 -->
+                                                <div>
+                                                    <p class="col-12 w3-small w3-center pt-1"
+                                                        style="letter-spacing: .1em;">【線上轉帳】如需<span
+                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
+                                                    </p>
+                                                    <form action="uk-margin" method="post">
+                                                        <label>
+                                                            <p class="w3-small">通道</p>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <form action="uk-margin" method="post">
+                                                        <label class="mt-2">
+                                                            <span class="w3-small">金額</span>
+                                                            <span class="pl-2"
+                                                                style="font-size: .65em;color: #fee682;">( 最低 100 最高
+                                                                50,000 )</span>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <div class="uk-margin">
+                                                        <label class="" for="form-horizontal-select">
+                                                            <p class="w3-small">優惠</p>
+                                                        </label>
+                                                        <div class="uk-form-controls">
+                                                            <select class="uk-select" id="form-horizontal-select">
+                                                                <option>請選擇</option>
+                                                                <option>優惠 01</option>
+                                                                <option>優惠 02</option>
+                                                                <option>優惠 03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <p class="col-12 centerCenter" style="font-size: .55em;">
+                                                        ★存款請使用本人銀行操作，若非本人而影響後續出款權益須自行承擔</p>
+                                                </div>
+                                                <!-- 線上刷卡 -->
+                                                <div>
+                                                    <p class="col-12 w3-small w3-center pt-1"
+                                                        style="letter-spacing: .1em;">【線上刷卡】如需<span
+                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
+                                                    </p>
+                                                    <form action="uk-margin" method="post">
+                                                        <label>
+                                                            <p class="w3-small">通道</p>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <form action="uk-margin" method="post">
+                                                        <label class="mt-2">
+                                                            <span class="w3-small">金額</span>
+                                                            <span class="pl-2"
+                                                                style="font-size: .65em;color: #fee682;">( 刷卡需收8%手續費
+                                                                )</span>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <div class="uk-margin">
+                                                        <label class="" for="form-horizontal-select">
+                                                            <p class="w3-small">優惠</p>
+                                                        </label>
+                                                        <div class="uk-form-controls">
+                                                            <select class="uk-select" id="form-horizontal-select">
+                                                                <option>請選擇</option>
+                                                                <option>優惠 01</option>
+                                                                <option>優惠 02</option>
+                                                                <option>優惠 03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <p class="col-12 centerCenter" style="font-size: .55em;">
+                                                        ★存款請使用本人銀行操作，若非本人而影響後續出款權益須自行承擔</p>
+                                                </div>
+                                                <!-- VIP存款區 -->
+                                                <div>
+                                                    <p class="col-12 w3-small w3-center pt-1"
+                                                        style="letter-spacing: .1em;">【VIP存款區】如需<span
+                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
+                                                    </p>
+                                                    <div class="uk-margin">
+                                                        <label class="" for="form-horizontal-select">
+                                                            <p class="w3-small">銀行帳戶</p>
+                                                        </label>
+                                                        <div class="uk-form-controls">
+                                                            <select class="uk-select" id="form-horizontal-select">
+                                                                <option>請選擇</option>
+                                                                <option>銀行 01</option>
+                                                                <option>銀行 02</option>
+                                                                <option>銀行 03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <form action="uk-margin" method="post">
+                                                        <label>
+                                                            <span class="w3-small">金額</span>
+                                                            <span class="pl-2"
+                                                                style="font-size: .65em;color: #fee682;">( 最低 100
+                                                                )</span>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <form action="uk-margin" method="post">
+                                                        <label class="mt-2">
+                                                            <span class="w3-small">備註</span>
+                                                            <span class="pl-2"
+                                                                style="font-size: .65em;color: #fee682;">( 請填寫匯款帳戶後五碼
+                                                                )</span>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <div class="uk-margin">
+                                                        <label class="" for="form-horizontal-select">
+                                                            <p class="w3-small">優惠</p>
+                                                        </label>
+                                                        <div class="uk-form-controls">
+                                                            <select class="uk-select" id="form-horizontal-select">
+                                                                <option>請選擇</option>
+                                                                <option>優惠 01</option>
+                                                                <option>優惠 02</option>
+                                                                <option>優惠 03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <p class="col-12 centerCenter w3-small">★VIP快速存款，上分更即時，24小時專屬客服為您服務★
+                                                    </p>
+                                                    <p class="col-12 centerCenter w3-small pt-1">
+                                                        ★存款請使用本人銀行操作，若非本人而影響後續出款權益須自行承擔</p>
+
+                                                </div>
+                                                <!-- 超商存款 -->
+                                                <div>
+                                                    <p class="col-12 w3-small w3-center pt-1"
+                                                        style="letter-spacing: .1em;">【超商存款】如需<span
+                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
+                                                    </p>
+                                                    <form action="uk-margin" method="post">
+                                                        <label>
+                                                            <p class="w3-small">通道</p>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <form action="uk-margin" method="post">
+                                                        <label class="mt-2">
+                                                            <span class="w3-small">金額</span>
+                                                            <span class="pl-2"
+                                                                style="font-size: .65em;color: #fee682;">( 最低 1,000 最高
+                                                                5,000 )</span>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <div class="uk-margin">
+                                                        <label class="" for="form-horizontal-select">
+                                                            <p class="w3-small">優惠</p>
+                                                        </label>
+                                                        <div class="uk-form-controls">
+                                                            <select class="uk-select" id="form-horizontal-select">
+                                                                <option>請選擇</option>
+                                                                <option>優惠 01</option>
+                                                                <option>優惠 02</option>
+                                                                <option>優惠 03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <p class="col-12 w3-small">
+                                                        注意事項：</br> 1. 請洽客服開通 </br>2.系統將發配一組專屬交易單號，請至您選擇的超商門市進行繳費。</br>
+                                                        3.繳費完成後請妥善保管交易收</p>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <!-- 提款 -->
+                                        <li>
+                                            <div>
+                                                <div class="uk-margin">
+                                                    <label class="" for="form-horizontal-select">
+                                                        <p class="w3-small">銀行</p>
+                                                    </label>
+                                                    <div class="uk-form-controls">
+                                                        <select class="uk-select" id="form-horizontal-select">
+                                                            <option>請選擇</option>
+                                                            <option>銀行 01</option>
+                                                            <option>銀行 02</option>
+                                                            <option>銀行 03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <form action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small">銀行戶名</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">銀行帳號</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">金額</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">密碼</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                            </div>
+                                        </li>
+                                        <!-- 綁定銀行帳戶 -->
+                                        <li>
+                                            <div>
+                                                <div class="uk-margin">
+                                                    <label class="" for="form-horizontal-select">
+                                                        <p class="w3-small">銀行</p>
+                                                    </label>
+                                                    <div class="uk-form-controls">
+                                                        <select class="uk-select" id="form-horizontal-select">
+                                                            <option>請選擇</option>
+                                                            <option>銀行 01</option>
+                                                            <option>銀行 02</option>
+                                                            <option>銀行 03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <form action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small">銀行戶名</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">銀行帳號</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="py-2 px-4"><button
+                                            class="uk-button uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                                            type="button">確認送出</button></div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                     <!-- 2 -->
                     <a href="#modal-example2" uk-toggle
                         class="btn list-inline-item p-1 w3-hover-shadow w3-hover-blue-gray">
@@ -76,55 +385,301 @@
                             </div>
                             <div class="modalBg">
                                 <div class="p-3">
-                                    <div class="row mx-1">
-                                        <div class="btn text-center col mx-1 modalBtn">存款</div>
-                                        <div class="btn text-center col mx-1 modalBtn">提款</div>
-                                        <div class="btn text-center col mx-1 modalBtn">綁定銀行帳戶</div>
-                                    </div>
-                                    <p class="col-12 centerCenter my-3 py-2" style="font-size: .5em;">如需<span
-                                            class="px-1" style="font-size: 1.5em;color: #fee682;">超商存款</span>，請洽在線客服</p>
-                                    <div class="row mx-1 w3-round-xxlarge" style="background-color: #103971;">
-                                        <div class="btn w3-round-xxlarge text-center col modalSBtn "
-                                            style="font-size: .8em;">線上轉帳</div>
-                                        <div class="btn w3-round-xxlarge text-center col modalSBtn"
-                                            style="font-size: .8em;">線上刷卡</div>
-                                        <div class="btn w3-round-xxlarge text-center col modalSBtn"
-                                            style="font-size: .8em;">VIP存款區</div>
-                                        <div class="btn w3-round-xxlarge text-center col modalSBtn"
-                                            style="font-size: .8em;">超商存款</div>
-                                    </div>
-                                    <form action="uk-margin" method="post">
-                                        <label class="mt-3">
-                                            <p style="font-size: .85em;">通道</p>
-                                        </label>
-                                        <input class="signup-input p-1" style="background-color: #103971;" type="text">
-                                    </form>
-                                    <form action="uk-margin" method="post">
-                                        <label class="mt-2">
-                                            <span style="font-size: .85em;">金額</span>
-                                            <span class="pl-2" style="font-size: .65em;color: #fee682;">( 最低 100 最高 50,000 )</span>
-                                        </label>
-                                        <input class="signup-input p-1" style="background-color: #103971;" type="text">
-                                    </form>
-                                    <div class="uk-margin">
-                                        <label class="" for="form-horizontal-select">
-                                            <p style="font-size: .85em;">優惠</p>
-                                        </label>
-                                        <div class="uk-form-controls">
-                                            <select class="uk-select" id="form-horizontal-select">
-                                                <option>請選擇</option>
-                                                <option>Option 01</option>
-                                                <option>Option 02</option>
-                                                <option>Option 03</option>
-                                            </select>
+                                    <div class="row mx-1 modalBtn-c" uk-switcher>
+                                        <div class="btn col mx-1 modalBtn py-1 modalBtn-active">
+                                            <p class="text-center">存款</p>
+                                        </div>
+                                        <div class="btn col mx-1 modalBtn py-1">
+                                            <p class="text-center">提款</p>
+                                        </div>
+                                        <div class="btn col mx-1 modalBtn py-1">
+                                            <p class="text-center">綁定銀行帳戶</p>
                                         </div>
                                     </div>
+
+
+                                    <ul class="uk-switcher uk-margin">
+                                        <!-- 存款 -->
+                                        <li>
+                                            <ul class="row mx-1 w3-round-xxlarge modalBtn-e"
+                                                style="background-color: #103971;" uk-switcher>
+                                                <div class="btn w3-round-xxlarge col modalSBtn modalSBtn-active">
+                                                    <p class=" text-center w3-small">線上轉帳</p>
+                                                </div>
+                                                <div class="btn w3-round-xxlarge col modalSBtn">
+                                                    <p class=" text-center w3-small">線上刷卡</p>
+                                                </div>
+                                                <div class="btn w3-round-xxlarge col modalSBtn">
+                                                    <p class=" text-center w3-small">VIP存款區</p>
+                                                </div>
+                                                <div class="btn w3-round-xxlarge col modalSBtn">
+                                                    <p class=" text-center w3-small">超商存款</p>
+                                                </div>
+                                            </ul>
+
+                                            <ul class="uk-switcher uk-margin">
+                                                <!-- 線上轉帳 -->
+                                                <div>
+                                                    <p class="col-12 w3-small w3-center pt-1"
+                                                        style="letter-spacing: .1em;">【線上轉帳】如需<span
+                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
+                                                    </p>
+                                                    <form action="uk-margin" method="post">
+                                                        <label>
+                                                            <p class="w3-small">通道</p>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <form action="uk-margin" method="post">
+                                                        <label class="mt-2">
+                                                            <span class="w3-small">金額</span>
+                                                            <span class="pl-2"
+                                                                style="font-size: .65em;color: #fee682;">( 最低 100 最高
+                                                                50,000 )</span>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <div class="uk-margin">
+                                                        <label class="" for="form-horizontal-select">
+                                                            <p class="w3-small">優惠</p>
+                                                        </label>
+                                                        <div class="uk-form-controls">
+                                                            <select class="uk-select" id="form-horizontal-select">
+                                                                <option>請選擇</option>
+                                                                <option>優惠 01</option>
+                                                                <option>優惠 02</option>
+                                                                <option>優惠 03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <p class="col-12 centerCenter" style="font-size: .55em;">
+                                                        ★存款請使用本人銀行操作，若非本人而影響後續出款權益須自行承擔</p>
+                                                </div>
+                                                <!-- 線上刷卡 -->
+                                                <div>
+                                                    <p class="col-12 w3-small w3-center pt-1"
+                                                        style="letter-spacing: .1em;">【線上刷卡】如需<span
+                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
+                                                    </p>
+                                                    <form action="uk-margin" method="post">
+                                                        <label>
+                                                            <p class="w3-small">通道</p>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <form action="uk-margin" method="post">
+                                                        <label class="mt-2">
+                                                            <span class="w3-small">金額</span>
+                                                            <span class="pl-2"
+                                                                style="font-size: .65em;color: #fee682;">( 刷卡需收8%手續費
+                                                                )</span>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <div class="uk-margin">
+                                                        <label class="" for="form-horizontal-select">
+                                                            <p class="w3-small">優惠</p>
+                                                        </label>
+                                                        <div class="uk-form-controls">
+                                                            <select class="uk-select" id="form-horizontal-select">
+                                                                <option>請選擇</option>
+                                                                <option>優惠 01</option>
+                                                                <option>優惠 02</option>
+                                                                <option>優惠 03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <p class="col-12 centerCenter" style="font-size: .55em;">
+                                                        ★存款請使用本人銀行操作，若非本人而影響後續出款權益須自行承擔</p>
+                                                </div>
+                                                <!-- VIP存款區 -->
+                                                <div>
+                                                    <p class="col-12 w3-small w3-center pt-1"
+                                                        style="letter-spacing: .1em;">【VIP存款區】如需<span
+                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
+                                                    </p>
+                                                    <div class="uk-margin">
+                                                        <label class="" for="form-horizontal-select">
+                                                            <p class="w3-small">銀行帳戶</p>
+                                                        </label>
+                                                        <div class="uk-form-controls">
+                                                            <select class="uk-select" id="form-horizontal-select">
+                                                                <option>請選擇</option>
+                                                                <option>銀行 01</option>
+                                                                <option>銀行 02</option>
+                                                                <option>銀行 03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <form action="uk-margin" method="post">
+                                                        <label>
+                                                            <span class="w3-small">金額</span>
+                                                            <span class="pl-2"
+                                                                style="font-size: .65em;color: #fee682;">( 最低 100
+                                                                )</span>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <form action="uk-margin" method="post">
+                                                        <label class="mt-2">
+                                                            <span class="w3-small">備註</span>
+                                                            <span class="pl-2"
+                                                                style="font-size: .65em;color: #fee682;">( 請填寫匯款帳戶後五碼
+                                                                )</span>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <div class="uk-margin">
+                                                        <label class="" for="form-horizontal-select">
+                                                            <p class="w3-small">優惠</p>
+                                                        </label>
+                                                        <div class="uk-form-controls">
+                                                            <select class="uk-select" id="form-horizontal-select">
+                                                                <option>請選擇</option>
+                                                                <option>優惠 01</option>
+                                                                <option>優惠 02</option>
+                                                                <option>優惠 03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <p class="col-12 centerCenter w3-small">★VIP快速存款，上分更即時，24小時專屬客服為您服務★
+                                                    </p>
+                                                    <p class="col-12 centerCenter w3-small pt-1">
+                                                        ★存款請使用本人銀行操作，若非本人而影響後續出款權益須自行承擔</p>
+
+                                                </div>
+                                                <!-- 超商存款 -->
+                                                <div>
+                                                    <p class="col-12 w3-small w3-center pt-1"
+                                                        style="letter-spacing: .1em;">【超商存款】如需<span
+                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
+                                                    </p>
+                                                    <form action="uk-margin" method="post">
+                                                        <label>
+                                                            <p class="w3-small">通道</p>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <form action="uk-margin" method="post">
+                                                        <label class="mt-2">
+                                                            <span class="w3-small">金額</span>
+                                                            <span class="pl-2"
+                                                                style="font-size: .65em;color: #fee682;">( 最低 1,000 最高
+                                                                5,000 )</span>
+                                                        </label>
+                                                        <input class="signup-input p-1"
+                                                            style="background-color: #103971;" type="text">
+                                                    </form>
+                                                    <div class="uk-margin">
+                                                        <label class="" for="form-horizontal-select">
+                                                            <p class="w3-small">優惠</p>
+                                                        </label>
+                                                        <div class="uk-form-controls">
+                                                            <select class="uk-select" id="form-horizontal-select">
+                                                                <option>請選擇</option>
+                                                                <option>優惠 01</option>
+                                                                <option>優惠 02</option>
+                                                                <option>優惠 03</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <p class="col-12 w3-small">
+                                                        注意事項：</br> 1. 請洽客服開通 </br>2.系統將發配一組專屬交易單號，請至您選擇的超商門市進行繳費。</br>
+                                                        3.繳費完成後請妥善保管交易收</p>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <!-- 提款 -->
+                                        <li>
+                                            <div>
+                                                <div class="uk-margin">
+                                                    <label class="" for="form-horizontal-select">
+                                                        <p class="w3-small">銀行</p>
+                                                    </label>
+                                                    <div class="uk-form-controls">
+                                                        <select class="uk-select" id="form-horizontal-select">
+                                                            <option>請選擇</option>
+                                                            <option>銀行 01</option>
+                                                            <option>銀行 02</option>
+                                                            <option>銀行 03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <form action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small">銀行戶名</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">銀行帳號</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">金額</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">密碼</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                            </div>
+                                        </li>
+                                        <!-- 綁定銀行帳戶 -->
+                                        <li>
+                                            <div>
+                                                <div class="uk-margin">
+                                                    <label class="" for="form-horizontal-select">
+                                                        <p class="w3-small">銀行</p>
+                                                    </label>
+                                                    <div class="uk-form-controls">
+                                                        <select class="uk-select" id="form-horizontal-select">
+                                                            <option>請選擇</option>
+                                                            <option>銀行 01</option>
+                                                            <option>銀行 02</option>
+                                                            <option>銀行 03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <form action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small">銀行戶名</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">銀行帳號</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="py-2 px-4"><button
+                                            class="uk-button uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                                            type="button">確認送出</button></div>
+
                                 </div>
-                                <div class="py-2 px-4"><button
-                                        class="uk-button uk-modal-close modalBtn d-flex centerCenter w-100"
-                                        type="button">確認送出</button></div>
-                                <p class="col-12 centerCenter pb-4" style="font-size: .55em;">
-                                    ★存款請使用本人銀行操作，若非本人而影響後續出款權益須自行承擔</p>
                             </div>
 
                         </div>
@@ -158,6 +713,10 @@
                         <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/7_我的最愛.png" alt="" class="">
                         </li>
                         <p class="text-light">我的最愛</p>
+                    </a>
+                    <!-- 刷新 -->
+                    <a href="javascript:;" class="btn list-inline-item p-1 w3-text-light-gray w3-hover-text-yellow">
+                        <li class="text-center"><i class="fas fa-sync-alt" style="font-size: 1.5em;"></i></li>
                     </a>
                     <!-- user -->
                     <div class="list-inline-item pl-2">
@@ -207,10 +766,56 @@
                 <div class="col-3 position-relative float-right text-right p-0">
                     <!-- This is an anchor toggling the modal -->
                     <a href="#modal-example" uk-toggle>
-                        <i class="far fa-envelope list-inline-item text-light mr-1" style="font-size: 1.35rem;"></i>
+                        <!-- 原email -->
+                        <!-- <i class="far fa-envelope list-inline-item text-light mr-1" style="font-size: 1.35rem;"></i> -->
+                        <i class="fas fa-bell text-light"></i>
                     </a>
                     <!-- This is the modal -->
-                    <div id="modal-example" uk-modal>
+                    <div class="" id="modal-example" uk-modal>
+                        <div class="uk-modal-dialog uk-modal-body p-2 w3-dark-gray"
+                            style="box-shadow: 0px 0px 5px 2px #1c63ba;">
+                            <div class="">
+                                <div class="px-3 py-1 w3-large text-light bg-primary md-footer-color w3-round">
+                                    <p class="w3-center">【存款公告】</p>
+                                </div>
+                                <div class="p-3 text-light modalBg">
+                                    <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="px-3 py-1 mt-1 w3-large text-light bg-primary md-footer-color w3-round">
+                                    <p class="w3-center">【存款公告】</p>
+                                </div>
+                                <div class="p-3 text-light modalBg mb-1">
+                                    <p>親愛的會員您好，為了保障會員資金安全性，使用信用卡、ATM轉帳以及VIP專用帳戶存款，請務必使用本人帳戶，若使用非本人帳戶存款將一律扣除營利退本金處理，相關損失需自行承擔風險，請見諒。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="px-3 mt-1 py-1 w3-large text-light bg-primary md-footer-color w3-round">
+                                    <p class="w3-center">【維護公告】</p>
+                                </div>
+                                <div class="p-3 text-light modalBg mb-1">
+                                    <p>親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。</p>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="px-3 py-1 mt-1 w3-large text-light bg-primary md-footer-color w3-round">
+                                    <p class="w3-center">【取款公告】</p>
+                                </div>
+                                <div class="p-3 text-light modalBg mb-1">
+                                    <p>親愛的娛樂城會員您好，由於體育注單會有因改判賽事等因素而進行注單重新結算，即日起，任你博網站出款時，體育相關注單須全數派彩完畢才可處理支付款項，若有未派彩注單請耐心等候派彩完畢，如有相關取款問題歡迎詢問24H在線客服，謝謝！
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="uk-text-right p-2 w-100">
+                                <button class="uk-button uk-button-primary uk-modal-close" type="button">Cancel</button>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 原 modal -->
+                    <!-- <div id="modal-example" uk-modal>
                         <div class="uk-modal-dialog uk-modal-body p-2 w3-sand">
                             <div class="row">
                                 <div class="col-md-6 col-sm-12 pb-1">
@@ -254,9 +859,10 @@
                                 <button class="uk-button uk-button-primary uk-modal-close" type="button">Cancel</button>
                             </p>
                         </div>
-                    </div>
-                    <i class="fas fa-circle text-danger position-absolute"
-                        style="font-size: 0.5rem;right: 1px;top: 1px;"></i>
+                    </div> -->
+                    <!-- 原email紅點 -->
+                    <!-- <i class="fas fa-circle text-danger position-absolute"
+                        style="font-size: 0.5rem;right: 1px;top: 1px;"></i> -->
                 </div>
             </div>
             <div class="col m-2 my-auto">
@@ -300,6 +906,8 @@
         </div>
     </div>
 
+    <!-- 自創 -->
+    <script src="../js/indexLogin.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
