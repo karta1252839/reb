@@ -72,23 +72,24 @@
                             <div class="modalBg">
                                 <div class="row px-5 py-3">
                                     <!-- 開始日期 -->
-                                    <form class="col-12" action="uk-margin" method="post">
+                                    <form class="col-6" action="uk-margin" method="post">
                                         <label>
-                                            <span class="w3-large">開始日期</span>
+                                            <span class="w3-small lp1">開始日期</span><span
+                                                class="w3-small text-warning pl-1 lp1">(右方點選日期)</span>
                                         </label>
-                                        <input class="p-1 text-light w-100" style="background-color: #103971;"
+                                        <input class="w3-small px-1 py-2 text-light w-100" style="background-color: #103971;"
                                             type="datetime-local" name="" id="">
                                     </form>
                                     <!-- 結束日期 -->
-                                    <form class="col-12 py-3" action="uk-margin" method="post">
+                                    <form class="col-6" action="uk-margin" method="post">
                                         <label>
-                                            <span class="w3-large">結束日期</span>
+                                            <span class="w3-small lp1">結束日期</span>
                                         </label>
-                                        <input class="p-1 text-light w-100" style="background-color: #103971;"
+                                        <input class="w3-small px-1 py-2 text-light w-100" style="background-color: #103971;"
                                             type="datetime-local" name="" id="">
                                     </form>
                                     <!-- 搜尋 -->
-                                    <div class="col-12 py-2">
+                                    <div class="col-12 pb-2 pt-4">
                                         <button
                                             class="uk-button uk-modal-close modalBtn-active d-flex centerCenter w-100"
                                             type="button">搜尋</button>
@@ -157,10 +158,13 @@
                                         </div>
                                     </div>
 
-
                                     <ul class="uk-switcher uk-margin">
                                         <!-- 存款 -->
                                         <li>
+                                            <p class="col-12 w3-small w3-center pb-3" style="letter-spacing: .1em;">
+                                                【線上轉帳】如需<span
+                                                    style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
+                                            </p>
                                             <ul class="row mx-1 w3-round-xxlarge modalBtn-e"
                                                 style="background-color: #103971;" uk-switcher>
                                                 <div class="btn w3-round-xxlarge col modalSBtn modalSBtn-active">
@@ -180,10 +184,6 @@
                                             <ul class="uk-switcher uk-margin">
                                                 <!-- 線上轉帳 -->
                                                 <div>
-                                                    <p class="col-12 w3-small w3-center pt-1"
-                                                        style="letter-spacing: .1em;">【線上轉帳】如需<span
-                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
-                                                    </p>
                                                     <form action="uk-margin" method="post">
                                                         <label>
                                                             <p class="w3-small">通道</p>
@@ -219,10 +219,6 @@
                                                 </div>
                                                 <!-- 線上刷卡 -->
                                                 <div>
-                                                    <p class="col-12 w3-small w3-center pt-1"
-                                                        style="letter-spacing: .1em;">【線上刷卡】如需<span
-                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
-                                                    </p>
                                                     <form action="uk-margin" method="post">
                                                         <label>
                                                             <p class="w3-small">通道</p>
@@ -258,10 +254,6 @@
                                                 </div>
                                                 <!-- VIP存款區 -->
                                                 <div>
-                                                    <p class="col-12 w3-small w3-center pt-1"
-                                                        style="letter-spacing: .1em;">【VIP存款區】如需<span
-                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
-                                                    </p>
                                                     <form class="uk-margin" action="uk-margin" method="post">
                                                         <label class="" for="form-horizontal-select">
                                                             <p class="w3-small">銀行帳戶</p>
@@ -312,14 +304,9 @@
                                                     </p>
                                                     <p class="col-12 centerCenter w3-small pt-1">
                                                         ★存款請使用本人銀行操作，若非本人而影響後續出款權益須自行承擔</p>
-
                                                 </div>
                                                 <!-- 超商存款 -->
                                                 <div>
-                                                    <p class="col-12 w3-small w3-center pt-1"
-                                                        style="letter-spacing: .1em;">【超商存款】如需<span
-                                                            style="letter-spacing: .1em; font-size: 1.3em; color: #fee682;">超商存款</span>，請洽在線客服
-                                                    </p>
                                                     <form action="uk-margin" method="post">
                                                         <label>
                                                             <p class="w3-small">通道</p>
@@ -462,9 +449,9 @@
                             <div class="modalBg">
                                 <div class="d-flex px-4 py-3">
                                     <!-- 左側 -->
-                                    <div class="col-6 bg-dark mr-1 w3-round-large overflow-auto" style="height: 350px;">
+                                    <div class="col-6 bg-dark mr-1 w3-round-large overflow-auto" style="height: 390px;">
                                         <!-- 1.從這轉帳 -->
-                                        <div class="uk-margin pt-3">
+                                        <div class="uk-margin pt-5">
                                             <label class="" for="form-horizontal-select">
                                                 <p class="w3-small lp1">從這轉帳</p>
                                             </label>
@@ -505,7 +492,7 @@
                                     </div>
                                     <!-- 右側 -->
                                     <div class="flex-grow-1 bg-dark w3-round-large mx-3 px-5"
-                                        style="max-height: 350px;overflow: auto !important;">
+                                        style="max-height: 390px;overflow: auto !important;">
                                         <div class="">
                                             <!-- 錢包 -->
                                             <div class="col-12 d-flex pt-1 border-bottom border-warning"
@@ -686,66 +673,174 @@
                         <div class="uk-modal-dialog">
                             <div class="border-bottom border-dark modalBg px-3 py-1"
                                 style="border-width: 2px !important;">
-                                <h2 class="uk-modal-title ty py-2 text-center display-4">交易記錄</h2>
+                                <h2 class="uk-modal-title ty py-2 text-center display-4">存_提款</h2>
                                 <button class="uk-modal-close-default text-light" type="button" uk-close></button>
                             </div>
                             <div class="modalBg">
-                                <div class="row px-5 py-3">
-                                    <!-- 開始日期 -->
-                                    <form class="col-12" action="uk-margin" method="post">
-                                        <label>
-                                            <span class="w3-large">開始日期</span>
-                                        </label>
-                                        <input class="p-1 text-light w-100" style="background-color: #103971;"
-                                            type="datetime-local" name="" id="">
-                                    </form>
-                                    <!-- 結束日期 -->
-                                    <form class="col-12 py-3" action="uk-margin" method="post">
-                                        <label>
-                                            <span class="w3-large">結束日期</span>
-                                        </label>
-                                        <input class="p-1 text-light w-100" style="background-color: #103971;"
-                                            type="datetime-local" name="" id="">
-                                    </form>
-                                    <!-- 搜尋 -->
-                                    <div class="col-12 py-2">
-                                        <button
+                                <div class="p-3">
+                                    <div class="row mx-1 modalBtn-c" uk-switcher>
+                                        <div class="btn col mx-1 modalBtn py-1 modalBtn-active">
+                                            <p class="text-center">存款</p>
+                                        </div>
+                                        <div class="btn col mx-1 modalBtn py-1">
+                                            <p class="text-center">提款</p>
+                                        </div>
+                                        <div class="btn col mx-1 modalBtn py-1">
+                                            <p class="text-center">綁定銀行帳戶</p>
+                                        </div>
+                                    </div>
+
+                                    <ul class="uk-switcher uk-margin">
+                                        <!-- 存款 -->
+                                        <li>
+                                            <p class="col-12 centerCenter">存款</p>
+                                            <div class="row px-3">
+                                                <!-- 開始日期 -->
+                                                <form class="col" action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small pl-1 lp1">開始日期</span>
+                                                        <span class="w3-small text-warning pl-1 lp1">(右方點選日期)</span>
+                                                    </label>
+                                                    <input class="w3-small py-2 p-1 text-light w-100"
+                                                        style="background-color: #103971;" type="datetime-local" name=""
+                                                        id="">
+                                                </form>
+                                                <!-- 結束日期 -->
+                                                <form class="col" action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small lp1">結束日期</span>
+                                                    </label>
+                                                    <input class="w3-small px-1 py-2 text-light w-100"
+                                                        style="background-color: #103971;" type="datetime-local" name=""
+                                                        id="">
+                                                </form>
+                                            </div>
+                                            <!-- 搜尋 -->
+                                            <div class="col-12 pb-2 pt-4">
+                                                <button
+                                                    class="btn lp1 uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                                                    type="button">搜尋</button>
+                                            </div>
+                                            <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
+                                                <div class="btn col modalSBtn modalSBtn-active">
+                                                    <p class=" text-center w3-small">昨日</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">今日</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">本週</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">上週</p>
+                                                </div>
+                                            </ul>
+
+                                            <ul class="uk-switcher uk-margin">
+                                                <!-- 昨日 -->
+                                                <div>
+                                                    <p class="col-12 centerCenter">昨日</p>
+                                                </div>
+                                                <!-- 今日 -->
+                                                <div>
+                                                    <p class="col-12 centerCenter">今日</p>
+                                                </div>
+                                                <!-- 本週 -->
+                                                <div>
+                                                    <p class="col-12 centerCenter">本週</p>
+                                                </div>
+                                                <!-- 上週 -->
+                                                <div>
+                                                    <p class="col-12 centerCenter">上週</p>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <!-- 提款 -->
+                                        <li>
+                                            <div>
+                                                <div class="uk-margin">
+                                                    <label class="" for="form-horizontal-select">
+                                                        <p class="w3-small">銀行</p>
+                                                    </label>
+                                                    <div class="uk-form-controls">
+                                                        <select class="uk-select" id="form-horizontal-select">
+                                                            <option>請選擇</option>
+                                                            <option>銀行 01</option>
+                                                            <option>銀行 02</option>
+                                                            <option>銀行 03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <form action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small">銀行戶名</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">銀行帳號</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">金額</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">密碼</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                            </div>
+                                        </li>
+                                        <!-- 綁定銀行帳戶 -->
+                                        <li>
+                                            <div>
+                                                <div class="uk-margin">
+                                                    <label class="" for="form-horizontal-select">
+                                                        <p class="w3-small">銀行</p>
+                                                    </label>
+                                                    <div class="uk-form-controls">
+                                                        <select class="uk-select" id="form-horizontal-select">
+                                                            <option>請選擇</option>
+                                                            <option>銀行 01</option>
+                                                            <option>銀行 02</option>
+                                                            <option>銀行 03</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <form action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small">銀行戶名</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                                <form action="uk-margin" method="post">
+                                                    <label class="mt-2">
+                                                        <span class="w3-small">銀行帳號</span>
+                                                    </label>
+                                                    <input class="signup-input p-1" style="background-color: #103971;"
+                                                        type="text">
+                                                </form>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="py-2 px-4"><button
                                             class="uk-button uk-modal-close modalBtn-active d-flex centerCenter w-100"
-                                            type="button">搜尋</button>
-                                    </div>
-                                    <!--  -->
-                                    <div class="col-12 modalBtn-c py-3" uk-switcher>
-                                        <div class="btn modalBtn modalBtn-active pt-1" style="width: 24%;">
-                                            <p class="text-center">今日</p>
-                                        </div>
-                                        <div class="btn modalBtn pt-1" style="width: 24%;">
-                                            <p class="text-center">昨日</p>
-                                        </div>
-                                        <div class="btn modalBtn pt-1" style="width: 24%;">
-                                            <p class="text-center">本週</p>
-                                        </div>
-                                        <div class="btn modalBtn pt-1" style="width: 24%;">
-                                            <p class="text-center">上週</p>
-                                        </div>
-                                    </div>
+                                            type="button">確認送出</button></div>
 
-                                    <div class="uk-switcher col-12">
-                                        <div class="w3-gray" style="min-height: 200px;">
-                                            <p class="text-center pl-2">今日 尚無任何記錄</p>
-                                        </div>
-                                        <div class="w3-gray" style="min-height: 200px;">
-                                            <p class="text-center pl-2">昨日 尚無任何記錄</p>
-                                        </div>
-                                        <div class="w3-gray" style="min-height: 200px;">
-                                            <p class="text-center pl-2">本週 尚無任何記錄</p>
-                                        </div>
-                                        <div class="w3-gray" style="min-height: 200px;">
-                                            <p class="text-center pl-2">上週 尚無任何記錄</p>
-                                        </div>
-
-                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                     <!-- 5.變更資料 -->
@@ -858,7 +953,7 @@
                     <i class="far fa-star fa-sm"></i>
                     <i class="far fa-star fa-sm"></i>
                 </div>
-                
+
             </div>
             <div class="col">
                 <div class="col-12 text-right pt-3">
@@ -866,8 +961,7 @@
                         <i class="fas fa-bell text-light"></i>
                     </a>
                     <div class="" id="modal-bell" uk-modal>
-                        <div class="p-2 w3-dark-gray centerCenter w-100"
-                            style="box-shadow: 0px 0px 5px 2px #1c63ba;">
+                        <div class="p-2 w3-dark-gray centerCenter w-100" style="box-shadow: 0px 0px 5px 2px #1c63ba;">
                             <div class="">
                                 <div class="px-3 py-1 w3-large text-light bg-primary md-footer-color w3-round">
                                     <p class="w3-center">【存款公告】</p>
@@ -932,7 +1026,7 @@
 
     <script>indexLoginFooter();</script>
 
-    
+
 
     <!-- 自創 -->
     <script src="../js/indexLogin.js"></script>
