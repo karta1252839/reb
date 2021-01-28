@@ -67,8 +67,8 @@ function MDFooter() {
     document.writeln("    <div class=\'container-fluid d-md-none\' style=\'background-color:#bdd5ef;\'>");
     document.writeln("        <div class=\'row mx-2 py-5\'>");
     document.writeln("            <a href=\'../index.html\' class=\'col-3 blog-t-color text-center\'>娛樂城</a>");
-    document.writeln("            <a href=\'./LiveCasino.html\' class=\'col-3 blog-t-color text-center\'>百家樂</a>");
-    document.writeln("            <a href=\'./Promotion.html\' class=\'col-3 blog-t-color text-center\'>娛樂城優惠</a>");
+    document.writeln("            <a href=\'../page/LiveCasino.html\' class=\'col-3 blog-t-color text-center\'>百家樂</a>");
+    document.writeln("            <a href=\'../page/Promotion.html\' class=\'col-3 blog-t-color text-center\'>娛樂城優惠</a>");
     document.writeln("            <a href=\'../Features page/BaccaratTechniques.html\' class=\'col-3 blog-t-color text-center\'>百家樂技巧</a>");
     document.writeln("            <p class=\'col-12 blog-t-color text-center pt-5 pb-3\'>任你博娛樂城-線上賭場百家樂推薦</p>");
     document.writeln("        </div>");
@@ -80,13 +80,13 @@ function MDFooter() {
     document.writeln("    <!-- footer -->");
     document.writeln("    <div class=\'container-fluid d-md-none md-footer-color fixed-bottom\'>");
     document.writeln("        <div class=\'row py-2\'>");
-    document.writeln("            <div class=\'col-3 text-center\'><a href=\'../index.html\'><img src=\'../img/手機index_img/手機最下方/包裝/首頁.png\'");
+    document.writeln("            <div class=\'col-3 h-100 text-center\'><a href=\'../index.html\'><img src=\'../img/手機index_img/手機最下方/包裝/首頁.png\'");
     document.writeln("                        alt=\'\'></a></div>");
-    document.writeln("            <div class=\'col-3 text-center\'><a href=\'../page/indexLogin.html\'><img src=\'../img/手機index_img/手機最下方/包裝/登入.png\' alt=\'\'></a></div>");
-    document.writeln("            <div class=\'col-3 text-center\'><a href=\'../header page/Signup.html\'><img");
+    document.writeln("            <div class=\'col-3 h-100 text-center\'><a href=\'../page/indexLogin.html\'><img src=\'../img/手機index_img/手機最下方/包裝/登入.png\' alt=\'\'></a></div>");
+    document.writeln("            <div class=\'col-3 h-100 text-center\'><a href=\'../header page/Signup.html\'><img");
     document.writeln("                        src=\'../img/手機index_img/手機最下方/包裝/註冊.png\' alt=\'\'></a></div>");
-    document.writeln("            <div class=\'col-3 text-center\'><a href=\'../page/Promotion.html\'><img");
-    document.writeln("                        src=\'../img/手機index_img/手機最下方/包裝/優惠活動.png\' alt=\'\'></a></div>");
+    document.writeln("            <div class=\'col-3 h-100 text-center\'><a href=\'../page/Promotion.html\'><img");
+    document.writeln("                        src=\'../img/手機index_img/手機最下方/包裝/優惠.png\' alt=\'\'></a></div>");
     document.writeln("        </div>");
     document.writeln("    </div>");
 }
@@ -518,4 +518,22 @@ function indexLoginHeader() {
 }
 // 登入頁面 Footer
 function indexLoginFooter() {
+    document.writeln("<!-- footer h -->");
+    document.writeln("    <div class=\'container-fluid d-md-none\' style=\'min-height: 70px;\'></div>");
+    document.writeln("");
+    document.writeln("    <!-- footer -->");
+    document.writeln("    <div class=\'container-fluid d-md-none md-footer-color fixed-bottom\'>");
+    document.writeln("        <div class=\'row py-2\'>");
+    document.writeln("            <div class=\'col text-center\'><a href=\'../index.html\'><img class=\'h-100\'");
+    document.writeln("                        src=\'../img/手機index_img/手機最下方/包裝/首頁登入.png\' alt=\'\'></a></div>");
+    document.writeln("            <div class=\'col text-center\'><a href=\'#\'><img class=\'h-100\' src=\'../img/手機index_img/手機最下方/包裝/平台轉帳.png\'");
+    document.writeln("                        alt=\'\'></a></div>");
+    document.writeln("            <div class=\'col text-center\'><a href=\'#\'><img class=\'h-100\' src=\'../img/手機index_img/手機最下方/包裝/存款_提款.png\'");
+    document.writeln("                        alt=\'\'></a></div>");
+    document.writeln("            <div class=\'col text-center\'><a href=\'../page/Promotion.html\'><img");
+    document.writeln("                        src=\'../img/手機index_img/手機最下方/包裝/優惠活動.png\' alt=\'\'></a></div>");
+    document.writeln("            <div class=\'col text-center\'><a href=\'#\'><img class=\'h-100\' src=\'../img/手機index_img/手機最下方/包裝/會員中心.png\'");
+    document.writeln("                        alt=\'\'></a></div>");
+    document.writeln("        </div>");
+    document.writeln("    </div>");
 }

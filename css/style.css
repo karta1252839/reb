@@ -676,7 +676,8 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     background: linear-gradient(180deg, #2278e0 0%, #1754a7 100%);
     color: #ffffff;
     border-radius: 5px;
-    height: 5vh;
+    /* height: 5vh; */
+    padding: .5em 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -693,7 +694,8 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     width: 100%;
     background: linear-gradient(180deg, #1c63ba 0%, #124080 100%);
     color: #ffffff;
-    padding: 5vh;
+    padding: .5em 0;
+    /* padding: 5vh; */
 }
 
 .blogh1 {
@@ -850,4 +852,10 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
 .modalSBtn:hover {
     background: #fff;
     color: #103971;
+}
+.lp1{
+    letter-spacing: .1em;
+}
+.lp2{
+    letter-spacing: .2em;
 }

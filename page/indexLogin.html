@@ -54,19 +54,19 @@
             <div class="row py-3 align-items-center">
                 <!-- 左側 -->
                 <ul class="list-inline flex-grow-1 text-right mr-5 text-light">
-                    <!-- 1.名廰流水 -->
+                    <!-- 1.各廰流水 -->
                     <a href="#modal-example1" class="btn list-inline-item p-1 w3-hover-shadow w3-hover-blue-gray"
                         uk-toggle>
-                        <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/1_名廰流水.png" alt="">
+                        <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/1_各廰流水.png" alt="">
                         </li>
-                        <p class="text-light">名廰流水</p>
+                        <p class="text-light">各廰流水</p>
                     </a>
 
                     <div id="modal-example1" uk-modal>
                         <div class="uk-modal-dialog">
                             <div class="border-bottom border-dark modalBg px-3 py-1"
                                 style="border-width: 2px !important;">
-                                <h2 class="uk-modal-title ty py-2 text-center display-4">存_提款</h2>
+                                <h2 class="uk-modal-title ty py-2 text-center display-4">各廰流水</h2>
                                 <button class="uk-modal-close-default text-light" type="button" uk-close></button>
                             </div>
                             <div class="modalBg">
@@ -452,21 +452,21 @@
                         <p class="text-light">平台轉帳</p>
                     </a>
 
-                    <div id="modal-example3" uk-modal>
-                        <div class="uk-modal-dialog">
+                    <div id="modal-example3" class="uk-modal-container" uk-modal>
+                        <div class="uk-modal-dialog ">
                             <div class="border-bottom border-dark modalBg px-3 py-1"
                                 style="border-width: 2px !important;">
                                 <h2 class="uk-modal-title ty py-2 text-center display-4">平台轉帳</h2>
                                 <button class="uk-modal-close-default text-light" type="button" uk-close></button>
                             </div>
                             <div class="modalBg">
-                                <div class="row px-5 py-3">
+                                <div class="d-flex px-4 py-3">
                                     <!-- 左側 -->
-                                    <div class="col-7 bg-dark mr-1 w3-round-large" style="height: 350px;">
+                                    <div class="col-6 bg-dark mr-1 w3-round-large overflow-auto" style="height: 350px;">
                                         <!-- 1.從這轉帳 -->
-                                        <div class="uk-margin pt-5">
+                                        <div class="uk-margin pt-3">
                                             <label class="" for="form-horizontal-select">
-                                                <p class="w3-small">從這轉帳</p>
+                                                <p class="w3-small lp1">從這轉帳</p>
                                             </label>
                                             <div class="uk-form-controls">
                                                 <select class="uk-select" id="form-horizontal-select">
@@ -479,7 +479,7 @@
                                         <!-- 2.轉帳去到 -->
                                         <div class="uk-margin">
                                             <label class="" for="form-horizontal-select">
-                                                <p class="w3-small">轉帳去到</p>
+                                                <p class="w3-small lp1">轉帳去到</p>
                                             </label>
                                             <div class="uk-form-controls">
                                                 <select class="uk-select" id="form-horizontal-select">
@@ -492,27 +492,262 @@
                                         <!-- 3.轉帳金額 -->
                                         <div class="uk-margin">
                                             <label class="" for="form-horizontal-select">
-                                                <p class="w3-small">轉帳金額</p>
+                                                <p class="w3-small lp1">轉帳金額</p>
                                             </label>
                                             <div class="">
                                                 <input class="uk-input" type="text" placeholder="0.00">
                                             </div>
                                         </div>
+                                        <!-- 4.轉帳 -->
+                                        <button
+                                            class="uk-button uk-modal-close modalBtn-active d-flex centerCenter col-12 uk-text-bold lp2"
+                                            type="button">轉帳</button>
                                     </div>
                                     <!-- 右側 -->
-                                    <div class="flex-grow-1 bg-dark w3-round-large overflow-auto">
-                                        
+                                    <div class="flex-grow-1 bg-dark w3-round-large mx-3 px-5"
+                                        style="max-height: 350px;overflow: auto !important;">
+                                        <div class="">
+                                            <!-- 錢包 -->
+                                            <div class="col-12 d-flex pt-1 border-bottom border-warning"
+                                                style="border-width: 3.5px !important;">
+                                                <div class="flex-grow-1">
+                                                    <span class="text-warning">錢包</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2 text-warning">餘額</span><i
+                                                        class="fas fa-sync-alt w3-spin"></i>
+                                                </div>
+                                            </div>
+                                            <!-- 主錢包 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>主錢包</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">222,222,821.39</span><i
+                                                        class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- 卡利百家樂 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>卡利百家樂</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- 歐博百家樂 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>歐博百家樂</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- 沙龍百家樂 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>沙龍百家樂</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- DG百家樂 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>DG百家樂</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- WM百家樂 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>WM百家樂</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- 卡利體育 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>卡利體育</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- Super體育 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>Super體育</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- DT電子 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>DT電子</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- BTX電子 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>BTX電子</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- RTG電子 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>RTG電子</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- SimplePlay電子 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>SimplePlay電子</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- MG棋牌 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>MG棋牌</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">1,000,000.00</span><i
+                                                        class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- 至尊棋牌 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>至尊棋牌</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- 9K彩票 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>9K彩票</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- 六合彩539 -->
+                                            <div class="col-12 d-flex pt-1">
+                                                <div class="flex-grow-1">
+                                                    <span>六合彩539</span>
+                                                </div>
+                                                <div class="col-7text-right pr-0">
+                                                    <span class="pr-2">0.00</span><i class="fas fa-sync-alt"></i>
+                                                </div>
+                                            </div>
+                                            <!-- 一鍵帶回 -->
+                                            <button
+                                                class="uk-button uk-modal-close modalBtn-active d-flex centerCenter col-12 lp1 my-3 uk-text-bold lp2"
+                                                type="button">一鍵帶回</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- 4.交易記錄 -->
-                    <a href="#" class="btn list-inline-item p-1 w3-hover-shadow w3-hover-blue-gray">
-                        <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/4_交易記錄.png" alt="" class="">
+                    <a href="#modal-example4" class="btn list-inline-item p-1 w3-hover-shadow w3-hover-blue-gray"
+                        uk-toggle>
+                        <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/4_交易記錄.png" alt="">
                         </li>
                         <p class="text-light">交易記錄</p>
                     </a>
+
+                    <div id="modal-example4" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <div class="border-bottom border-dark modalBg px-3 py-1"
+                                style="border-width: 2px !important;">
+                                <h2 class="uk-modal-title ty py-2 text-center display-4">交易記錄</h2>
+                                <button class="uk-modal-close-default text-light" type="button" uk-close></button>
+                            </div>
+                            <div class="modalBg">
+                                <div class="row px-5 py-3">
+                                    <!-- 開始日期 -->
+                                    <form class="col-12" action="uk-margin" method="post">
+                                        <label>
+                                            <span class="w3-large">開始日期</span>
+                                        </label>
+                                        <input class="p-1 text-light w-100" style="background-color: #103971;"
+                                            type="datetime-local" name="" id="">
+                                    </form>
+                                    <!-- 結束日期 -->
+                                    <form class="col-12 py-3" action="uk-margin" method="post">
+                                        <label>
+                                            <span class="w3-large">結束日期</span>
+                                        </label>
+                                        <input class="p-1 text-light w-100" style="background-color: #103971;"
+                                            type="datetime-local" name="" id="">
+                                    </form>
+                                    <!-- 搜尋 -->
+                                    <div class="col-12 py-2">
+                                        <button
+                                            class="uk-button uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                                            type="button">搜尋</button>
+                                    </div>
+                                    <!--  -->
+                                    <div class="col-12 modalBtn-c py-3" uk-switcher>
+                                        <div class="btn modalBtn modalBtn-active pt-1" style="width: 24%;">
+                                            <p class="text-center">今日</p>
+                                        </div>
+                                        <div class="btn modalBtn pt-1" style="width: 24%;">
+                                            <p class="text-center">昨日</p>
+                                        </div>
+                                        <div class="btn modalBtn pt-1" style="width: 24%;">
+                                            <p class="text-center">本週</p>
+                                        </div>
+                                        <div class="btn modalBtn pt-1" style="width: 24%;">
+                                            <p class="text-center">上週</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-switcher col-12">
+                                        <div class="w3-gray" style="min-height: 200px;">
+                                            <p class="text-center pl-2">今日 尚無任何記錄</p>
+                                        </div>
+                                        <div class="w3-gray" style="min-height: 200px;">
+                                            <p class="text-center pl-2">昨日 尚無任何記錄</p>
+                                        </div>
+                                        <div class="w3-gray" style="min-height: 200px;">
+                                            <p class="text-center pl-2">本週 尚無任何記錄</p>
+                                        </div>
+                                        <div class="w3-gray" style="min-height: 200px;">
+                                            <p class="text-center pl-2">上週 尚無任何記錄</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- 5.變更資料 -->
                     <a href="#" class="btn list-inline-item p-1 w3-hover-shadow w3-hover-blue-gray">
                         <li class="text-center"><img src="../img/桌機各分頁img/indexLogin_登入條/5_變更資料.png" alt="" class="">
@@ -609,34 +844,29 @@
     <!-- 手機版------------------------------------------------------------------- -->
     <script>indexLoginHeader();</script>
     <div class="container-fluid d-md-none p-0 m-0 FAQ-btn-items">
-        <div class="row py-2">
-            <div class="col border-right w3-border-gray m-2  my-auto">
-                <div class="col-9 float-left">
-                    <div class="row">
-                        <div class="col-12 list-inline p-0">
-                            <p class="list-inline-item">您好,</p>
-                            <p class="list-inline-item">user</p>
-                        </div>
-                        <div class="col-12 p-0">
-                            <i class="fas fa-star fa-sm text-warning"></i>
-                            <i class="far fa-star fa-sm"></i>
-                            <i class="far fa-star fa-sm"></i>
-                            <i class="far fa-star fa-sm"></i>
-                            <i class="far fa-star fa-sm"></i>
-                            <i class="far fa-star fa-sm"></i>
-                        </div>
-                    </div>
+        <div class="row p-0 m-0 border-bottom border-warning">
+            <div class="col p-2">
+                <div class="col-12">
+                    <span class="list-inline-item">您好,</span>
+                    <span class="list-inline-item">user</span>
                 </div>
-                <div class="col-3 position-relative float-right text-right p-0">
-                    <!-- This is an anchor toggling the modal -->
-                    <a href="#modal-example" uk-toggle>
-                        <!-- 原email -->
-                        <!-- <i class="far fa-envelope list-inline-item text-light mr-1" style="font-size: 1.35rem;"></i> -->
+                <div class="col-12">
+                    <i class="fas fa-star fa-sm text-warning"></i>
+                    <i class="far fa-star fa-sm"></i>
+                    <i class="far fa-star fa-sm"></i>
+                    <i class="far fa-star fa-sm"></i>
+                    <i class="far fa-star fa-sm"></i>
+                    <i class="far fa-star fa-sm"></i>
+                </div>
+                
+            </div>
+            <div class="col">
+                <div class="col-12 text-right pt-3">
+                    <a href="#modal-bell" uk-toggle>
                         <i class="fas fa-bell text-light"></i>
                     </a>
-                    <!-- This is the modal -->
-                    <div class="" id="modal-example" uk-modal>
-                        <div class="uk-modal-dialog uk-modal-body p-2 w3-dark-gray"
+                    <div class="" id="modal-bell" uk-modal>
+                        <div class="p-2 w3-dark-gray centerCenter w-100"
                             style="box-shadow: 0px 0px 5px 2px #1c63ba;">
                             <div class="">
                                 <div class="px-3 py-1 w3-large text-light bg-primary md-footer-color w3-round">
@@ -678,97 +908,31 @@
                             </p>
                         </div>
                     </div>
-                    <!-- 原 modal -->
-                    <!-- <div id="modal-example" uk-modal>
-                        <div class="uk-modal-dialog uk-modal-body p-2 w3-sand">
-                            <div class="row">
-                                <div class="col-md-6 col-sm-12 pb-1">
-                                    <div class="card" style="background-color: #0061bf;">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color: #fff62c;">已獲得任你博冠軍</h5>
-                                            <p class="card-text" style="color: #eee;">親愛的玩家您好，您已獲得任你博本次冠軍，領取10000獎金。</p>
-                                            <p class="btn disabled" style="color: #bebebe;">2020-09-17</p>
-                                            <a href="../page/Email page.html" class="btn float-right"
-                                                style="color: #bebebe;">更多詳情
-                                                ></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12 pb-1">
-                                    <div class="card" style="background-color: #0061bf;">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color: #fff62c;">已獲得任你博冠軍</h5>
-                                            <p class="card-text" style="color: #eee;">親愛的玩家您好，您已獲得任你博本次冠軍，領取10000獎金。</p>
-                                            <p class="btn disabled" style="color: #bebebe;">2020-09-17</p>
-                                            <a href="../page/Email page.html" class="btn float-right"
-                                                style="color: #bebebe;">更多詳情
-                                                ></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12 pb-1">
-                                    <div class="card" style="background-color: #0061bf;">
-                                        <div class="card-body">
-                                            <h5 class="card-title" style="color: #fff62c;">已獲得任你博冠軍</h5>
-                                            <p class="card-text" style="color: #eee;">親愛的玩家您好，您已獲得任你博本次冠軍，領取10000獎金。</p>
-                                            <p class="btn disabled" style="color: #bebebe;">2020-09-17</p>
-                                            <a href="../page/Email page.html" class="btn float-right"
-                                                style="color: #bebebe;">更多詳情
-                                                ></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="uk-text-right p-2 w-100">
-                                <button class="uk-button uk-button-primary uk-modal-close" type="button">Cancel</button>
-                            </p>
-                        </div>
-                    </div> -->
-                    <!-- 原email紅點 -->
-                    <!-- <i class="fas fa-circle text-danger position-absolute"
-                        style="font-size: 0.5rem;right: 1px;top: 1px;"></i> -->
                 </div>
             </div>
-            <div class="col m-2 my-auto">
-                <div class="col-9 float-left pl-0">
-                    <div class="row">
-                        <div class="col-12 list-inline p-0">
-                            <img src="../img/登入條/money.png" alt="" class="img-fluid">
-                            <p class="list-inline-item">1,000,000</p>
-                        </div>
-                    </div>
+        </div>
+        <div class="row p-0 m-0">
+            <div class="col p-2">
+                <div class="col-12">
+                    <img src="../img/登入條/money.png" alt="" class="img-fluid">
+                    <span>1,000,000</span>
                 </div>
-                <div class="col-3 float-right text-right p-0">
-                    <!-- dropdown -->
-                    <div class="uk-inline">
-                        <button class="btn align-items-center text-light" style="margin-top: -15%;" type="button"><i
-                                class="fas fa-chevron-down"></i></button>
-                        <div class="FAQ-btn-items" uk-dropdown="mode: click">
-                            <p>123</p>
-                        </div>
+            </div>
+            <div class="col p-2">
+                <div class="col-12 text-right pr-3">
+                    <button class="btn align-items-center text-light p-0 m-0" type="button"><i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="FAQ-btn-items" uk-dropdown="mode: click">
+                        <p>123</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
+
     <script>indexLoginFooter();</script>
 
-    <!-- footer h -->
-    <div class="container-fluid d-md-none" style="min-height: 70px;"></div>
-
-    <!-- footer -->
-    <div class="container-fluid d-md-none md-footer-color fixed-bottom">
-        <div class="row py-2">
-            <div class="col text-center"><a href="../index.html"><img src="../img/手機index_img/手機最下方/包裝/首頁.png"
-                        alt=""></a></div>
-            <div class="col text-center"><a href="#"><img src="../img/手機index_img/手機最下方/包裝/平台轉帳.png" alt=""></a></div>
-            <div class="col text-center"><a href="#"><img src="../img/手機index_img/手機最下方/包裝/存款_提款.png" alt=""></a></div>
-            <div class="col text-center"><a href="../page/Promotion.html"><img
-                        src="../img/手機index_img/手機最下方/包裝/優惠活動.png" alt=""></a></div>
-            <div class="col text-center"><a href="#"><img src="../img/手機index_img/手機最下方/包裝/會員中心.png" alt=""></a></div>
-        </div>
-    </div>
+    
 
     <!-- 自創 -->
     <script src="../js/indexLogin.js"></script>
