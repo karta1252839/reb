@@ -77,16 +77,16 @@
                                             <span class="w3-small lp1">開始日期</span><span
                                                 class="w3-small text-warning pl-1 lp1">(右方點選日期)</span>
                                         </label>
-                                        <input class="w3-small px-1 py-2 text-light w-100" style="background-color: #103971;"
-                                            type="datetime-local" name="" id="">
+                                        <input class="w3-small px-1 py-2 text-light w-100"
+                                            style="background-color: #103971;" type="datetime-local" name="" id="">
                                     </form>
                                     <!-- 結束日期 -->
                                     <form class="col-6" action="uk-margin" method="post">
                                         <label>
                                             <span class="w3-small lp1">結束日期</span>
                                         </label>
-                                        <input class="w3-small px-1 py-2 text-light w-100" style="background-color: #103971;"
-                                            type="datetime-local" name="" id="">
+                                        <input class="w3-small px-1 py-2 text-light w-100"
+                                            style="background-color: #103971;" type="datetime-local" name="" id="">
                                     </form>
                                     <!-- 搜尋 -->
                                     <div class="col-12 pb-2 pt-4">
@@ -669,11 +669,11 @@
                         <p class="text-light">交易記錄</p>
                     </a>
 
-                    <div id="modal-example4" uk-modal>
+                    <div id="modal-example4" class="uk-modal-container" uk-modal>
                         <div class="uk-modal-dialog">
                             <div class="border-bottom border-dark modalBg px-3 py-1"
                                 style="border-width: 2px !important;">
-                                <h2 class="uk-modal-title ty py-2 text-center display-4">存_提款</h2>
+                                <h2 class="uk-modal-title ty py-2 text-center display-4">交易記錄</h2>
                                 <button class="uk-modal-close-default text-light" type="button" uk-close></button>
                             </div>
                             <div class="modalBg">
@@ -686,7 +686,13 @@
                                             <p class="text-center">提款</p>
                                         </div>
                                         <div class="btn col mx-1 modalBtn py-1">
-                                            <p class="text-center">綁定銀行帳戶</p>
+                                            <p class="text-center">轉點</p>
+                                        </div>
+                                        <div class="btn col mx-1 modalBtn py-1">
+                                            <p class="text-center">優惠</p>
+                                        </div>
+                                        <div class="btn col mx-1 modalBtn py-1">
+                                            <p class="text-center">下注</p>
                                         </div>
                                     </div>
 
@@ -721,7 +727,10 @@
                                                     class="btn lp1 uk-modal-close modalBtn-active d-flex centerCenter w-100"
                                                     type="button">搜尋</button>
                                             </div>
-                                            <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
+
+                                            <!--  -->
+                                            <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;"
+                                                uk-switcher>
                                                 <div class="btn col modalSBtn modalSBtn-active">
                                                     <p class=" text-center w3-small">昨日</p>
                                                 </div>
@@ -736,111 +745,1230 @@
                                                 </div>
                                             </ul>
 
-                                            <ul class="uk-switcher uk-margin">
+                                            <ul class="uk-switcher pt-3 px-3">
                                                 <!-- 昨日 -->
                                                 <div>
-                                                    <p class="col-12 centerCenter">昨日</p>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">昨日-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between" style="display: none;">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉出帳戶:</span>
+                                                                <span>Betsoft</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉入帳戶:</span>
+                                                                <span>RTG天地</span>
+                                                            </li>
+                                                            <li>
+                                                                <span>剩餘額度：</span>
+                                                                <span class="text-warning">$3,033.82</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                                 <!-- 今日 -->
                                                 <div>
-                                                    <p class="col-12 centerCenter">今日</p>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">今日-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                                 <!-- 本週 -->
                                                 <div>
-                                                    <p class="col-12 centerCenter">本週</p>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">本週-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                                 <!-- 上週 -->
                                                 <div>
-                                                    <p class="col-12 centerCenter">上週</p>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">上週-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </ul>
                                         </li>
                                         <!-- 提款 -->
                                         <li>
-                                            <div>
-                                                <div class="uk-margin">
-                                                    <label class="" for="form-horizontal-select">
-                                                        <p class="w3-small">銀行</p>
-                                                    </label>
-                                                    <div class="uk-form-controls">
-                                                        <select class="uk-select" id="form-horizontal-select">
-                                                            <option>請選擇</option>
-                                                            <option>銀行 01</option>
-                                                            <option>銀行 02</option>
-                                                            <option>銀行 03</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <form action="uk-margin" method="post">
+                                            <p class="col-12 centerCenter">提款</p>
+                                            <div class="row px-3">
+                                                <!-- 開始日期 -->
+                                                <form class="col" action="uk-margin" method="post">
                                                     <label>
-                                                        <span class="w3-small">銀行戶名</span>
+                                                        <span class="w3-small pl-1 lp1">開始日期</span>
+                                                        <span class="w3-small text-warning pl-1 lp1">(右方點選日期)</span>
                                                     </label>
-                                                    <input class="signup-input p-1" style="background-color: #103971;"
-                                                        type="text">
+                                                    <input class="w3-small py-2 p-1 text-light w-100"
+                                                        style="background-color: #103971;" type="datetime-local" name=""
+                                                        id="">
                                                 </form>
-                                                <form action="uk-margin" method="post">
-                                                    <label class="mt-2">
-                                                        <span class="w3-small">銀行帳號</span>
+                                                <!-- 結束日期 -->
+                                                <form class="col" action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small lp1">結束日期</span>
                                                     </label>
-                                                    <input class="signup-input p-1" style="background-color: #103971;"
-                                                        type="text">
-                                                </form>
-                                                <form action="uk-margin" method="post">
-                                                    <label class="mt-2">
-                                                        <span class="w3-small">金額</span>
-                                                    </label>
-                                                    <input class="signup-input p-1" style="background-color: #103971;"
-                                                        type="text">
-                                                </form>
-                                                <form action="uk-margin" method="post">
-                                                    <label class="mt-2">
-                                                        <span class="w3-small">密碼</span>
-                                                    </label>
-                                                    <input class="signup-input p-1" style="background-color: #103971;"
-                                                        type="text">
+                                                    <input class="w3-small px-1 py-2 text-light w-100"
+                                                        style="background-color: #103971;" type="datetime-local" name=""
+                                                        id="">
                                                 </form>
                                             </div>
+                                            <!-- 搜尋 -->
+                                            <div class="col-12 pb-2 pt-4">
+                                                <button
+                                                    class="btn lp1 uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                                                    type="button">搜尋</button>
+                                            </div>
+
+                                            <!--  -->
+                                            <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;"
+                                                uk-switcher>
+                                                <div class="btn col modalSBtn modalSBtn-active">
+                                                    <p class=" text-center w3-small">昨日</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">今日</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">本週</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">上週</p>
+                                                </div>
+                                            </ul>
+
+                                            <ul class="uk-switcher pt-3 px-3">
+                                                <!-- 昨日 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">昨日-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 今日 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">今日-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 本週 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">本週-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 上週 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">上週-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </ul>
                                         </li>
-                                        <!-- 綁定銀行帳戶 -->
+                                        <!-- 轉點 -->
                                         <li>
-                                            <div>
-                                                <div class="uk-margin">
-                                                    <label class="" for="form-horizontal-select">
-                                                        <p class="w3-small">銀行</p>
-                                                    </label>
-                                                    <div class="uk-form-controls">
-                                                        <select class="uk-select" id="form-horizontal-select">
-                                                            <option>請選擇</option>
-                                                            <option>銀行 01</option>
-                                                            <option>銀行 02</option>
-                                                            <option>銀行 03</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <form action="uk-margin" method="post">
+                                            <p class="col-12 centerCenter">轉點</p>
+                                            <div class="row px-3">
+                                                <!-- 開始日期 -->
+                                                <form class="col" action="uk-margin" method="post">
                                                     <label>
-                                                        <span class="w3-small">銀行戶名</span>
+                                                        <span class="w3-small pl-1 lp1">開始日期</span>
+                                                        <span class="w3-small text-warning pl-1 lp1">(右方點選日期)</span>
                                                     </label>
-                                                    <input class="signup-input p-1" style="background-color: #103971;"
-                                                        type="text">
+                                                    <input class="w3-small py-2 p-1 text-light w-100"
+                                                        style="background-color: #103971;" type="datetime-local" name=""
+                                                        id="">
                                                 </form>
-                                                <form action="uk-margin" method="post">
-                                                    <label class="mt-2">
-                                                        <span class="w3-small">銀行帳號</span>
+                                                <!-- 結束日期 -->
+                                                <form class="col" action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small lp1">結束日期</span>
                                                     </label>
-                                                    <input class="signup-input p-1" style="background-color: #103971;"
-                                                        type="text">
+                                                    <input class="w3-small px-1 py-2 text-light w-100"
+                                                        style="background-color: #103971;" type="datetime-local" name=""
+                                                        id="">
                                                 </form>
                                             </div>
+                                            <!-- 搜尋 -->
+                                            <div class="col-12 pb-2 pt-4">
+                                                <button
+                                                    class="btn lp1 uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                                                    type="button">搜尋</button>
+                                            </div>
+
+                                            <!--  -->
+                                            <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;"
+                                                uk-switcher>
+                                                <div class="btn col modalSBtn modalSBtn-active">
+                                                    <p class=" text-center w3-small">昨日</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">今日</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">本週</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">上週</p>
+                                                </div>
+                                            </ul>
+
+                                            <ul class="uk-switcher pt-3 px-3">
+                                                <!-- 昨日 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">昨日-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 今日 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">今日-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 本週 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">本週-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 上週 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">上週-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <!-- 優惠 -->
+                                        <li>
+                                            <p class="col-12 centerCenter">優惠</p>
+                                            <div class="row px-3">
+                                                <!-- 開始日期 -->
+                                                <form class="col" action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small pl-1 lp1">開始日期</span>
+                                                        <span class="w3-small text-warning pl-1 lp1">(右方點選日期)</span>
+                                                    </label>
+                                                    <input class="w3-small py-2 p-1 text-light w-100"
+                                                        style="background-color: #103971;" type="datetime-local" name=""
+                                                        id="">
+                                                </form>
+                                                <!-- 結束日期 -->
+                                                <form class="col" action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small lp1">結束日期</span>
+                                                    </label>
+                                                    <input class="w3-small px-1 py-2 text-light w-100"
+                                                        style="background-color: #103971;" type="datetime-local" name=""
+                                                        id="">
+                                                </form>
+                                            </div>
+                                            <!-- 搜尋 -->
+                                            <div class="col-12 pb-2 pt-4">
+                                                <button
+                                                    class="btn lp1 uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                                                    type="button">搜尋</button>
+                                            </div>
+
+                                            <!--  -->
+                                            <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;"
+                                                uk-switcher>
+                                                <div class="btn col modalSBtn modalSBtn-active">
+                                                    <p class=" text-center w3-small">昨日</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">今日</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">本週</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">上週</p>
+                                                </div>
+                                            </ul>
+
+                                            <ul class="uk-switcher pt-3 px-3">
+                                                <!-- 昨日 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">昨日-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 今日 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">今日-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 本週 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">本週-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 上週 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">上週-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <!-- 下注 -->
+                                        <li>
+                                            <p class="col-12 centerCenter">下注</p>
+                                            <div class="row px-3">
+                                                <!-- 開始日期 -->
+                                                <form class="col" action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small pl-1 lp1">開始日期</span>
+                                                        <span class="w3-small text-warning pl-1 lp1">(右方點選日期)</span>
+                                                    </label>
+                                                    <input class="w3-small py-2 p-1 text-light w-100"
+                                                        style="background-color: #103971;" type="datetime-local" name=""
+                                                        id="">
+                                                </form>
+                                                <!-- 結束日期 -->
+                                                <form class="col" action="uk-margin" method="post">
+                                                    <label>
+                                                        <span class="w3-small lp1">結束日期</span>
+                                                    </label>
+                                                    <input class="w3-small px-1 py-2 text-light w-100"
+                                                        style="background-color: #103971;" type="datetime-local" name=""
+                                                        id="">
+                                                </form>
+                                            </div>
+                                            <!-- 搜尋 -->
+                                            <div class="col-12 pb-2 pt-4">
+                                                <button
+                                                    class="btn lp1 uk-modal-close modalBtn-active d-flex centerCenter w-100"
+                                                    type="button">搜尋</button>
+                                            </div>
+
+                                            <!--  -->
+                                            <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;"
+                                                uk-switcher>
+                                                <div class="btn col modalSBtn modalSBtn-active">
+                                                    <p class=" text-center w3-small">昨日</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">今日</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">本週</p>
+                                                </div>
+                                                <div class="btn col modalSBtn">
+                                                    <p class=" text-center w3-small">上週</p>
+                                                </div>
+                                            </ul>
+
+                                            <ul class="uk-switcher pt-3 px-3">
+                                                <!-- 昨日 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">昨日-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 今日 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">今日-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 本週 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">本週-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <!-- 上週 -->
+                                                <div>
+                                                    <!-- 尚無任何記錄 -->
+                                                    <p class="col-12 centerCenter w3-round-large py-2"
+                                                        style="background-color: #1e6cd8;">上週-尚無任何記錄</p>
+                                                    <!-- 資訊 -->
+                                                    <div class="pt-3 Announcement">
+                                                        <ul class="FAQ-btn px-3 justify-content-between">
+                                                            <li class="lp1">
+                                                                <span>單號:</span>
+                                                                <span>xxxxx</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>狀態:</span>
+                                                                <span style="color: #18FFFF;">成功</span>
+                                                            </li>
+                                                            <li class="lp1">
+                                                                <span>轉帳金額:</span>
+                                                                <span class="text-warning">$1000</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="date">
+                                                                    <script>
+                                                                        var x = new Date().toLocaleString();
+                                                                        $(".date").text(x);
+                                                                    </script>
+                                                                </span>
+                                                                <span class="pl-2"><i class="fas fa-arrows-alt-v"
+                                                                        style="margin-top: -2.5%;"></i></span>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="FAQ-btn-items p-5" style="display: none;">
+                                                            <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 頁碼 -->
+                                                    <div class="text-center pt-3">
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-left"></i>
+                                                        </div>
+                                                        <div class="btn text-white-50 modalBtn">1</div>
+                                                        <div class="btn text-white-50 modalBtn">2</div>
+                                                        <div class="btn text-white-50 modalBtn">3</div>
+                                                        <div class="btn text-white-50 modalBtn">4</div>
+                                                        <div class="btn text-white-50 modalBtn">5</div>
+                                                        <div class="btn text-white-50 modalBtn"><i class="fas fa-caret-right"></i>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </ul>
                                         </li>
                                     </ul>
-                                    <div class="py-2 px-4"><button
-                                            class="uk-button uk-modal-close modalBtn-active d-flex centerCenter w-100"
-                                            type="button">確認送出</button></div>
-
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <!-- 5.變更資料 -->
@@ -1030,6 +2158,18 @@
 
     <!-- 自創 -->
     <script src="../js/indexLogin.js"></script>
+    <!-- toggle -->
+    <script>
+        $(document).ready(
+            function () {
+                $('.Announcement ul').click(
+                    function () {
+                        $(this).next().toggle();
+                    }
+                )
+            }
+        )
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
