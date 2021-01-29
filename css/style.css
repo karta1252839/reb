@@ -859,3 +859,10 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
 .lp2{
     letter-spacing: .2em;
 }
+.slot-bg {
+    background: linear-gradient(180deg, #022053 0%, #0b4598 25%, #0b4598 75%, #022053 100%);
+    border: 1px solid #f7b500;
+    border-width: 3.5px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 13px #f7b500;
+}
