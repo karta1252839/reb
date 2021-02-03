@@ -38,6 +38,10 @@
             border: transparent;
             font-size: 1.1rem;
         }
+
+        .card_c:hover{
+            mix-blend-mode: normal;
+        }
     </style>
 </head>
 
@@ -55,29 +59,29 @@
             </div>
             <!-- 遊戲廠商區 -->
             <div class="row p-3 centerCenter" uk-switcher>
-                <div class="col-4 col-sm-4 col-md px-1 ">
+                <div class="col-4 col-sm-4 col-md px-1 card_c uk-blend-overlay">
                     <a href="#">
-                        <img class="card_1 w-100 px-3" src="../img/桌機各分頁img/捕魚接機Fish/gameBtn/card0off.png" alt="">
+                        <img class="card_1 w-100 px-3" src="../img/桌機各分頁img/捕魚接機Fish/gameBtn/card0.png" alt="">
                     </a>
                 </div>
-                <div class="col-4 col-sm-4 col-md px-1">
+                <div class="col-4 col-sm-4 col-md px-1 card_c uk-blend-overlay">
                     <a href="#">
-                        <img class="card_2 w-100 px-3" src="../img/桌機各分頁img/捕魚接機Fish/gameBtn/card1off.png" alt="">
+                        <img class="card_2 w-100 px-3" src="../img/桌機各分頁img/捕魚接機Fish/gameBtn/card1.png" alt="">
                     </a>
                 </div>
-                <div class="col-4 col-sm-4 col-md px-1">
+                <div class="col-4 col-sm-4 col-md px-1 card_c uk-blend-overlay">
                     <a href="#">
-                        <img class="card_3 w-100 px-3" src="../img/桌機各分頁img/捕魚接機Fish/gameBtn/card2off.png" alt="">
+                        <img class="card_3 w-100 px-3" src="../img/桌機各分頁img/捕魚接機Fish/gameBtn/card2.png" alt="">
                     </a>
                 </div>
-                <div class="col-4 col-sm-4 col-md px-1">
+                <div class="col-4 col-sm-4 col-md px-1 card_c uk-blend-overlay">
                     <a href="#">
-                        <img class="card_4 w-100 px-3" src="../img/桌機各分頁img/捕魚接機Fish/gameBtn/card3off.png" alt="">
+                        <img class="card_4 w-100 px-3" src="../img/桌機各分頁img/捕魚接機Fish/gameBtn/card3.png" alt="">
                     </a>
                 </div>
-                <div class="col-4 col-sm-4 col-md px-1">
+                <div class="col-4 col-sm-4 col-md px-1 card_c uk-blend-overlay">
                     <a href="#">
-                        <img class="card_5 w-100 px-3" src="../img/桌機各分頁img/捕魚接機Fish/gameBtn/card4off.png" alt="">
+                        <img class="card_5 w-100 px-3" src="../img/桌機各分頁img/捕魚接機Fish/gameBtn/card4.png" alt="">
                     </a>
                 </div>
             </div>
@@ -297,20 +301,26 @@
     <script>PCFooter();</script>
 
     <!-- 自創 -->
-    <script >
+    <script>
         $(document).ready(function () {
-            var cards = ["card0", "card1", "card2", "card3", "card4", "card5"];
-            for (let i = 0; i < cards.length; i++) {
-                $('.card_' + i + '').hover(function () {
-                    $(this).attr('src', '../img/桌機各分頁img/捕魚接機Fish/gameBtn/card' + (i - 1) + '.png');
-                    // $(this).attr('src', '../img/桌機各分頁img/電子遊戲_Slot/gameBtn/card' + (i - 1) + '.png');
-                }, function () {
-                    $(this).attr('src', '../img/桌機各分頁img/捕魚接機Fish/gameBtn/card' + (i - 1) + 'off.png');
-                    // $(this).attr('src', '../img/桌機各分頁img/電子遊戲_Slot/gameBtn/card' + (i - 1) + 'off.png');
-                })
-            }
+            // var cards = ["card0", "card1", "card2", "card3", "card4", "card5", "card6", "card7"];
+            // for (let i = 0; i < cards.length; i++) {
+            //     $('.card_' + i + '').click(function () {
+            //         $(this).attr('src', '../img/桌機各分頁img/捕魚接機Fish/gameBtn/card' + (i - 1) + '.png');
+            //     }, function () {
+
+            //         $(this).attr('src', '../img/桌機各分頁img/捕魚接機Fish/gameBtn/card' + (i - 1) + 'off.png');
+            //     })
+            // }
+            $('.card_c').click(
+                function(){
+                    $(this).siblings().addClass('uk-blend-overlay');
+                    $(this).toggleClass('uk-blend-overlay');
+                }
+            )
         })
     </script>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
