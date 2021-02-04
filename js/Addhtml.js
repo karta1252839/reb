@@ -554,10 +554,10 @@ function indexLoginHeader() {
 // 登入頁面 Footer
 function indexLoginFooter() {
     document.writeln("<!-- footer h -->");
-    document.writeln("    <div class=\'container-fluid d-md-none\' style=\'min-height: 70px;\'></div>");
-    document.writeln("");
+    document.writeln("    <div class=\'container-fluid d-md-none\' id=\'footerH\'></div>");
+    document.writeln("        ");
     document.writeln("    <!-- footer -->");
-    document.writeln("    <div class=\'container-fluid d-md-none md-footer-color fixed-bottom\'>");
+    document.writeln("    <div class=\'container-fluid d-md-none md-footer-color fixed-bottom\' id=\'footerHC\'>");
     document.writeln("        <div class=\'row py-2\'>");
     document.writeln("            <div class=\'col text-center\'><a href=\'../index.html\'><img class=\'w-100\'");
     document.writeln("                        src=\'../img/手機index_img/手機最下方/包裝/首頁登入.png\' alt=\'\'></a></div>");
@@ -571,4 +571,5 @@ function indexLoginFooter() {
     document.writeln("                        alt=\'\'></a></div>");
     document.writeln("        </div>");
     document.writeln("    </div>");
+    document.writeln("    <script src=\'../js/footerH.js\'></script>");
 }
