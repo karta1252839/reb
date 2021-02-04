@@ -45,7 +45,7 @@
         <!-- Title -->
         <img src="../img/Featurespage/MemberNotification/Title.png" alt="" class="w-100 p-3">
         <!-- switcher -->
-        <div class="p-2">
+        <div class="py-2">
             <div class="row mx-1 modalBtn-c" uk-switcher>
                 <div class="uk-button col modalBtn p-0 mx-1 modalBtn-active" style="border-radius: 5px;">
                     <p class="text-center py-1 ">個人訊息</p>
@@ -61,34 +61,52 @@
                     <ul class=" pt-3 px-3">
                         <div>
                             <!-- 尚無任何記錄 -->
-                            <p class="col-12 centerCenter w3-round-large py-2 text-light" style="background-color: #1e6cd8;">
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
                                 個人訊息-尚無任何記錄</p>
                             <!-- 資訊 -->
                             <div class="pt-3 Announcement">
-                                <ul class="FAQ-btn px-3 justify-content-between">
-                                    <!--  -->
-                                    <li>
+                                <ul class="FAQ-btn row m-0 flex-wrap">
+                                    <li class="lp1 col-2">
                                         <span class="text-warning bg-primary w3-round-xxlarge centerCenter py-1 px-2"><i
                                                 class="fas fa-volume-down"></i></span>
-                                        <span class="pl-2 lp1">提款規則變更通知</span>
                                     </li>
-                                    <!--  -->
-                                    <li>
-                                        <span class="date" style="font-size: 0.8em;opacity: .5;">
+
+                                    <li class="col-8">
+                                        <p class="lp1">提款規則變更通知</p>
+                                        <p class="date lp1 text-white-50 w3-small" style="font-size: 0.75em;">
                                             <script>
                                                 var x = new Date().toLocaleString();
                                                 $(".date").text(x);
                                             </script>
-                                        </span>
-                                        <span class="pl-2"><i class="fas fa-arrows-alt-v"
-                                                style="margin-top: -2.5%;"></i></span>
+                                        </p>
+                                    </li>
+                                    <li class="lp1 col-1 mr-1">
+                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                            style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
-                                <div class="FAQ-btn-items p-5" style="display: none;">
-                                    <p>開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
-                                    </p>
-                                </div>
+                                <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
+                                    style="display: none;background:#103971;">
+                                    <li class="lp1 col-12">
+                                        <span class="w3-small">單號:</span>
+                                        <span class="w3-small">xxxxx</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="w3-small">轉出帳戶:</span>
+                                        <span class="w3-small">Betsoft</span>
+                                    </li>
+                                    <li class="lp1 col-12">
+                                        <span class="w3-small">轉入帳戶:</span>
+                                        <span class="w3-small">RTG天地</span>
+                                    </li>
+                                    <li class="col-12">
+                                        <span class="w3-small">剩餘額度：</span>
+                                        <span class="text-warning w3-small">$3,033.82</span>
+                                    </li>
+                                </ul>
                             </div>
+
                         </div>
                     </ul>
                 </li>
@@ -96,22 +114,22 @@
                 <li>
                     <ul class="row p-0 my-0 mx-1 modalBtn-e" uk-switcher>
                         <div class="btn col-2 mx-1 p-0 modalSBtn modalSBtn-active">
-                            <p class=" text-center w3-small pt-1 pb-2">全部</p>
+                            <p class="text-center w3-small pt-1 pb-2">全部</p>
                         </div>
                         <div class="btn col-2 mx-1 p-0 modalSBtn">
-                            <p class=" text-center w3-small pt-1 pb-2">系統</p>
+                            <p class="text-center w3-small pt-1 pb-2">系統</p>
                         </div>
                         <div class="btn col-2 mx-1 p-0 modalSBtn">
-                            <p class=" text-center w3-small pt-1 pb-2">特殊</p>
+                            <p class="text-center w3-small pt-1 pb-2">特殊</p>
                         </div>
                         <div class="btn col-2 mx-1 p-0 modalSBtn">
-                            <p class=" text-center w3-small pt-1 pb-2">存提款</p>
+                            <p class="text-center w3-small pt-1 pb-2">存提款</p>
                         </div>
                         <div class="btn col-2 mx-1 p-0 modalSBtn">
-                            <p class=" text-center w3-small pt-1 pb-2">銀行維護</p>
+                            <p class="text-center w3-small pt-1 pb-2">銀行維護</p>
                         </div>
                         <div class="btn col-2 mx-1 p-0 modalSBtn mt-1">
-                            <p class=" text-center w3-small pt-1 pb-2">優惠</p>
+                            <p class="text-center w3-small pt-1 pb-2">優惠</p>
                         </div>
                     </ul>
 
@@ -119,7 +137,8 @@
                         <!-- 全部 -->
                         <div>
                             <!-- 尚無任何記錄 -->
-                            <p class="col-12 centerCenter w3-round-large py-2 text-light" style="background-color: #1e6cd8;">
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
                                 全部-尚無任何記錄</p>
                             <!-- 資訊 -->
                             <div class="pt-3 Announcement">
@@ -151,7 +170,8 @@
                         <!-- 系統 -->
                         <div>
                             <!-- 尚無任何記錄 -->
-                            <p class="col-12 centerCenter w3-round-large py-2 text-light" style="background-color: #1e6cd8;">
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
                                 系統-尚無任何記錄</p>
                             <!-- 資訊 -->
                             <div class="pt-3 Announcement">
@@ -183,7 +203,8 @@
                         <!-- 特殊 -->
                         <div>
                             <!-- 尚無任何記錄 -->
-                            <p class="col-12 centerCenter w3-round-large py-2 text-light" style="background-color: #1e6cd8;">
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
                                 特殊-尚無任何記錄</p>
                             <!-- 資訊 -->
                             <div class="pt-3 Announcement">
@@ -215,7 +236,8 @@
                         <!-- 存提款 -->
                         <div>
                             <!-- 尚無任何記錄 -->
-                            <p class="col-12 centerCenter w3-round-large py-2 text-light" style="background-color: #1e6cd8;">
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
                                 存提款-尚無任何記錄</p>
                             <!-- 資訊 -->
                             <div class="pt-3 Announcement">
@@ -247,7 +269,8 @@
                         <!-- 銀行維護 -->
                         <div>
                             <!-- 尚無任何記錄 -->
-                            <p class="col-12 centerCenter w3-round-large py-2 text-light" style="background-color: #1e6cd8;">
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
                                 銀行維護-尚無任何記錄</p>
                             <!-- 資訊 -->
                             <div class="pt-3 Announcement">
@@ -279,7 +302,8 @@
                         <!-- 優惠 -->
                         <div>
                             <!-- 尚無任何記錄 -->
-                            <p class="col-12 centerCenter w3-round-large py-2 text-light" style="background-color: #1e6cd8;">
+                            <p class="col-12 centerCenter w3-round-large py-2 text-light"
+                                style="background-color: #1e6cd8;">
                                 優惠-尚無任何記錄</p>
                             <!-- 資訊 -->
                             <div class="pt-3 Announcement">
