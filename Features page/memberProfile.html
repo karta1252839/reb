@@ -32,7 +32,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>DepositWthdrawal 存_提款</title>
+    <title>memberProfile 會員資料</title>
     <style>
 
     </style>
@@ -40,26 +40,38 @@
 
 <body>
     <script>indexLoginHeader();</script>
-    <!-- 存_提款-------------------------------------------------------------------------- -->
+    <!-- 會員資料-------------------------------------------------------------------------- -->
     <div class="container-fluid d-md-none" id="m-bgc-color" style="min-height: 650px;">
-        <img src="../img/Featurespage/DepositWthdrawal/Title1.png" alt="" class="w-100 p-3">
+        <!-- Title -->
+        <img src="../img/Featurespage/MemberCentre/memberProfile/Title.png" alt="" class="w-100 p-3">
         <!--  -->
-        <div class="container mt-3">
-            <a href="./deposit.html" class="btn col-12 modalBtn p-0 my-2 modalBtn-active w3-round-large py-2" style="height: auto;">
-                <!-- <img src="../img/桌機各分頁img/indexLogin_登入條/1_各廰流水.png" alt=""> -->
-                <span class="pl-3 text-center lp1 w3-large">存款專區</span>
-            </a>
-            <a href="./Withdrawal.html" class="btn col-12 modalBtn p-0 my-2 modalBtn-active w3-round-large" style="height: auto;">
-                <p class="text-center py-2 lp1 w3-large">提款專區</p>
-            </a>
-            <a href="./BindBankAccount.html" class="btn col-12 modalBtn p-0 my-2 modalBtn-active w3-round-large" style="height: auto;">
-                <p class="text-center py-2 lp1 w3-large">綁定銀行帳戶</p>
-            </a>
+        <div class="p-2 text-black-50">
+            <!--  -->
+            <form action="uk-margin" method="post">
+                <label class="mt-2">
+                    <span class="w3-small">用戶名</span>
+                </label>
+                <input class="signup-input p-1" style="background-color: #103971;" type="text">
+            </form>
+            <!--  -->
+            <form action="uk-margin" method="post">
+                <label class="mt-2">
+                    <span class="w3-small">手機號碼</span>
+                </label>
+                <input class="signup-input p-1" style="background-color: #103971;" type="text">
+            </form>
+            <!--  -->
+            <form action="uk-margin" method="post">
+                <label class="mt-2">
+                    <span class="w3-small">LineID</span>
+                </label>
+                <input class="signup-input p-1" style="background-color: #103971;" type="text">
+            </form>
+            <!--  -->
+            <div class="py-3"><button class="uk-button modalBtn-active d-flex centerCenter w-100"
+                    type="button" style="border-radius: 25px;">修改請洽客服 前往<i class="far fa-hand-point-right pl-3"></i></button></div>
         </div>
     </div>
-    <script>
-        
-    </script>
 
     <script>indexLoginFooter();</script>
 

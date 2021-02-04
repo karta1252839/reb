@@ -27,12 +27,12 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
 
     <!-- JQ -->
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="../jquery/jquery-3.5.1.min.js"></script>
     <script src="../js/Addhtml.js"></script>
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>DepositWthdrawal 存_提款</title>
+    <title>BindBankAccount 綁定銀行帳戶</title>
     <style>
 
     </style>
@@ -40,26 +40,45 @@
 
 <body>
     <script>indexLoginHeader();</script>
-    <!-- 存_提款-------------------------------------------------------------------------- -->
+    <!-- 綁定銀行帳戶-------------------------------------------------------------------------- -->
     <div class="container-fluid d-md-none" id="m-bgc-color" style="min-height: 650px;">
-        <img src="../img/Featurespage/DepositWthdrawal/Title1.png" alt="" class="w-100 p-3">
+        <!-- Title -->
+        <img src="../img/Featurespage/DepositWthdrawal/Title.png" alt="" class="w-100 p-3">
         <!--  -->
-        <div class="container mt-3">
-            <a href="./deposit.html" class="btn col-12 modalBtn p-0 my-2 modalBtn-active w3-round-large py-2" style="height: auto;">
-                <!-- <img src="../img/桌機各分頁img/indexLogin_登入條/1_各廰流水.png" alt=""> -->
-                <span class="pl-3 text-center lp1 w3-large">存款專區</span>
-            </a>
-            <a href="./Withdrawal.html" class="btn col-12 modalBtn p-0 my-2 modalBtn-active w3-round-large" style="height: auto;">
-                <p class="text-center py-2 lp1 w3-large">提款專區</p>
-            </a>
-            <a href="./BindBankAccount.html" class="btn col-12 modalBtn p-0 my-2 modalBtn-active w3-round-large" style="height: auto;">
-                <p class="text-center py-2 lp1 w3-large">綁定銀行帳戶</p>
-            </a>
+        <div class="p-2 text-black-50">
+            <!--  -->
+            <div class="uk-margin">
+                <label class="" for="form-horizontal-select">
+                    <p class="w3-small">銀行帳戶</p>
+                </label>
+                <div class="uk-form-controls">
+                    <select class="uk-select" id="form-horizontal-select">
+                        <option>---</option>
+                        <option>銀行 01</option>
+                        <option>銀行 02</option>
+                        <option>銀行 03</option>
+                    </select>
+                </div>
+            </div>
+            <!--  -->
+            <form action="uk-margin" method="post">
+                <label class="mt-2">
+                    <span class="w3-small">銀行戶名</span>
+                </label>
+                <input class="signup-input p-1" style="background-color: #103971;" type="text">
+            </form>
+            <!--  -->
+            <form action="uk-margin" method="post">
+                <label class="mt-2">
+                    <span class="w3-small">銀行帳號</span>
+                </label>
+                <input class="signup-input p-1" style="background-color: #103971;" type="text">
+            </form>
+            <!--  -->
+            <div class="py-3"><button class="uk-button modalBtn-active d-flex centerCenter w-100"
+                    type="button">確認送出</button></div>
         </div>
     </div>
-    <script>
-        
-    </script>
 
     <script>indexLoginFooter();</script>
 
