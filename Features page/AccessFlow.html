@@ -27,27 +27,114 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
 
     <!-- JQ -->
-    <script src="../jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="../js/Addhtml.js"></script>
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>存取流程_AccessFlow</title>
+    <title>AccessFlow 存取流程</title>
     <style>
+        .lin-list ul li {
+            list-style: decimal;
+            font-size: 0.8em;
+            letter-spacing: .1em;
+        }
 
+        .lin2-list ul li {
+            list-style: disc;
+            font-size: 1em;
+            letter-spacing: .1em;
+        }
     </style>
 </head>
 
 <body>
     <script>indexLoginHeader();</script>
-    <div class="bg-primary">存取流程_AccessFlow</div>
+    <!-- 存取流程-------------------------------------------------------------------------- -->
+    <div class="container-fluid d-md-none" id="m-bgc-color" style="min-height: 650px;">
+        <!-- Title -->
+        <img src="../img/Featurespage/AccessFlow/Title.png" alt="" class="w-100 p-3">
+        <!--  -->
+        <div class="p-3">
+            <div class="row mx-1 modalBtn-c" uk-switcher>
+                <div class="uk-button col mx-1 modalBtn p-0 modalBtn-active" style="height: auto;border-radius: 10px;">
+                    <p class="text-center py-3">存款步驟</p>
+                </div>
+                <div class="uk-button col mx-1 modalBtn p-0" style="height: auto;border-radius: 10px;">
+                    <p class="text-center py-3">提款規定</p>
+                </div>
+            </div>
 
+            <ul class="uk-switcher uk-margin">
+                <!-- 存款 -->
+                <li>
+                    <div class="border px-2 border-dark w3-round-large" style="background-color: #103971;">
+                        <p class="text-justify text-light p-3 lp1" style="opacity: .8;">卡利娛樂城提供線上儲值及超商儲值，若您已經註冊
+                            並成為本網站會員，並綁定銀行帳戶，就可依照此步驟進行存款。此為線上儲值的存款步驟。
+                        </p>
+                    </div>
+                    <div class="px-0 w3-round-large my-3">
+                        <img src="../img/Featurespage/AccessFlow/1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="mx-4 lin-list">
+                        <ul class="text-justify w3-text-indigo">
+                            <li>至「會員存款」介面。</li>
+                            <li>選擇「信用卡」或「銀行」。(信用卡需收8%手續費、銀行轉入虛擬帳號)
+                            </li>
+                            <li>輸入金額。</li>
+                            <li>若為以優惠方案儲值，請選擇對應的優惠名稱。</li>
+                            <li>點擊提交送出資料。</li>
+                        </ul>
+                    </div>
+
+                </li>
+                <!-- 提款 -->
+                <li>
+                    <div class="border p-2 border-dark w3-round-large lin2-list" style="background-color: #103971;">
+                        <div class="row centerCenter text-light py-2 border-bottom border-light">
+                            <div class="col">出款條件</div>
+                            <div class="col">出款次數</div>
+                            <div class="col">出款收取％數</div>
+                        </div>
+                        <div class="row centerCenter text-light py-2 border-bottom border-light">
+                            <div class="col">一般會員</div>
+                            <div class="col">一周可申請3次取款，免手續費</div>
+                            <div class="col">第四次取款，收取1%手續費</div>
+                        </div>
+                        <div class="row centerCenter text-light py-2">
+                            <div class="col">VIP會員</div>
+                            <div class="col">一天可申請1次取款，免手續費</div>
+                            <div class="col">第二次取款，收取1%手續費</div>
+                        </div>
+                    </div>
+                    <div class="border px-2 border-dark w3-round-large lin2-list my-3" style="background-color: #103971;">
+                        <p class="w3-xlarge text-center text-warning lp1 pt-3">取款注意事項</p>
+                        <ul class="text-justify text-light mx-4 px-2 py-3" style="opacity: 0.8;">
+                            <li>一般存款，且沒有享有活動優惠情況下，玩家只需達到1倍流水即可出款囉。</li>
+                            <li>免手續費服務：一天限1次，一週最多3次。超過之次數，將收取1%、2%手續費…最高收取5%。</li>
+                            <li>玩家首次出金需依照客服指示提供身分證、存摺等資訊，且傳送圖片檔案供客服確認，以保障會員資安，有任何相關疑問請洽客服。</li>
+                            <li>★超過免費次數，最少收取手續費60元</li>
+                            <li>★假如手續費%超過60元，依手續費%計算</li>
+                        </ul>
+                    </div>
+                    <div class="border p-2 border-dark w3-round-large lin2-list" style="background-color: #103971;">
+                        <div class="row centerCenter text-light py-2 border-bottom border-light">
+                            <div class="col centerCenter">申請VIP存款帳戶條件</div>
+                        </div>
+                        <div class="row centerCenter text-light py-2">
+                            <div class="col centerCenter">申請VIP存款帳戶條件，麻煩請洽線上客服申請！</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
 
     <script>indexLoginFooter();</script>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <!-- 自創 -->
+    <script src="../js/indexLogin.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
