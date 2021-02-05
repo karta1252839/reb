@@ -14,7 +14,7 @@ btnHome1.onclick = function () {
 var btnHome2 = document.getElementById('btnHome2');
 var btnHome_items1 = document.getElementById('btnHome_items1');
 var btn1 = 0;
-btnHome2.onclick = function (){
+btnHome2.onclick = function () {
     // alert('123');
     if (btn1 == 0) {
         btnHome_items1.style.display = "block";
