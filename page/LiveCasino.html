@@ -35,7 +35,9 @@
 
     <title>LiveCasino</title>
     <style>
-
+        .linScrollbarHide::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 
@@ -95,10 +97,12 @@
             <!--  -->
             <div class="uk-inline pt-3 position-relative">
                 <img src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/ia_100000067.png" alt="" class="img-fluid">
-                <div class="uk-position-top-right position-absolute" style="top: 50%;transform: translateY(-50%); right: 0%;width: 55%;max-height: 270px;overflow-y: auto;">
-                    <p class="text-warning text-justify lp1 w3-xlarge" style="font-size: 1.3em !important;">任你博百家樂-最安全的網路投注平台</p>
+                <div class="uk-position-top-right position-absolute linScrollbarHide"
+                    style="top: 50%;transform: translateY(-50%); right: 0%;width: 55%;max-height: 270px;overflow-y: auto;">
+                    <p class="text-warning text-justify lp1 w3-xlarge" style="font-size: 1.3em !important;">
+                        任你博百家樂-最安全的網路投注平台</p>
                     <p class="text-light text-justify lp1">百家樂(Baccarat)為一款使用撲克牌來進行的博弈遊戲，也是現在任你博娛樂城主打的遊戲種類之一。</p>
-                    <p class="text-light text-justify lp1">
+                    <p class="text-light text-justify lp1 ">
                         線上百家樂越來越發達，遊玩方式也越來越多樣，任你博百家樂提供四大品牌：DG、SA沙龍、歐博、WM百家樂，希望能帶給您優質的線上賭場體驗，百家樂預測程式app、詐騙娛樂城名單詳見任你博部落格。
                     </p>
                 </div>
@@ -113,7 +117,7 @@
                 <img class="img-fluid col-6" src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/WM.png" alt="">
             </div>
             <!-- blog -->
-            <div class="row py-3" style="color: rgba(255, 255, 255, 0.8) !important;">
+            <div class="row py-3 clearfix" style="color: rgba(255, 255, 255, 0.8) !important;">
                 <div class="col-12 mx-1 modalBg py-4 px-5 w3-round-large">
                     <p class="w3-large pb-2 text-justify lin-TColor">用百家樂預測程式就可以贏錢？被騙都是有理由的！</p>
                     <p class="w3-small">百家樂預測程式是真的存在的嗎？網路上流傳著形形色色的破解外掛，是否有效？背後又存在著哪些內幕？...</p>
@@ -141,7 +145,7 @@
     <!-- 手機版------------------------------------ -->
     <div class="container-fluid d-md-none" id="m-bgc-color">
         <div class="text-center">
-            <img class="w-100 p-4" src="../img/手機各分頁img/真人百家樂_LiveCasino/Title.png" alt="">
+            <img class="img-fluid p-4" src="../img/手機各分頁img/真人百家樂_LiveCasino/Title.png" alt="">
             <a href="https://www.allbetgame.net/?language=zh_TW&sessionId=456d5a61cf604aeb955a1da1e1919a89&loginType=2&token=ac2d407fe0ed"
                 target="_blank">
                 <img class="w-100 px-3" src="../img/手機各分頁img/真人百家樂_LiveCasino/AB.png" alt="">
@@ -155,10 +159,61 @@
                 <img class="w-100 px-3" src="../img/手機各分頁img/真人百家樂_LiveCasino/SA.png" alt="">
             </a>
             <a href="https://wmtw.s5t4c.cn/?sid=331013A60005A168M72394&ui=0&lang=tw&co=wm" target="_blank">
-                <img class="w-100 px-3 pb-5" src="../img/手機各分頁img/真人百家樂_LiveCasino/WM.png" alt="">
+                <img class="w-100 px-3" src="../img/手機各分頁img/真人百家樂_LiveCasino/WM.png" alt="">
             </a>
+            <!--  -->
+            <div class="">
+                <div class="p-3">
+                    <div class="row mx-1 modalBtn-c" uk-switcher>
+                        <div class="btn col mx-1 modalBtn p-0 modalBtn-active">
+                            <p class="text-center pt-1">歐博</p>
+                        </div>
+                        <div class="btn col mx-1 modalBtn p-0">
+                            <p class="text-center pt-1">SA</p>
+                        </div>
+                        <div class="btn col mx-1 modalBtn p-0">
+                            <p class="text-center pt-1">DG</p>
+                        </div>
+                        <div class="btn col mx-1 modalBtn p-0">
+                            <p class="text-center pt-1">WM</p>
+                        </div>
+                    </div>
+
+                    <ul class="uk-switcher uk-margin">
+                        <!-- 歐伯 -->
+                        <li>
+                            <img src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/AB.jpg" alt="" class="w-100">
+                        </li>
+                        <!-- SA -->
+                        <li>
+                            <img src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/SA.png" alt="" class="w-100">
+                        </li>
+                        <!-- DG -->
+                        <li>
+                            <img src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/DG.png" alt="" class="w-100">
+                        </li>
+                        <!-- WM -->
+                        <li>
+                            <img src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/WM.png" alt="" class="w-100">
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="col-12 py-3">
+                <img src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/ia_100000067.png" alt="">
+                <p class="text-danger h4 text-center py-1 text-monospace">任你博百家樂-最安全的網路投注平台</p>
+                <p class="text-justify pb-1">百家樂(Baccarat)為一款使用撲克牌來進行的博弈遊戲，也是現在任你博娛樂城主打的遊戲種類之一。</p>
+                <p class="text-justify">線上百家樂越來越發達，遊玩方式也越來越多樣，任你博百家樂提供四大品牌：DG、SA沙龍、歐博、WM百家樂，希望能帶給您優質的線上賭場體驗，百家樂預測程式app、詐騙娛樂城名單詳見任你博部落格。</p>
+            </div>
+            <div class="col-12 py-3">
+                <img class="img-fluid py-1" src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/AB.jpg" alt="">
+                <img class="img-fluid py-1" src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/SA.png" alt="">
+                <img class="img-fluid py-1" src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/DG.png" alt="">
+                <img class="img-fluid py-1" src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/WM.png" alt="">
+            </div> -->
             <!-- blog -->
-            <div class="col-12 pb-3">
+            <div class="col-12 pb-3 clearfix">
                 <div class="card" style="width: 100%;background-color: #0061bf;">
                     <div class="card-body">
                         <h5 class="card-title" style="color: #fff62c;">歐博app下載教學</h5>
@@ -178,6 +233,9 @@
     <!-- footer -->
     <script>PCFooter();</script>
     <script>MDFooter();</script>
+
+    <!-- 自創 -->
+    <script src="../js/indexLogin.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
