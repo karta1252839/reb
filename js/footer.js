@@ -1,5 +1,5 @@
 Vue.component('footer_pc', {
-  template: `
+	template: `
     <div id="footer_pc" class="pc">
 		<div class="workframe small">
 			<div id="footer_nav_pc">
@@ -77,7 +77,7 @@ Vue.component('footer_pc', {
 	</div>`
 });
 Vue.component('footer_mb', {
-  template: `
+	template: `
 	<div id="footer_mb" class="mb">
 		<div id="footer_nav_mb" class="nowrap_box">
 			<a href="" title="娛樂城">娛樂城</a>

@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- UK CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/css/uikit.min.css" />
 
     <!-- UK JS -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script> -->
 
     <!-- JQ -->
@@ -104,65 +104,344 @@
 
 <body>
     <!-- /////////////////////////////////////// 電腦板 ///////////////////////////////////// -->
+
     <!-- ------------------------------------login------------------------------------ -->
-    <header>
-        <div class="container-fluid d-none d-md-block p-0" style="background-color:#3fa9f5;">
-            <div class="row py-3">
-                <div class="flex-grow-1 text-right mr-5">
-                    <input type="text" class="px-2 input-style" placeholder="用戶名(ID)" onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = '用戶名(ID)'" />
-                    <input type="password" class="px-2 input-style" placeholder="密碼" onfocus="this.placeholder = ''"
-                        onblur="this.placeholder = '密碼'" />
-                    <a href="../reb/page/indexLogin.html"><input class="mx-1 button-login" type="submit" value="登入"></a>
-                    <a href="./header page/Signup.html" target="_blank">
-                        <input class="mx-1 button-registered" type="button" value="註冊">
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-12 text-md-right text-lg-left mr-md-5 pr-md-5 pt-md-2 pt-lg-0"
-                    style="justify-content: space-between;margin-left: -2%;">
-                    <a class="text-light mx-1" href="./header page/Announcement.html">公告</a>
-                    <a class="text-light mx-1" href="./header page/AppDownload.html">APP下載</a>
-                    <a class="text-light mx-1" href="./header page/FAQ.html">常見問題</a>
-                    <a class="text-light mx-1" href="./header page/Agent.html">合作代理</a>
-                </div>
+    <div class="container-fluid d-none d-md-block p-0" id="headerHCopy" style="background-color:#3fa9f5;">
+        <div class="row py-3">
+            <div class="flex-grow-1 text-right mr-5">
+                <input type="text" class="px-2 input-style" placeholder="用戶名(ID)" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = '用戶名(ID)'" />
+                <input type="password" class="px-2 input-style" placeholder="密碼" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = '密碼'" />
+                <a href="../reb/page/indexLogin.html"><input class="mx-1 button-login" type="submit" value="登入"></a>
+                <a href="./header page/Signup.html" target="_blank">
+                    <input class="mx-1 button-registered" type="button" value="註冊">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-12 text-md-right text-lg-left mr-md-5 pr-md-5 pt-md-2 pt-lg-0"
+                style="justify-content: space-between;margin-left: -2%;">
+                <a class="text-light mx-1" href="./header page/Announcement.html">公告</a>
+                <a class="text-light mx-1" href="./header page/AppDownload.html">APP下載</a>
+                <a class="text-light mx-1" href="./header page/FAQ.html">常見問題</a>
+                <a class="text-light mx-1" href="./header page/Agent.html">合作代理</a>
             </div>
         </div>
-    </header>
-    <!-- ------------------------------------login------------------------------------ -->
+    </div>
 
     <!-- ------------------------------------logo & list------------------------------------ */ -->
-    <div class="container-fluid d-none d-lg-block p-0"
+    <div class="container-fluid d-none d-lg-block p-0" id="headerHCopy1"
         style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
         <div class="container py-3">
             <div class="row" style="align-items:center;">
                 <div class="col-3">
                     <a class="" href="./index.html"><img class="w-100" src="../reb/img/桌機index_img/logo.png"></a>
                 </div>
-                <div class="col-9">
-                    <a href="./page/LiveCasino.html" style="width: 11.11%;"><img class="AnimaTion AnimaTion1"
-                            src="./img/桌機index_img/list/list1.png" alt=""></a>
-                    <a href="./page/Sport.html" style="width: 11.11%;"><img class="AnimaTion AnimaTion2"
-                            src="./img/桌機index_img/list/list2.png" alt=""></a>
-                    <a href="./page/Chess.html" style="width: 11.11%;"><img class="AnimaTion AnimaTion3"
-                            src="./img/桌機index_img/list/list3.png" alt=""></a>
-                    <a href="./page/Slot.html" style="width: 11.11%;"><img class="AnimaTion AnimaTion4"
-                            src="./img/桌機index_img/list/list4.png" alt=""></a>
-                    <a href="./page/Bingo.html" style="width: 11.11%;"><img class="AnimaTion AnimaTion5"
-                            src="./img/桌機index_img/list/list5.png" alt=""></a>
-                    <a href="./page/Fish.html" style="width: 11.11%;"><img class="AnimaTion AnimaTion6"
-                            src="./img/桌機index_img/list/list6.png" alt=""></a>
-                    <a href="./page/MainPages.html" style="width: 11.11%;"><img class="AnimaTion AnimaTion7"
-                            src="./img/桌機index_img/list/list7.png" alt=""></a>
-                    <a href="./page/Promotion.html" style="width: 11.11%;"><img class="AnimaTion AnimaTion8"
-                            src="./img/桌機index_img/list/list8.png" alt=""></a>
-                    <a href="./page/Movie.html" style="width: 11.11%;"><img class="AnimaTion AnimaTion9"
-                            src="./img/桌機index_img/list/list9.png" alt=""></a>
+                <div class="col-9 hove-list-all">
+                    <!-- LiveCasino -->
+                    <a href="./page/LiveCasino.html" style="width: 11.11%;">
+                        <img class="AnimaTion AnimaTion1" src="./img/桌機index_img/list/list1.png" alt="">
+                    </a>
+                    <!-- hove-list-LiveCasino -->
+                    <div class="container-fluid p-0 border-bottom border-top hove-list position-fixed"
+                        style="z-index: 999;display: none;left: 0;">
+                        <div class="py-2" style="background-color: rgba(0, 95, 191, 0.85);">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/LIVE/imgMenuABLogo.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">Allbet 真人</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/LIVE/imgMenuSAGamingLogo.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">SA 真人</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/LIVE/imgMenuDGLogo.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">DG 真人</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/LIVE/imgMenuWMLogo.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">WM 真人</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sport -->
+                    <a href="./page/Sport.html" style="width: 11.11%;" id="hove-list-a-2">
+                        <img class="AnimaTion AnimaTion2" src="./img/桌機index_img/list/list2.png" alt="">
+                    </a>
+                    <!-- hove-list-Sport -->
+                    <div class="container-fluid p-0 border-bottom border-top hove-list position-fixed"
+                        style="z-index: 999;display: none;top: 50;left: 0;">
+                        <div class="py-2" style="background-color: rgba(0, 95, 191, 0.85);">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/Sport/rennibo-logo vertical.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">任你博 體育</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/Sport/Layer 4.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">Super 體育</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Chess -->
+                    <a href="./page/Chess.html" style="width: 11.11%;">
+                        <img class="AnimaTion AnimaTion3" src="./img/桌機index_img/list/list3.png" alt="">
+                    </a>
+                    <!-- hove-list-Chess -->
+                    <div class="container-fluid p-0 border-bottom border-top hove-list position-fixed"
+                        style="z-index: 999;display: none;top: 50;left: 0;">
+                        <div class="py-2" style="background-color: rgba(0, 95, 191, 0.85);">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/Chess/LG_logo.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">幸運棋牌</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/Chess/LG_logo1.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">MG棋牌</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/Chess/LG_logo2.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">皇家棋牌</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slot -->
+                    <a href="./page/Slot.html" style="width: 11.11%;">
+                        <img class="AnimaTion AnimaTion4" src="./img/桌機index_img/list/list4.png" alt="">
+                    </a>
+                    <!-- hove-list-Slot -->
+                    <div class="container-fluid p-0 border-bottom border-top hove-list position-fixed"
+                        style="z-index: 999;display: none;top: 50;left: 0;">
+                        <div class="py-2" style="background-color: rgba(0, 95, 191, 0.85);">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/Sport/rennibo-logo vertical.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">任你博 體育</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/Sport/Layer 4.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">Super 體育</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bingo -->
+                    <a href="./page/Bingo.html" style="width: 11.11%;">
+                        <img class="AnimaTion AnimaTion5" src="./img/桌機index_img/list/list5.png" alt="">
+                    </a>
+                    <!-- hove-list-Bingo -->
+                    <div class="container-fluid p-0 border-bottom border-top hove-list position-fixed"
+                        style="z-index: 999;display: none;top: 50;left: 0;">
+                        <div class="py-2" style="background-color: rgba(0, 95, 191, 0.85);">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/Sport/rennibo-logo vertical.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">任你博 體育</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/Sport/Layer 4.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">Super 體育</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fish -->
+                    <a href="./page/Fish.html" style="width: 11.11%;">
+                        <img class="AnimaTion AnimaTion6" src="./img/桌機index_img/list/list6.png" alt="">
+                    </a>
+                    <!-- hove-list-Fish -->
+                    <div class="container-fluid p-0 border-bottom border-top hove-list position-fixed"
+                        style="z-index: 999;display: none;top: 50;left: 0;">
+                        <div class="py-2" style="background-color: rgba(0, 95, 191, 0.85);">
+                            <div class="container text-center">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/Sport/rennibo-logo vertical.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">任你博 體育</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row p-0 m-0">
+                                            <a href="#" class="centerCenter hove-list-a">
+                                                <img src="./img/桌機index_img/HoveList/Sport/Layer 4.png"
+                                                    class="img-fluid pl-3 centerCenter" alt="">
+                                                <p class="text-light centerCenter pt-2">Super 體育</p>
+                                                <p class="border w3-small text-light centerCenter my-3 col-6 py-2">進入遊戲
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- MainPages -->
+                    <a href="./page/MainPages.html" style="width: 11.11%;">
+                        <img class="AnimaTion AnimaTion7" src="./img/桌機index_img/list/list7.png" alt="">
+                    </a>
+                    <!-- Promotion -->
+                    <a href="./page/Promotion.html" style="width: 11.11%;">
+                        <img class="AnimaTion AnimaTion8" src="./img/桌機index_img/list/list8.png" alt="">
+                    </a>
+                    <!-- Movie -->
+                    <a href="./page/Movie.html" style="width: 11.11%;">
+                        <img class="AnimaTion AnimaTion9" src="./img/桌機index_img/list/list9.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     <script src="./js/indexList.js"></script>
-    <!-- ------------------------------------logo & list-------------------------------------->
+
+    <script>
+        // 內部文字
+        $(".hove-list-a").hover(function () {
+            $(this).children("p").eq(0).addClass('w3-text-aqua');
+        }, function () {
+            $(this).children("p").eq(0).removeClass('w3-text-aqua');
+        }
+        );
+        // hover 開關 list
+        $(".hove-list-all a").hover(function () {
+            $(this).next(".hove-list").show();
+        }, function () {
+            // $(this).show();
+            $(this).next(".hove-list").hide();
+            // setTimeout(() => {
+            // }, 1000);
+        }
+        );
+        // 自體
+        $(".hove-list-all .hove-list").hover(function () {
+            $(this).show();
+        }, function () {
+            $(this).hide();
+        }
+        );
+        // 高度控制項
+        $(window).resize(function () {
+            $(function () {
+                var headerHCopy = $("#headerHCopy").height();
+                var headerHCopy1 = $("#headerHCopy1").height();
+                var footerHC = headerHCopy + headerHCopy1;
+                $(".hove-list").css("top", footerHC + "px")
+            }
+            )
+        });
+    </script>
 
     <!-- /////////////////////////////////////// 手機板header ///////////////////////////////////// -->
     <div class="container-fluid p-0 d-lg-none " style="background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);">
@@ -257,7 +536,7 @@
                                 <!-- </button> -->
                             </div>
                             <div class="modal-body p-0">
-                                <img src="./img/手機index_img/banner2.webp" alt="" class="w-100">
+                                <img src="./img/手機index_img/24HR.webp" alt="" class="w-100">
                             </div>
                             <!-- <div class="modal-footer"> -->
                             <div class="w-100 " style="background: #555;">
@@ -311,7 +590,10 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
+
     </div>
+
     <!-- 維護時間 -->
     <div class="dropleft d-none d-md-block">
         <a class="btn BMaintenanceTime" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
@@ -1170,7 +1452,8 @@
         <!-- 最新消息 -->
         <img class="w-100 py-3 my-3" src="./img/手機index_img/最新消息TITLE.png" alt="">
         <div class="py-2 px-3 mx-3 text-justify text-center">
-            <p>任你博娛樂城陪您迎接全新的一年！最受玩家喜愛的線上賭場品牌-任你博，邁入第六個年頭，聖誕新年活動將好評延長到2021年1月15日！超優質的儲值回饋、百家樂連贏活動、電子遊戲送紅包，讓您體驗多種娛樂城遊戲的樂趣！</p>
+            <p>任你博娛樂城陪您迎接全新的一年！最受玩家喜愛的線上賭場品牌-任你博，邁入第六個年頭，聖誕新年活動將好評延長到2021年1月15日！超優質的儲值回饋、百家樂連贏活動、電子遊戲送紅包，讓您體驗多種娛樂城遊戲的樂趣！
+            </p>
         </div>
         <!-- 為何選擇我們 -->
         <img class="w-100 py-3 my-3" src="./img/手機index_img/為何選擇我們TITLE.png" alt="">
@@ -1202,7 +1485,7 @@
                         <a href="./Features page/Blog.html" class="btn float-right" style="color: #bebebe;">更多詳情 ></a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
