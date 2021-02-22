@@ -27,25 +27,19 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.10/dist/js/uikit-icons.min.js"></script>
 
     <!-- JQ -->
-    <script src="../jquery/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="../js/Addhtml.js"></script>
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>LiveCasino</title>
+    <title id="title">真人娛樂</title>
     <style>
         .linScrollbarHide::-webkit-scrollbar {
             display: none;
         }
 
-        .ellipsis {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 6;
-            -webkit-box-orient: vertical;
-            white-space: normal;
+        .breadcrumb {
+            background-color: transparent;
         }
     </style>
 </head>
@@ -62,7 +56,8 @@
             <div class="row" style="padding-top: 8%;">
                 <!-- AB -->
                 <div class="col">
-                    <a href="https://www.allbetgame.net/?language=zh_TW&sessionId=0d6884f0e7d44a3aa530aeee0d1cb609&loginType=2&token=b3405482461e">
+                    <a
+                        href="https://www.allbetgame.net/?language=zh_TW&sessionId=0d6884f0e7d44a3aa530aeee0d1cb609&loginType=2&token=b3405482461e">
                         <img class="w-100 position-relative" src="../img/桌機各分頁img/真人百家樂_LiveCasino/Group 1.png" alt="">
                         <div class="w-25 uk-transition-toggle position-absolute" style="bottom: 12%; right: 10%;">
                             <img src="../img/桌機各分頁img/真人百家樂_LiveCasino/btn1.png" alt="">
@@ -86,7 +81,8 @@
             <div class="row pt-3">
                 <!-- SA -->
                 <div class="col">
-                    <a href="https://bln.sa-api2.net/h5web/index.html?username=dragon777@rnb&token=9DD59D4025EBD6609FFD2194F25302BE&lang=zh_TW&lobby=a483&returnurl=&net=0&h5web=True&ui=1&options=&ip=220.137.157.128&bannerURL=">
+                    <a
+                        href="https://bln.sa-api2.net/h5web/index.html?username=dragon777@rnb&token=9DD59D4025EBD6609FFD2194F25302BE&lang=zh_TW&lobby=a483&returnurl=&net=0&h5web=True&ui=1&options=&ip=220.137.157.128&bannerURL=">
                         <img class="w-100 position-relative" src="../img/桌機各分頁img/真人百家樂_LiveCasino/Group 3.png" alt="">
                         <div class="w-25 uk-transition-toggle position-absolute" style="bottom: 12%; right: 10%;">
                             <img src="../img/桌機各分頁img/真人百家樂_LiveCasino/btn1.png" alt="">
@@ -158,7 +154,31 @@
     <!-- 手機版------------------------------------ -->
     <div class="container-fluid d-md-none" id="m-bgc-color">
         <div class="text-center">
-            <img class="img-fluid p-4" src="../img/手機各分頁img/真人百家樂_LiveCasino/Title.png" alt="">
+            <!-- MD history.back ------------------------------------------------------------------------>
+            <div class="d-md-none pt-1">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                            <i class="fas fa-angle-left text-primary fa-lg"></i>
+                        </button>
+                        <li class="breadcrumb-item"><a href="#" class="text-primary">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-primary pl-2" id="copyTitle"></span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    // copyTitle
+                    let title = $('#title').text();
+                    $('#copyTitle').html(title);
+                });
+            </script>
+            <!--  -->
+            <div class="pt-0 pb-4 px-2 row centerCenter">
+                <img class="img-fluid col-12" src="../img/手機各分頁img/真人百家樂_LiveCasino/Title.png" alt="">
+            </div>
             <a href="https://www.allbetgame.net/?language=zh_TW&sessionId=0d6884f0e7d44a3aa530aeee0d1cb609&loginType=2&token=b3405482461e"
                 target="_blank">
                 <img class="w-100 px-3" src="../img/手機各分頁img/真人百家樂_LiveCasino/AB.png" alt="">
@@ -167,7 +187,8 @@
                 target="_blank">
                 <img class="w-100 px-3" src="../img/手機各分頁img/真人百家樂_LiveCasino/DG.png" alt="">
             </a>
-            <a href="https://pc.dg0.co/?token=c631631f1d1844d19e8618ddfb0b5386&showapp=on&return=dg99.info" target="_blank">
+            <a href="https://pc.dg0.co/?token=c631631f1d1844d19e8618ddfb0b5386&showapp=on&return=dg99.info"
+                target="_blank">
                 <img class="w-100 px-3" src="../img/手機各分頁img/真人百家樂_LiveCasino/SA.png" alt="">
             </a>
             <a href="https://wmtw.s5t4c.cn/?sid=331013I70002A168M72394&ui=0&lang=tw&co=wm" target="_blank">
@@ -212,30 +233,20 @@
                     </ul>
                 </div>
             </div>
-            <!-- <div class="col-12 py-3">
-                <img src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/ia_100000067.png" alt="">
-                <p class="text-danger h4 text-center py-1 text-monospace">任你博百家樂-最安全的網路投注平台</p>
-                <p class="text-justify pb-1">百家樂(Baccarat)為一款使用撲克牌來進行的博弈遊戲，也是現在任你博娛樂城主打的遊戲種類之一。</p>
-                <p class="text-justify">線上百家樂越來越發達，遊玩方式也越來越多樣，任你博百家樂提供四大品牌：DG、SA沙龍、歐博、WM百家樂，希望能帶給您優質的線上賭場體驗，百家樂預測程式app、詐騙娛樂城名單詳見任你博部落格。</p>
-            </div>
-            <div class="col-12 py-3">
-                <img class="img-fluid py-1" src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/AB.jpg" alt="">
-                <img class="img-fluid py-1" src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/SA.png" alt="">
-                <img class="img-fluid py-1" src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/DG.png" alt="">
-                <img class="img-fluid py-1" src="../img/桌機各分頁img/真人百家樂_LiveCasino/文章/WM.png" alt="">
-            </div> -->
             <!-- blog -->
             <div class="col-12 pb-3 clearfix">
                 <div class="card" style="width: 100%;background-color: #0061bf;">
                     <div class="card-body">
                         <h5 class="card-title" style="color: #fff62c;">歐博app下載教學</h5>
-                        <p class="card-text text-justify ellipsis" style="color: #eee;">想用手機玩歐博百家樂但不知道如何下載
+                        <p class="card-text text-justify rowEllipsis" style="color: #eee;">想用手機玩歐博百家樂但不知道如何下載
                             歐博app嗎？本篇内容給您最詳盡的下載想用手機玩歐博百家樂但不知道如何下載
                             歐博app嗎？本篇内容給您最詳盡的下載想用手機玩歐博百家樂但不知道如何下載
                             歐博app嗎？本篇内容給您最詳盡的下載想用手機玩歐博百家樂但不知道如何下載
                             歐博app嗎？本篇内容給您最詳盡的下載想用手機玩歐博百家樂但不知道如何下載
                             歐博app嗎？本篇内容給您最詳盡的下載想用手機玩歐博百家樂但不知道如何下載
-                            歐博app嗎？...</p>
+                            歐博app嗎？本篇内容給您最詳盡的下載想用手機玩歐博百家樂但不知道如何下載
+                            歐博app嗎？本篇内容給您最詳盡的下載想用手機玩歐博百家樂但不知道如何下載
+                            歐博app嗎？</p>
                         <p class="float-left" style="color: #bebebe;">2020-09-17</p>
                         <a href="./Features page/Blog.html" class="btn float-right" style="color: #bebebe;">更多詳情 ></a>
                     </div>

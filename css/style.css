@@ -1,4 +1,5 @@
 /*  -------------------------------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -818,7 +819,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     margin-right: auto !important;
 }
 
-.ty{
+.ty {
     font-size: 1.35em;
     color: #fff62c;
 }
@@ -827,38 +828,47 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     background: linear-gradient(180deg, #1c63ba 0%, #124080 100%);
     color: #ffffff;
 }
+
 .modalBtn {
     background: #103971;
-    color: rgb(255, 255, 255,.5);
+    color: rgb(255, 255, 255, .5);
     height: 32px;
 }
+
 .modalBtn-active {
     background: linear-gradient(180deg, #fee682 0%, #d69724 100%);
     color: #103971;
 }
+
 .modalBtn:hover {
     background: linear-gradient(180deg, #fee682 0%, #d69724 100%);
     color: #103971;
 }
+
 .modalSBtn {
     background: #103971;
-    color: rgb(255, 255, 255,.5);
+    color: rgb(255, 255, 255, .5);
     height: 32px;
 }
+
 .modalSBtn-active {
     background: #fff;
     color: #103971;
 }
+
 .modalSBtn:hover {
     background: #fff;
     color: #103971;
 }
-.lp1{
+
+.lp1 {
     letter-spacing: .1em;
 }
-.lp2{
+
+.lp2 {
     letter-spacing: .2em;
 }
+
 .slot-bg {
     background: linear-gradient(180deg, #022053 0%, #0b4598 25%, #0b4598 75%, #022053 100%);
     border: 1px solid #f7b500;
@@ -866,6 +876,18 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     border-radius: 15px;
     box-shadow: 1px 1px 13px #f7b500;
 }
-.lin-TColor{
+
+.lin-TColor {
     color: #fee682;
+}
+
+.rowEllipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    white-space: normal;
 }
