@@ -31,7 +31,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>Slot</title>
+    <title id="title">電子遊戲</title>
 
     <style>
         /* game button */
@@ -68,6 +68,11 @@
             opacity: 1 !important;
             transform: scale(1) !important;
         }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            color: #fff;
+            content: "/";
+        }
     </style>
 </head>
 
@@ -75,6 +80,30 @@
     <script>PageHeader();</script>
 
     <div id="bgc-flex-v" class="container-fluid" style="background-image: url(../img/桌機各分頁img/電子遊戲_Slot/BGC.jpg);">
+
+        <!-- MD history.back ------------------------------------------------------------------------>
+        <div class="pt-1" style="margin-left: -35px;">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="d-flex pt-2">
+                    <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                        <i class="fas fa-angle-left text-light fa-lg"></i>
+                    </button>
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-light">首頁</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span class="text-light pl-2" id="copyTitle"></span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <script>
+            $(document).ready(function () {
+                // copyTitle
+                let title = $('#title').text();
+                $('#copyTitle').html(title);
+            });
+        </script>
+
+        <!--  -->
         <div class="container">
             <!-- tittle -->
             <div class="py-5 d-none d-md-block">
@@ -121,38 +150,39 @@
                     </a>
                 </div>
             </div> -->
-            <div class="row p-3 centerCenter noActive-a" uk-switcher>
-                <div class="col-4 col-sm-4 col-md-3 col-lg px-1 my-1">
+            <div class="row p-3 noActive-a" uk-switcher>
+                <div class="col-3 col-md px-1 my-1">
                     <a href="javascript:()">
-                        <img class="card_1 img-fluid noActive slotActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c1.png" alt="">
+                        <img class="card_1 img-fluid noActive slotActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c1.png"
+                            alt="">
                     </a>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg px-1 my-1">
+                <div class="col-3 col-md px-1 my-1">
                     <a href="javascript:()">
                         <img class="card_2 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c2.png" alt="">
                     </a>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg px-1 my-1">
+                <div class="col-3 col-md px-1 my-1">
                     <a href="javascript:()">
                         <img class="card_3 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c3.png" alt="">
                     </a>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg px-1 my-1">
+                <div class="col-3 col-md px-1 my-1">
                     <a href="javascript:()">
                         <img class="card_4 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c5.png" alt="">
                     </a>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg px-1 my-1">
+                <div class="col-3 col-md px-1 my-1">
                     <a href="javascript:()">
                         <img class="card_5 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c6.png" alt="">
                     </a>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg px-1 my-1">
+                <div class="col-3 col-md px-1 my-1">
                     <a href="javascript:()">
                         <img class="card_6 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c7.png" alt="">
                     </a>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg px-1 my-1">
+                <div class="col-3 col-md px-1 my-1">
                     <a href="javascript:()">
                         <img class="card_7 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c8.png" alt="">
                     </a>

@@ -891,3 +891,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     -webkit-box-orient: vertical;
     white-space: normal;
 }
+
+.fsz-08{
+    font-size: .8em;
+}

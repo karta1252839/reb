@@ -23,9 +23,12 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
-    <title>部落格_Blog</title>
+    <title>部落格_Blog_page</title>
     <style>
-
+        .breadcrumb-item+.breadcrumb-item::before {
+            color: #fff;
+            content: "/";
+        }
     </style>
 </head>
 
@@ -34,6 +37,31 @@
     <!-- page -->
     <div class="container-fluid p-0 m-0" style="background-color: #a7cbef;">
         <div class="" style="background:url(../img/Featurespage/Blog/BG.png) center top no-repeat;">
+
+            <!-- MD history.back ------------------------------------------------------------------------>
+            <div class="pt-1">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="d-flex pt-2">
+                        <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">
+                            <i class="fas fa-angle-left text-light fa-lg"></i>
+                        </button>
+                        <li class="breadcrumb-item"><a href="../index.html" class="text-light">首頁</a></li>
+                        <li class="breadcrumb-item"><button type="button" onclick="history.back()"
+                                class="btn p-0 text-light">部落格_Blog</button></li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span class="text-light pl-2" id="copyTitle"></span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    let title = $('title').text();
+                    $('#copyTitle').html(title);
+                });
+            </script>
+
+            <!--  -->
             <div class="container py-3">
                 <div class="row pt-3">
                     <div class="col-md-8 col-sm-12">
