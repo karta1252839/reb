@@ -777,7 +777,8 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
 /* 顏色背景漸層 */
 
 #m-bgc-color {
-    background: #dce9ff;
+    background: #bcd5ee;
+    /* background: #dce9ff; */
 }
 
 #btn-input {
