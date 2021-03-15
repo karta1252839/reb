@@ -713,6 +713,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     padding: 2%;
     /* background-size: 100% auto; */
     background: no-repeat;
+    background-position: left center;
     text-indent: 2.5rem;
     font-size: 1rem;
     letter-spacing: 0.1rem;

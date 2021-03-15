@@ -82,7 +82,7 @@ function MDFooter() {
     document.writeln("        <div class=\'row py-2\'>");
     document.writeln("            <div class=\'col-3 h-100 text-center\'><a href=\'../index.html\'><img src=\'../img/手機index_img/手機最下方/包裝/首頁.png\'");
     document.writeln("                        alt=\'\'></a></div>");
-    document.writeln("            <div class=\'col-3 h-100 text-center\'><a href=\'../page/indexLogin.html\'><img");
+    document.writeln("            <div class=\'col-3 h-100 text-center\'><a href=\'../page/indexLoginPage.html\'><img");
     document.writeln("                        src=\'../img/手機index_img/手機最下方/包裝/登入.png\' alt=\'\'></a></div>");
     document.writeln("            <div class=\'col-3 h-100 text-center\'><a href=\'../header page/Signup.html\'><img");
     document.writeln("                        src=\'../img/手機index_img/手機最下方/包裝/註冊.png\' alt=\'\'></a></div>");
