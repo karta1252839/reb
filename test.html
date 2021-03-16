@@ -39,7 +39,226 @@
 </head>
 
 <body>
-    
+    <!-- /////////////////////////////////////// 手機板header ///////////////////////////////////// -->
+    <div class='container-fluid p-0 d-lg-none ' style='background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);'>
+        <div class='container'>
+            <div class='row py-2' style='align-items: center;'>
+                <!-- 漢堡圖 -->
+                <div class='col-4 text-left'>
+                    <!-- HamburgBtn -->
+                    <i class='fas fa-bars fa-2x text-light' id='HamburgBtn' data-toggle='modal'
+                        data-target='#exampleModal0'></i>
+                    <!--  -->
+                    <div class='modal' id='exampleModal0'>
+                        <div id='showMenu p-0' class='modal-dialog'>
+                            <div class='showMenuList modal-content'>
+                                <div class='modal-body p-0'>
+                                    <!-- 關閉 -->
+                                    <div class='w-100'>
+                                        <div class='pb-2 pt-1 pr-3 text-light text-right' data-dismiss='modal'><i
+                                                class='fas fa-times text-light'></i></div>
+                                    </div>
+                                    <!-- user -->
+                                    <div class='col-12 text-center w-100'>
+                                        <img src='../img/手機index_img/sidebar/user.png' alt=''>
+                                        <p class='text-center text-light pt-1' style='font-size: 1.2rem;'>admin</p>
+                                    </div>
+                                    <div class='sidebarLine w-100'></div>
+                                    <div class='row'>
+                                        <div class='col-12 pt-3'><a href='/reb/page/Promotion.html'><img
+                                                    src='/reb/img/手機index_img/sidebar/Group 2/1gift.png' alt=''
+                                                    class='pl-3'><span
+                                                    class='text-light pl-3 w3-large lp1'>優惠活動</span></a></div>
+                                        <div class='col-12  pt-3'><a href='/reb/header page/Announcement.html'><img
+                                                    src='/reb/img/手機index_img/sidebar/Group 2/2Shape.png' alt=''
+                                                    class='pl-3'><span
+                                                    class='text-light pl-3 w3-large lp1'>公告</span></a></div>
+                                        <div class='col-12  pt-3'><a href='/reb/header page/FAQ.html'><img
+                                                    src='/reb/img/手機index_img/sidebar/Group 2/3_question-square-light.png'
+                                                    alt='' class='pl-3'><span
+                                                    class='text-light pl-3 w3-large lp1'>常見問題</span></a>
+                                        </div>
+                                        <div class='col-12  pt-3'><a href='/reb/Features page/RepairTime.html'><img
+                                                    src='/reb/img/手機index_img/sidebar/Group 2/4_clock-light.png' alt=''
+                                                    class='pl-3'><span
+                                                    class='text-light pl-3 w3-large lp1'>維修時間</span></a></div>
+                                        <div class='col-12  pt-3'><a href='/reb/header page/AppDownload.html'><img
+                                                    src='/reb/img/手機index_img/sidebar/Group 2/5cloud-download-light.png'
+                                                    alt='' class='pl-3'><span
+                                                    class='text-light pl-3 w3-large lp1'>APP下載</span></a>
+                                        </div>
+                                        <!-- sidebarBLine -->
+                                        <div class=' col-12 py-3'>
+                                            <div class='sidebarBLine'></div>
+                                        </div>
+                                    </div>
+                                    <!-- list2 -->
+                                    <div class='row'>
+                                        <div class='col-12 pt-1'><a href='/reb/Features page/AccessFlow.html'>
+                                                <img src='/reb/img/手機index_img/sidebar/Group 3/1wallet-light.png' alt=''
+                                                    class='pl-3'>
+                                                <span class='text-light pl-3 w3-large lp1'>存取流程</span></a></div>
+                                        <div class='col-12  pt-3'><a href='/reb/header page/Agent.html'><img
+                                                    src='/reb/img/手機index_img/sidebar/Group 3/5_cooperation.png' alt=''
+                                                    class='pl-3'><span
+                                                    class='text-light pl-3 w3-large lp1'>合營代理</span></a></div>
+                                        <div class='col-12  pt-3'><a href='/reb/Features page/AboutUs.html'><img
+                                                    src='/reb/img/手機index_img/sidebar/Group 3/6_RENNIBO1.png' alt=''
+                                                    class='pl-3'><span
+                                                    class='text-light pl-3 w3-large lp1'>關於任你博</span></a></div>
+                                        <!-- sidebarBLine -->
+                                        <div class=' col-12 py-3'>
+                                            <div class='sidebarBLine'></div>
+                                        </div>
+                                    </div>
+                                    <!-- list3 -->
+                                    <div class='row'>
+                                        <div class='col-12 pt-1'><a href='../index.html' role='button'><img
+                                                    src='../img/手機index_img/sidebar/signOut.png' alt=''
+                                                    class='pl-3'><span
+                                                    class='text-light pl-3 w3-large lp1'>登出</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='col-4 text-center'>
+                    <div class='text-center' style='margin-left: -5%;'><a href='../index.html'><img
+                                src='../img/桌機index_img/logo.png' alt='' class='w-100'></a></div>
+                </div>
+                <!-- 24HR客服 -->
+                <div class='col-4'>
+                    <div class='text-right' style='margin-right: 10%;'><img id='hrServiceBtn'
+                            src='../img/手機index_img/24-service.png' alt='' class='h-100' data-toggle='modal'
+                            data-target='#exampleModal'></div>
+                </div>
+                <!-- Modal -->
+                <div class='modal fade' id='exampleModal' tabindex='-1' role='dialog'
+                    aria-labelledby='exampleModalLabel' aria-hidden='true'>
+                    <div class='modal-dialog' role='document'>
+                        <div class='modal-content mx-auto w-75'
+                            style='position: fixed !important;top: 6% !important; left: 10% !important;right: 10% !important;'>
+                            <div class='modal-header'
+                                style='background: linear-gradient(180deg, #2278E0 0%, #1754A7 100%);'>
+                                <h2 class='modal-title text-light m-auto' id='exampleModalLabel'
+                                    style='font-size: 1.2rem !important;'>聯繫我們
+                                </h2>
+                            </div>
+                            <div class='modal-body p-0'>
+                                <img src='../img/手機index_img/24HR客服.png' alt='' class='w-100'>
+                            </div>
+                            <div class='w-100 ' style='background: #555;'>
+                                <div class='py-2 text-light text-center' data-dismiss='modal'>Close</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 金色顏色條 -->
+    <div class='container-fluid p-0'>
+        <div class='GoldenBorder d-none d-md-block'></div>
+        <div class='GoldenBorder-md d-md-none'></div>
+    </div>
+    <!-- 跑馬燈 -->
+    <div class='container-fluid p-0 md-footer-color'>
+        <div class='container' style='position: relative;'>
+            <!-- 維修按鈕 -->
+            <div class='dropdown' style='z-index: 999;position: absolute;top: 0;left: 0;'>
+                <button class='btn Maintenance' style='z-index: 999;top: 0;left: 0;' type='button' id='dropdownMenu2'
+                    data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+                </button>
+                <div class='dropdown-menu' aria-labelledby='dropdownMenu2' style='background-color: #1754A7;'>
+                    <button class='btn text-light' type='button' data-toggle='modal' data-target='#marqueeBtn'>
+                        維修公告1
+                    </button>
+                    <button class='btn text-light' type='button' data-toggle='modal' data-target='#marqueeBtn2'>
+                        維修公告2
+                    </button>
+                </div>
+            </div>
+            <!-- 彈出框2 -->
+            <div class='modal fade' id='marqueeBtn2' tabindex='-1' role='dialog'
+                aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>
+                <div class='modal-dialog modal-dialog-centered' role='document'>
+                    <div class='modal-content'>
+                        <div class='modal-header md-footer-color'>
+                            <h2 class='modal-title mx-auto text-light' id='exampleModalCenterTitle'>存款公告</h2>
+                        </div>
+                        <div class='modal-body p-5 text-light' style='background: rgb(52, 96, 177);'>
+                            開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                            開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可
+                        </div>
+                        <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 彈出框1 -->
+            <div class='modal fade' id='marqueeBtn' tabindex='-1' role='dialog'
+                aria-labelledby='exampleModalCenterTitle' aria-hidden='true'>
+                <div class='modal-dialog modal-dialog-centered' role='document'>
+                    <div class='modal-content'>
+                        <div class='modal-header md-footer-color'>
+                            <h2 class='modal-title mx-auto text-light' id='exampleModalCenterTitle'>維護公告</h2>
+                        </div>
+                        <div class='modal-body p-5 text-light' style='background: rgb(52, 96, 177);'>
+                            親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒
+                            親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒
+                        </div>
+                        <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 字 -->
+            <div class='' style='z-index: 1;'>
+                <marquee direction='left' height='30' scrollamount='5' behavior='left'
+                    style='height: 100%;width: 100%; color: cornsilk;'>
+                    【維護公告】 親愛的娛樂城會員您好，【幸運棋牌-維護通知】即刻起進行線路調整緊急維護，維護完成時間待定，造成不便敬請見諒    【存款公告】
+                    開通超商存款後以第一次繳費地點為綁定超商，若後續要更換繳費超商，請先提前告知與客服申請，否則導致造成資金損失風險需自行承擔，若為附近的超商地點繳費提前告知即可    【存款公告】
+                    敬愛的卡利會員您好，卡利娛樂城為防堵詐騙氾濫、保障會員資金安全，在此提醒：信用卡、ATM轉帳、VIP專用帳戶存款等服務，務必使用「本人帳戶」！若使用非本人帳戶存款，將一律扣除處理費用後退還本金，感謝您的配合。    【維護公告】
+                    親愛的會員您好，AV影城將於2020/12/14正式下架，造成不便敬請見諒。    【取款公告】
+                    親愛的卡利會員您好，由於體育注單會因改判賽事等因素，而進行注單重新結算，因此即日起，卡利娛樂城進行出款時，體育相關注單須全數派彩完畢才處理支付款項，若玩家手上有未派彩注單，麻煩您耐心等候，如有相關疑問、歡迎諮詢24H線上客服，謝謝您。
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <div class='container-fluid d-md-none p-0 m-0 FAQ-btn-items'>
+        <div class='row p-0 m-0 border-bottom border-warning'>
+            <div class='col p-2'>
+                <div class='col-12'>
+                    <span class='list-inline-item'>您好,</span>
+                    <span class='list-inline-item'>user</span>
+                </div>
+                <div class='col-12'>
+                    <i class='fas fa-star fa-sm text-warning'></i>
+                    <i class='far fa-star fa-sm'></i>
+                    <i class='far fa-star fa-sm'></i>
+                    <i class='far fa-star fa-sm'></i>
+                    <i class='far fa-star fa-sm'></i>
+                    <i class='far fa-star fa-sm'></i>
+                </div>
+
+            </div>
+            <div class='col'>
+                <div class='col-12 text-right pt-3'>
+                    <a href='../Features page/MemberNotification.html'>
+                        <i class='fas fa-bell text-light'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class='row p-0 m-0'>
+            <div class='col p-2'>
+                <div class='col-12'>
+                    <img src='../img/登入條/money.png' alt='' class='img-fluid'>
+                    <span>1,000,000</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
