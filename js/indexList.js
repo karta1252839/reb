@@ -97,3 +97,14 @@ $('.AnimaTion9').mouseout(
     }
 )
 // ----------------------
+$('.AnimaTion10').mousemove(
+    function () {
+        $('.AnimaTion10').attr('src', './img/桌機index_img/list/list10remove.png')
+    }
+)
+$('.AnimaTion10').mouseout(
+    function () {
+        $('.AnimaTion10').attr('src', './img/桌機index_img/list/list10.png')
+    }
+)
+// ----------------------

@@ -57,6 +57,21 @@
             font-size: .85rem;
         }
 
+        .noActive {
+            opacity: 0.8;
+            transform: scale(.9);
+        }
+
+        .noActive:hover {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .slotActive {
+            opacity: 1 !important;
+            transform: scale(1) !important;
+        }
+
     </style>
 </head>
 
@@ -73,7 +88,7 @@
                 <img class="img-fluid" src="../img/手機各分頁img/推薦_MainPages/Title.png" alt="">
             </div> -->
             <!-- 遊戲廠商區 -->
-            <div class="row p-3 centerCenter slot-bg" uk-switcher>
+            <!-- <div class="row p-3 centerCenter slot-bg" uk-switcher>
                 <div class="col-4 col-sm-4 col-md-3 col-lg px-1 my-1">
                     <a href="#">
                         <img class="card_1 img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/card0off.png" alt="">
@@ -107,6 +122,46 @@
                 <div class="col-4 col-sm-4 col-md-3 col-lg px-1 my-1">
                     <a href="#">
                         <img class="card_7 img-fluid" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/card6off.png" alt="">
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- 遊戲廠商區 -->
+            <div class="row p-3 noActive-a" uk-switcher>
+                <div class="col-3 col-md px-1 my-1">
+                    <a href="javascript:()">
+                        <img class="card_1 img-fluid noActive slotActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c1.png"
+                            alt="">
+                    </a>
+                </div>
+                <div class="col-3 col-md px-1 my-1">
+                    <a href="javascript:()">
+                        <img class="card_2 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c2.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3 col-md px-1 my-1">
+                    <a href="javascript:()">
+                        <img class="card_3 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c3.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3 col-md px-1 my-1">
+                    <a href="javascript:()">
+                        <img class="card_4 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c5.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3 col-md px-1 my-1">
+                    <a href="javascript:()">
+                        <img class="card_5 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c6.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3 col-md px-1 my-1">
+                    <a href="javascript:()">
+                        <img class="card_6 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c7.png" alt="">
+                    </a>
+                </div>
+                <div class="col-3 col-md px-1 my-1">
+                    <a href="javascript:()">
+                        <img class="card_7 img-fluid noActive" src="../img/桌機各分頁img/電子遊戲_Slot/gameBtn/c8.png" alt="">
                     </a>
                 </div>
             </div>
@@ -743,14 +798,17 @@
 
     <!-- 自創 -->
     <script>
-        var cards = ["card0", "card1", "card2", "card3", "card4", "card5", "card6", "card7"];
-        for (let i = 0; i < cards.length; i++) {
-            $('.card_' + i + '').hover(function () {
-                $(this).attr('src', '../img/桌機各分頁img/電子遊戲_Slot/gameBtn/card' + (i - 1) + '.png');
-            }, function () {
-                $(this).attr('src', '../img/桌機各分頁img/電子遊戲_Slot/gameBtn/card' + (i - 1) + 'off.png');
-            })
-        }
+        // 迴圈換jpg
+        // var cards = ["card0", "card1", "card2", "card3", "card4", "card5", "card6", "card7"];
+        // for (let i = 0; i < cards.length; i++) {
+        //     $('.card_' + i + '').hover(function () {
+        //         $(this).attr('src', '../img/桌機各分頁img/電子遊戲_Slot/gameBtn/card' + (i - 1) + '.png');
+        //     }, function () {
+        //         $(this).attr('src', '../img/桌機各分頁img/電子遊戲_Slot/gameBtn/card' + (i - 1) + 'off.png');
+        //     })
+        // }
+
+
         // 【active】
         // $(".modalBtn-c div").click(
         //     function () {
@@ -758,6 +816,10 @@
         //         $(this).addClass('modalBtn-active');
         //     }
         // )
+        $(".noActive-a a img").click(function () {
+            $(".noActive-a a img").removeClass("slotActive");
+            $(this).addClass("slotActive");
+        });
     </script>
 
 
