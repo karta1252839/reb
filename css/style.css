@@ -23,7 +23,8 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-:before, :after {
+:before,
+ :after {
     -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -ms-transition: all .3s ease-out;
@@ -31,7 +32,31 @@ body::-webkit-scrollbar {
     transition: all .3s ease-out;
 }
 
-header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input, textarea, ul, li, img, span, font, strong, b, a, i {
+header,
+footer,
+div,
+nav,
+article,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+form,
+label,
+input,
+textarea,
+ul,
+li,
+img,
+span,
+font,
+strong,
+b,
+a,
+i {
     text-align: left;
     vertical-align: middle;
     margin: 0;
@@ -49,7 +74,8 @@ header, footer, div, nav, article, h2, h3, h4, h5, h6, hr, p, form, label, input
     transition: all .3s ease-out;
 }
 
-header .header_menu #logo #menu_btn span, header #close_menu span {
+header .header_menu #logo #menu_btn span,
+header #close_menu span {
     position: absolute;
     width: 100%;
     height: 2px;
@@ -60,12 +86,14 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     transition: transform .4s cubic-bezier(.215, .61, .355, 1), opacity .4s cubic-bezier(.215, .61, .355, 1), -webkit-transform .4s cubic-bezier(.215, .61, .355, 1);
 }
 
+
 /* body -------------------------------------------------------- */
 
 .xxx img {
     width: 100%;
     height: auto;
 }
+
 
 /* navbar becomes mobile sidebar under lg breakpoint */
 
@@ -117,6 +145,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
         background: transparent;
     }
 }
+
 
 /* 手機版大小圖 */
 
@@ -198,6 +227,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     }
 }
 
+
 /* 手機版大小圖 */
 
 @media (min-width: 575.98px) {
@@ -230,6 +260,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
         overflow: hidden;
     }
 }
+
 
 /* 電腦大小圖 */
 
@@ -281,7 +312,9 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     }
 }
 
+
 /* ------------------------------------login------------------------------------ */
+
 
 /* 帳號密碼輸入表單 */
 
@@ -299,6 +332,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     font-style: 11px;
 }
 
+
 /* 登入按鈕 */
 
 .button-login {
@@ -314,6 +348,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     padding: 0.3% 0;
 }
 
+
 /* 註冊按鈕 */
 
 .button-registered {
@@ -328,14 +363,18 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     padding: 0.3% 0;
 }
 
+
 /* fs-15 字體大小 */
+
 
 /* .fs-15{
     font-size: px;
     padding: 0;
 } */
 
+
 /* ------------------------------------login------------------------------------ */
+
 
 /* ------------------------------------logo & list------------------------------------ */
 
@@ -354,6 +393,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
 .inner-container::-webkit-scrollbar {
     display: none;
 }
+
 
 /* .AnimaTion:hover{
     transform: translateY(-10%);
@@ -383,7 +423,9 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     }
 }
 
+
 /* ------------------------------------logo & list------------------------------------ */
+
 
 /* ------------------------------------金色顏色條------------------------------------ */
 
@@ -399,7 +441,9 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     background: linear-gradient(180deg, #fffd70 0%, #f7bb3e 100%);
 }
 
+
 /* ------------------------------------金色顏色條------------------------------------ */
+
 
 /* ------------------------------------banner------------------------------------ */
 
@@ -437,9 +481,12 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     border: 1px solid;
 }
 
+
 /* ------------------------------------banner------------------------------------ */
 
+
 /* /////////////////////////////////////// 手機板 ///////////////////////////////////// */
+
 
 /* ------------------------------------header------------------------------------ */
 
@@ -453,7 +500,9 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     background: rgba(39, 39, 39, 0.5);
 }
 
+
 /* ------------------------------------header------------------------------------ */
+
 
 /* ------------------------------------header------------------------------------ */
 
@@ -504,6 +553,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     line-height: 60px;
 }
 
+
 /* #hrService {
     background-color: rgb(0, 0, 0, 50%);
     position: fixed;
@@ -526,18 +576,24 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     list-style: none;
 } */
 
+
 /* ------------------------------------header------------------------------------ */
 
+
 /* ------------------------------------遊戲大廳------------------------------------ */
+
 
 /* .game{
     width: 50%;
     height: auto;
 } */
 
+
 /* ------------------------------------遊戲大廳------------------------------------ */
 
+
 /* ------------------------------------文章方框區塊------------------------------------ */
+
 
 /* .article-box {
     width: 100%;
@@ -549,7 +605,9 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
 
 } */
 
+
 /* ------------------------------------文章方框區塊------------------------------------ */
+
 
 /* ------------------------------------blog------------------------------------ */
 
@@ -567,7 +625,9 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     text-align: center;
 }
 
+
 /* ------------------------------------blog------------------------------------ */
+
 
 /* ------------------------------------footer------------------------------------ */
 
@@ -590,11 +650,15 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     text-align: center;
 }
 
+
 /* ------------------------------------footer------------------------------------ */
+
 
 /* /////////////////////////////////////// 手機板 ///////////////////////////////////// */
 
+
 /* /////////////////////////////////////// 電腦版 ///////////////////////////////////// */
+
 
 /* ------------------------------------遊戲大廳------------------------------------ */
 
@@ -609,7 +673,9 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     min-height: 244px;
 }
 
+
 /* ------------------------------------遊戲大廳------------------------------------ */
+
 
 /* ------------------------------------跑馬燈------------------------------------ */
 
@@ -626,13 +692,18 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     outline-style: none;
 }
 
+
 /* ------------------------------------跑馬燈------------------------------------ */
+
 
 /* /////////////////////////////////////// 電腦版 ///////////////////////////////////// */
 
+
 /* /////////////////////////////////////// 其他分頁 ///////////////////////////////////// */
 
+
 /* ------------------------------------電腦版------------------------------------  */
+
 
 /* 背景 */
 
@@ -652,6 +723,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     background-size: cover;
 }
 
+
 /* 遊戲背景 */
 
 #game-flex {
@@ -665,6 +737,7 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     background: no-repeat;
     background-size: 100% auto;
 }
+
 
 /* 顏色背景漸層 */
 
@@ -773,9 +846,12 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     width: auto;
 }
 
+
 /* ------------------------------------電腦版------------------------------------  */
 
+
 /* ------------------------------------手機版------------------------------------  */
+
 
 /* 顏色背景漸層 */
 
@@ -808,7 +884,9 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     border-radius: 10px;
 }
 
+
 /* ------------------------------------手機版------------------------------------  */
+
 
 /* /////////////////////////////////////// 其他分頁 ///////////////////////////////////// */
 
@@ -890,13 +968,12 @@ header .header_menu #logo #menu_btn span, header #close_menu span {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-
     display: -webkit-box;
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
     white-space: normal;
 }
 
-.fsz-08{
+.fsz-08 {
     /* font-size: .8em; */
 }
