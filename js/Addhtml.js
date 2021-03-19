@@ -420,7 +420,7 @@ function indexLoginHeader() {
     document.writeln("                                        <div class=\'col-12  pt-3\'><a href=\'/reb/page/MainPages.html\'><img");
     document.writeln("                                                    src=\'/reb/img/手機index_img/sidebar/Group 3/7.png\' alt=\'\'");
     document.writeln("                                                    class=\'pl-3\'><span");
-    document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>關於任你博</span></a></div>");
+    document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>推薦好友</span></a></div>");
     document.writeln("                                        <!-- sidebarBLine -->");
     document.writeln("                                        <div class=\' col-12 py-3\'>");
     document.writeln("                                            <div class=\'sidebarBLine\'></div>");
