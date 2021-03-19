@@ -980,5 +980,5 @@ header #close_menu span {
 
 .m_bg {
     background: center top url(/reb/img/手機各分頁img/MBG.png) #91c3fa no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
