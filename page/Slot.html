@@ -75,16 +75,7 @@
             content: "/";
         }
 
-        @media(max-width: 768px) {
-            .changeBG {
-                background: url(/reb/img/手機各分頁img/MBG.png) !important;
-            }
-        }
-        @media(min-width: 768px) {
-            .changeBG {
-                background: url(../img/桌機各分頁img/電子遊戲_Slot/BGC.jpg) !important;
-            }
-        }
+        
     </style>
 </head>
 
@@ -93,10 +84,10 @@
         PageHeader();
     </script>
 
-    <div id="bgc-flex-v" class="container-fluid changeBG">
+    <div id="bgc-flex-v" class="container-fluid changeBGE p-0 m-0">
 
         <!-- MD history.back ------------------------------------------------------------------------>
-        <div class="" style="margin-left: -35px;">
+        <div class="d-md-none" style="margin-left: -35px;">
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                 <ol class="d-flex my-auto pl-5" style="background-color: #1076db6b;">
                     <button class="btn py-0" type="button" onclick="history.back()" value="回到上一頁">

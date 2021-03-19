@@ -52,7 +52,7 @@
 <body>
     <script>indexLoginHeader();</script>
     <!-- 交易記錄-------------------------------------------------------------------------- -->
-    <div class="container-fluid d-md-none" id="m-bgc-color" style="min-height: 650px;">
+    <div class="container-fluid d-md-none changeBG" style="min-height: 650px;">
         <!-- Title -->
         <img src="../img/Featurespage/MemberCentre/TransactionRecord/Title.png" alt="" class="w-100 p-3">
         <!--  -->
@@ -82,18 +82,18 @@
                         <!-- 開始日期 -->
                         <form class="col-12" action="uk-margin" method="post">
                             <label>
-                                <span class="w3-small pl-1 lp1">開始日期</span>
-                                <span class="w3-small text-danger pl-1 lp1">(右方點選日期)</span>
+                                <span class=" pl-1 lp1">開始日期</span>
+                                <span class=" text-danger pl-1 lp1">(右方點選日期)</span>
                             </label>
-                            <input class="w3-small py-2 p-1 text-light w-100" style="background-color: #103971;"
+                            <input class=" py-2 p-1 text-light w-100" style="background-color: #103971;"
                                 type="datetime-local" name="" id="">
                         </form>
                         <!-- 結束日期 -->
                         <form class="col-12" action="uk-margin" method="post">
                             <label>
-                                <span class="w3-small lp1">結束日期</span>
+                                <span class=" lp1">結束日期</span>
                             </label>
-                            <input class="w3-small px-1 py-2 text-light w-100" style="background-color: #103971;"
+                            <input class=" px-1 py-2 text-light w-100" style="background-color: #103971;"
                                 type="datetime-local" name="" id="">
                         </form>
                     </div>
@@ -106,16 +106,16 @@
                     <!--  -->
                     <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
                         <div class="btn col modalSBtn p-0 modalSBtn-active">
-                            <p class=" text-center w3-small pt-1 pb-2">昨日</p>
+                            <p class=" text-center  pt-1 pb-2">昨日</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">今日</p>
+                            <p class=" text-center  pt-1 pb-2">今日</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">本週</p>
+                            <p class=" text-center  pt-1 pb-2">本週</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">上週</p>
+                            <p class=" text-center  pt-1 pb-2">上週</p>
                         </div>
                     </ul>
 
@@ -130,16 +130,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -148,27 +148,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -196,16 +196,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -214,27 +214,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -262,16 +262,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -280,27 +280,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -328,16 +328,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -346,27 +346,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -393,18 +393,18 @@
                         <!-- 開始日期 -->
                         <form class="col" action="uk-margin" method="post">
                             <label>
-                                <span class="w3-small pl-1 lp1">開始日期</span>
-                                <span class="w3-small text-danger pl-1 lp1">(右方點選日期)</span>
+                                <span class=" pl-1 lp1">開始日期</span>
+                                <span class=" text-danger pl-1 lp1">(右方點選日期)</span>
                             </label>
-                            <input class="w3-small py-2 p-1 text-light w-100" style="background-color: #103971;"
+                            <input class=" py-2 p-1 text-light w-100" style="background-color: #103971;"
                                 type="datetime-local" name="" id="">
                         </form>
                         <!-- 結束日期 -->
                         <form class="col" action="uk-margin" method="post">
                             <label>
-                                <span class="w3-small lp1">結束日期</span>
+                                <span class=" lp1">結束日期</span>
                             </label>
-                            <input class="w3-small px-1 py-2 text-light w-100" style="background-color: #103971;"
+                            <input class=" px-1 py-2 text-light w-100" style="background-color: #103971;"
                                 type="datetime-local" name="" id="">
                         </form>
                     </div>
@@ -417,16 +417,16 @@
                     <!--  -->
                     <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
                         <div class="btn col modalSBtn p-0 modalSBtn-active">
-                            <p class=" text-center w3-small pt-1 pb-2">昨日</p>
+                            <p class=" text-center  pt-1 pb-2">昨日</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">今日</p>
+                            <p class=" text-center  pt-1 pb-2">今日</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">本週</p>
+                            <p class=" text-center  pt-1 pb-2">本週</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">上週</p>
+                            <p class=" text-center  pt-1 pb-2">上週</p>
                         </div>
                     </ul>
 
@@ -441,16 +441,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -459,27 +459,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -507,16 +507,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -525,27 +525,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -573,16 +573,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -591,27 +591,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -639,16 +639,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -657,27 +657,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -704,18 +704,18 @@
                         <!-- 開始日期 -->
                         <form class="col" action="uk-margin" method="post">
                             <label>
-                                <span class="w3-small pl-1 lp1">開始日期</span>
-                                <span class="w3-small text-danger pl-1 lp1">(右方點選日期)</span>
+                                <span class=" pl-1 lp1">開始日期</span>
+                                <span class=" text-danger pl-1 lp1">(右方點選日期)</span>
                             </label>
-                            <input class="w3-small py-2 p-1 text-light w-100" style="background-color: #103971;"
+                            <input class=" py-2 p-1 text-light w-100" style="background-color: #103971;"
                                 type="datetime-local" name="" id="">
                         </form>
                         <!-- 結束日期 -->
                         <form class="col" action="uk-margin" method="post">
                             <label>
-                                <span class="w3-small lp1">結束日期</span>
+                                <span class=" lp1">結束日期</span>
                             </label>
-                            <input class="w3-small px-1 py-2 text-light w-100" style="background-color: #103971;"
+                            <input class=" px-1 py-2 text-light w-100" style="background-color: #103971;"
                                 type="datetime-local" name="" id="">
                         </form>
                     </div>
@@ -728,16 +728,16 @@
                     <!--  -->
                     <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
                         <div class="btn col modalSBtn p-0 modalSBtn-active">
-                            <p class=" text-center w3-small pt-1 pb-2">昨日</p>
+                            <p class=" text-center  pt-1 pb-2">昨日</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">今日</p>
+                            <p class=" text-center  pt-1 pb-2">今日</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">本週</p>
+                            <p class=" text-center  pt-1 pb-2">本週</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">上週</p>
+                            <p class=" text-center  pt-1 pb-2">上週</p>
                         </div>
                     </ul>
 
@@ -752,16 +752,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -770,27 +770,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -818,16 +818,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -836,27 +836,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -884,16 +884,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -902,27 +902,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -950,16 +950,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -968,27 +968,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1015,18 +1015,18 @@
                         <!-- 開始日期 -->
                         <form class="col" action="uk-margin" method="post">
                             <label>
-                                <span class="w3-small pl-1 lp1">開始日期</span>
-                                <span class="w3-small text-danger pl-1 lp1">(右方點選日期)</span>
+                                <span class=" pl-1 lp1">開始日期</span>
+                                <span class=" text-danger pl-1 lp1">(右方點選日期)</span>
                             </label>
-                            <input class="w3-small py-2 p-1 text-light w-100" style="background-color: #103971;"
+                            <input class=" py-2 p-1 text-light w-100" style="background-color: #103971;"
                                 type="datetime-local" name="" id="">
                         </form>
                         <!-- 結束日期 -->
                         <form class="col" action="uk-margin" method="post">
                             <label>
-                                <span class="w3-small lp1">結束日期</span>
+                                <span class=" lp1">結束日期</span>
                             </label>
-                            <input class="w3-small px-1 py-2 text-light w-100" style="background-color: #103971;"
+                            <input class=" px-1 py-2 text-light w-100" style="background-color: #103971;"
                                 type="datetime-local" name="" id="">
                         </form>
                     </div>
@@ -1039,16 +1039,16 @@
                     <!--  -->
                     <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
                         <div class="btn col modalSBtn p-0 modalSBtn-active">
-                            <p class=" text-center w3-small pt-1 pb-2">昨日</p>
+                            <p class=" text-center  pt-1 pb-2">昨日</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">今日</p>
+                            <p class=" text-center  pt-1 pb-2">今日</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">本週</p>
+                            <p class=" text-center  pt-1 pb-2">本週</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">上週</p>
+                            <p class=" text-center  pt-1 pb-2">上週</p>
                         </div>
                     </ul>
 
@@ -1063,16 +1063,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -1081,27 +1081,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1129,16 +1129,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -1147,27 +1147,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1195,16 +1195,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -1213,27 +1213,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1261,16 +1261,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -1279,27 +1279,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1326,18 +1326,18 @@
                         <!-- 開始日期 -->
                         <form class="col" action="uk-margin" method="post">
                             <label>
-                                <span class="w3-small pl-1 lp1">開始日期</span>
-                                <span class="w3-small text-danger pl-1 lp1">(右方點選日期)</span>
+                                <span class=" pl-1 lp1">開始日期</span>
+                                <span class=" text-danger pl-1 lp1">(右方點選日期)</span>
                             </label>
-                            <input class="w3-small py-2 p-1 text-light w-100" style="background-color: #103971;"
+                            <input class=" py-2 p-1 text-light w-100" style="background-color: #103971;"
                                 type="datetime-local" name="" id="">
                         </form>
                         <!-- 結束日期 -->
                         <form class="col" action="uk-margin" method="post">
                             <label>
-                                <span class="w3-small lp1">結束日期</span>
+                                <span class=" lp1">結束日期</span>
                             </label>
-                            <input class="w3-small px-1 py-2 text-light w-100" style="background-color: #103971;"
+                            <input class=" px-1 py-2 text-light w-100" style="background-color: #103971;"
                                 type="datetime-local" name="" id="">
                         </form>
                     </div>
@@ -1350,16 +1350,16 @@
                     <!--  -->
                     <ul class="row mx-3 mt-3 modalBtn-e" style="background-color: #103971;" uk-switcher>
                         <div class="btn col modalSBtn p-0 modalSBtn-active">
-                            <p class=" text-center w3-small pt-1 pb-2">昨日</p>
+                            <p class=" text-center  pt-1 pb-2">昨日</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">今日</p>
+                            <p class=" text-center  pt-1 pb-2">今日</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">本週</p>
+                            <p class=" text-center  pt-1 pb-2">本週</p>
                         </div>
                         <div class="btn col modalSBtn p-0">
-                            <p class=" text-center w3-small pt-1 pb-2">上週</p>
+                            <p class=" text-center  pt-1 pb-2">上週</p>
                         </div>
                     </ul>
 
@@ -1374,16 +1374,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -1392,27 +1392,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1440,16 +1440,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -1458,27 +1458,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1506,16 +1506,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -1524,27 +1524,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>
@@ -1572,16 +1572,16 @@
                             <div class="pt-3 Announcement">
                                 <ul class="FAQ-btn row-cols-2 flex-wrap">
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">狀態:</span>
-                                        <span class="w3-small" style="color: #18FFFF;">成功</span>
+                                        <span class="">狀態:</span>
+                                        <span class="" style="color: #18FFFF;">成功</span>
                                     </li>
                                     <li class="lp1 col-6 pr-0">
-                                        <span class="w3-small">轉帳金額:</span>
-                                        <span class="text-warning w3-small">$1000</span>
+                                        <span class="">轉帳金額:</span>
+                                        <span class="text-warning ">$1000</span>
                                     </li>
                                     <li class="col-12 pr-0 d-flex justify-content-between">
                                         <span class="date lp1 text-white-50" style="font-size: 0.75em;">
@@ -1590,27 +1590,27 @@
                                                 $(".date").text(x);
                                             </script>
                                         </span>
-                                        <span class="w3-small pr-3"><i class="fas fa-arrows-alt-v"
+                                        <span class=" pr-3"><i class="fas fa-arrows-alt-v"
                                                 style="margin-top: -2.5%;"></i></span>
                                     </li>
                                 </ul>
                                 <ul class="FAQ-btn-items row mx-0 px-3 py-2 justify-content-between w3-round-large"
                                     style="display: none;background:#103971;">
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">單號:</span>
-                                        <span class="w3-small">xxxxx</span>
+                                        <span class="">單號:</span>
+                                        <span class="">xxxxx</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉出帳戶:</span>
-                                        <span class="w3-small">Betsoft</span>
+                                        <span class="">轉出帳戶:</span>
+                                        <span class="">Betsoft</span>
                                     </li>
                                     <li class="lp1 col-12">
-                                        <span class="w3-small">轉入帳戶:</span>
-                                        <span class="w3-small">RTG天地</span>
+                                        <span class="">轉入帳戶:</span>
+                                        <span class="">RTG天地</span>
                                     </li>
                                     <li class="col-12">
-                                        <span class="w3-small">剩餘額度：</span>
-                                        <span class="text-warning w3-small">$3,033.82</span>
+                                        <span class="">剩餘額度：</span>
+                                        <span class="text-warning ">$3,033.82</span>
                                     </li>
                                 </ul>
                             </div>

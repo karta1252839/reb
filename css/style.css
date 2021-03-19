@@ -982,3 +982,20 @@ header #close_menu span {
     background: center top url(/reb/img/手機各分頁img/MBG.png) #91c3fa no-repeat;
     background-size: cover;
 }
+
+.changeBG {
+    background: url(/reb/img/手機各分頁img/MBG.png) !important;
+    background-position: top center !important;
+}
+
+@media(max-width: 768px) {
+    .changeBGE {
+        background: url(/reb/img/手機各分頁img/MBG.png) !important;
+        background-position: top center !important;
+    }
+}
+@media(min-width: 768px) {
+    .changeBGE {
+        background: url(../img/桌機各分頁img/電子遊戲_Slot/BGC.jpg) !important;
+    }
+}
