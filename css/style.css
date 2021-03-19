@@ -151,79 +151,79 @@ header #close_menu span {
 
 @media (min-width: 250px) {
     .md-gameH {
-        min-height: 480px;
+        height: 500px;
     }
 }
 
 @media (min-width: 275px) {
     .md-gameH {
-        min-height: 530px;
+        height: 550px;
     }
 }
 
 @media (min-width: 300px) {
     .md-gameH {
-        min-height: 580px;
+        height: 600px;
     }
 }
 
 @media (min-width: 325px) {
     .md-gameH {
-        min-height: 630px;
+        height: 650px;
     }
 }
 
 @media (min-width: 350px) {
     .md-gameH {
-        min-height: 680px;
+        height: 700px;
     }
 }
 
 @media (min-width: 375px) {
     .md-gameH {
-        min-height: 730px;
+        height: 750px;
     }
 }
 
 @media (min-width: 400px) {
     .md-gameH {
-        min-height: 780px;
+        height: 800px;
     }
 }
 
 @media (min-width: 425px) {
     .md-gameH {
-        min-height: 830px;
+        height: 850px;
     }
 }
 
 @media (min-width: 450px) {
     .md-gameH {
-        min-height: 880px;
+        height: 900px;
     }
 }
 
 @media (min-width: 475px) {
     .md-gameH {
-        min-height: 930px;
+        height: 950px;
     }
 }
 
 @media (min-width: 500px) {
     .md-gameH {
-        min-height: 980px;
+        height: 1000px;
     }
 }
 
 @media (min-width: 525px) {
     .md-gameH {
-        min-height: 1030px;
+        height: 1050px;
     }
 }
 
 @media (min-width: 550px) {
     .md-gameH {
-        min-height: 1080px;
+        height: 1100px;
     }
 }
 
