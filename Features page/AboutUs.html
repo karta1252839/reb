@@ -16,6 +16,9 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+    <!-- w3 -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <!-- JQ -->
     <!-- <script src="./jquery/jquery-1.10.js"></script> -->
     <script src="../jquery/jquery-3.5.1.min.js"></script>
@@ -61,12 +64,27 @@
             line-height: 50px;
             text-align: center;
         }
+
+
+        @media(min-width: 768px) {
+            .changeBGE {
+                background: linear-gradient(180deg, #224dc9 0%, #a7cbef 100%) !important;
+            }
+
+
+        }
+
+        @media(max-width: 768px) {
+            .bgBlue {
+                background-color: #1c63ba;
+            }
+        }
     </style>
 </head>
 
 <body>
     <script>PageHeader();</script>
-    <div class="container-fluid p-0 m-0 ">
+    <div class="container-fluid changeBGE p-0 m-0">
         <div class="container">
             <div class="text-center py-3 d-none d-md-block">
                 <img src="../img/Featurespage/AboutUs/Title 01.png" alt="" class="img-fluid">
@@ -81,14 +99,14 @@
                         的博彩娛樂集團,我們憑著數十位博彩專家的經驗與心血並結合網絡
                         技術優勢,成功打造出一個以百家樂,運彩,賓果,電子遊戲為主的超級 遊戲平台,全程擔保,會員資金安全。</p>
                     <div class="d-md-none">
-                        <p class="px-5 py-3" id="game-flex"
-                            style="background-image: url(../img/Featurespage/AboutUs/MD/BGT1.png);">任你博娛樂城(Rennibo
+                        <p class="px-5 py-3 w3-round-large bgBlue text-justify">
+                            任你博娛樂城(Rennibo
                             Online Casino)成立於2015年,是亞洲最新興 的博彩娛樂集團,我們憑著數十位博彩專家的經驗與心血並結合網絡
                             技術優勢,成功打造出一個以百家樂,運彩,賓果,電子遊戲為主的超級 遊戲平台,全程擔保,會員資金安全。</p>
                     </div>
                 </div>
             </div>
-            <div class="p-3 AboutUSTextBg1">
+            <div class="p-3 bgBlue w3-round-large">
                 <p class="col-12 text-center" style="font-size: 1.3rem;color: #fff62c;">100%保證兌現 & 個資/資金安全防護</p>
                 <div class="col-12 pt-3 text-light">
                     <p>本網站是由任你博集團官方直營，玩家的正常投注行為100%支付保證，資金與個資由嚴密的加密系統控管。任你博娛樂城在此鄭重聲明，絕不
@@ -126,7 +144,7 @@
                                 <img class="col-md-5 col-sm-12 h-100" src="../img/Featurespage/AboutUs/image1.png"
                                     alt="">
                                 <div class="col-md-6 col-sm-12 pl-md-5 my-auto pt-sm-3">
-                                    <div class="AboutUSTextBg1 px-5 py-3">
+                                    <div class="bgBlue w3-round-large px-5 py-3">
                                         <p style="color: #ffff33; font-size: 1.3rem;">誠信與服務</p>
                                         <p class="text-light">任你博娛樂城 999xc.net 擁有受過專業訓練、給與親切服務的客服團隊，
                                             並以數十位多年博彩經驗的專家與頂尖的網站技術團隊為基礎，建立出
@@ -140,8 +158,7 @@
                         <!-- 2 -->
                         <div class="tab-pane container fade" id="menu1">
                             <div class="row pt-5 align-self-center">
-                                <img class="col-md-5 col-sm-12 h-100" src="../img/Featurespage/AboutUs/logo.png"
-                                    alt="">
+                                <img class="col-md-5 col-sm-12 h-100" src="../img/Featurespage/AboutUs/logo.png" alt="">
                                 <div class="col-md-6 col-sm-12 pl-md-5 my-auto">
                                     <div class="AboutUSTextBg1 px-5 py-3">
                                         <p style="color: #ffff33; font-size: 1.3rem;">起源</p>
@@ -158,7 +175,7 @@
                                 <img class="col-md-5 col-sm-12 h-100" src="../img/Featurespage/AboutUs/遊戲種類-01.png"
                                     alt="">
                                 <div class="col-md-6 col-sm-12 pl-md-5 my-auto">
-                                    <div class="AboutUSTextBg1 px-5 py-3">
+                                    <div class="px-5 py-3">
                                         <p style="color: #ffff33; font-size: 1.3rem;">誠信與服務</p>
                                         <p class="text-light">任你博娛樂城 999xc.net 擁有受過專業訓練、給與親切服務的客服團隊，
                                             並以數十位多年博彩經驗的專家與頂尖的網站技術團隊為基礎，建立出
@@ -172,8 +189,7 @@
                         <!-- 4 -->
                         <div class="tab-pane container fade" id="menu3">
                             <div class="row pt-5 align-self-center">
-                                <img class="col-md-5 col-sm-12 h-100" src="../img/Featurespage/AboutUs/安心保證.png"
-                                    alt="">
+                                <img class="col-md-5 col-sm-12 h-100" src="../img/Featurespage/AboutUs/安心保證.png" alt="">
                                 <div class="col-md-6 col-sm-12 pl-md-5 my-auto">
                                     <div class="AboutUSTextBg1 px-5 py-3">
                                         <p style="color: #ffff33; font-size: 1.3rem;">安心保證</p>
@@ -204,4 +220,5 @@
         crossorigin="anonymous"></script>
 
 </body>
+
 </html>

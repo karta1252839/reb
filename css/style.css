@@ -129,11 +129,6 @@ header #close_menu span {
     border-bottom: transparent;
 }
 
-.AboutUSTextBg1 {
-    background-image: url(../img/Featurespage/AboutUs/MD/BGT1.png);
-    background-size: 100% 100%;
-}
-
 @media (min-width: 768px) {
     .bgc {
         background: linear-gradient(180deg, #224dc9 0%, #a7cbef 100%);
