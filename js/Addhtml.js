@@ -93,7 +93,7 @@ function MDFooter() {
 }
 // page頁面 上方
 function PageHeader() {
-    document.writeln("    <!-- /////////////////////////////////////// 電腦板 ///////////////////////////////////// -->");
+    document.writeln("<!-- /////////////////////////////////////// 電腦板 ///////////////////////////////////// -->");
     document.writeln("    <!-- login -->");
     document.writeln("    <header>");
     document.writeln("        <div class=\'container-fluid d-none d-md-block p-0\' style=\'background-color:#3fa9f5;\'>");
@@ -111,10 +111,10 @@ function PageHeader() {
     document.writeln("                <div class=\'col-lg-4 col-md-12 text-md-right text-lg-left mr-md-5 pr-md-5 pt-md-2 pt-lg-0\'");
     document.writeln("                    style=\'justify-content: space-between;margin-left: -2%;\'>");
     document.writeln("                    <a class=\'text-light mx-1\' href=\'/reb/header page/Announcement.html\'>公告</a>");
-    document.writeln("                <a class=\'text-light mx-1\' href=\'/reb/header page/AppDownload.html\'>APP下載</a>");
-    document.writeln("                <a class=\'text-light mx-1\' href=\'/reb/header page/FAQ.html\'>常見問題</a>");
-    document.writeln("                <a class=\'text-light mx-1\' href=\'/reb/header page/Agent.html\'>合作代理</a>");
-    document.writeln("                <a class=\'text-light mx-1\' href=\'/reb/page/FavoriteGame.html\'>最愛遊戲</a>");
+    document.writeln("                    <a class=\'text-light mx-1\' href=\'/reb/header page/AppDownload.html\'>APP下載</a>");
+    document.writeln("                    <a class=\'text-light mx-1\' href=\'/reb/header page/FAQ.html\'>常見問題</a>");
+    document.writeln("                    <a class=\'text-light mx-1\' href=\'/reb/header page/Agent.html\'>合作代理</a>");
+    document.writeln("                    <a class=\'text-light mx-1\' href=\'/reb/page/FavoriteGame.html\'>最愛遊戲</a>");
     document.writeln("                </div>");
     document.writeln("            </div>");
     document.writeln("        </div>");
@@ -213,7 +213,11 @@ function PageHeader() {
     document.writeln("                                    </div>");
     document.writeln("                                    <!-- list2 -->");
     document.writeln("                                    <div class=\'row\'>");
-    document.writeln("                                        <div class=\'col-12 pt-1\'><a href=\'/reb/Features page/AccessFlow.html\'><img");
+    document.writeln("                                        <div class=\'col-12  pt-1\'><a href=\'/reb/Features page/AboutUs.html\'><img");
+    document.writeln("                                                    src=\'/reb/img/手機index_img/sidebar/Group 3/6_RENNIBO1.png\' alt=\'\'");
+    document.writeln("                                                    class=\'pl-3\'><span");
+    document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>關於任你博</span></a></div>");
+    document.writeln("                                        <div class=\'col-12 pt-3\'><a href=\'/reb/Features page/AccessFlow.html\'><img");
     document.writeln("                                                    src=\'/reb/img/手機index_img/sidebar/Group 3/1wallet-light.png\' alt=\'\'");
     document.writeln("                                                    class=\'pl-3\'><span");
     document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>存取流程</span></a></div>");
@@ -221,21 +225,21 @@ function PageHeader() {
     document.writeln("                                                    src=\'/reb/img/手機index_img/sidebar/Group 3/5_cooperation.png\' alt=\'\'");
     document.writeln("                                                    class=\'pl-3\'><span");
     document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>合營代理</span></a></div>");
-    document.writeln("                                        <div class=\'col-12  pt-3\'><a href=\'/reb/Features page/AboutUs.html\'><img");
+    document.writeln("                                        <div class=\'col-12  pt-3\'><a href=\'/reb/Features page/GameIntro.html\'><img");
     document.writeln("                                                    src=\'/reb/img/手機index_img/sidebar/Group 3/6_RENNIBO1.png\' alt=\'\'");
     document.writeln("                                                    class=\'pl-3\'><span");
-    document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>關於任你博</span></a></div>");
+    document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>品牌介紹</span></a></div>");
     document.writeln("                                        <!-- sidebarBLine -->");
     document.writeln("                                        <!-- <div class=\' col-12 py-3\'>");
-    document.writeln("                                                <div class=\'sidebarBLine\'></div>");
-    document.writeln("                                            </div> -->");
+    document.writeln("                                                    <div class=\'sidebarBLine\'></div>");
+    document.writeln("                                                </div> -->");
     document.writeln("                                    </div>");
     document.writeln("                                    <!-- list3 -->");
     document.writeln("                                    <!-- <div class=\'row\'>");
-    document.writeln("                                                <div class=\'col-12 pt-1\'><a href=\'../index.html\' role=\'button\'><img");
-    document.writeln("                                                            src=\'../img/手機index_img/sidebar/signOut.png\' alt=\'\'");
-    document.writeln("                                                            class=\'pl-3\'><span class=\'text-light pl-3\'>登出</span></a></div>");
-    document.writeln("                                            </div> -->");
+    document.writeln("                                                    <div class=\'col-12 pt-1\'><a href=\'../index.html\' role=\'button\'><img");
+    document.writeln("                                                                src=\'../img/手機index_img/sidebar/signOut.png\' alt=\'\'");
+    document.writeln("                                                                class=\'pl-3\'><span class=\'text-light pl-3\'>登出</span></a></div>");
+    document.writeln("                                                </div> -->");
     document.writeln("                                </div>");
     document.writeln("                            </div>");
     document.writeln("                        </div>");
@@ -405,7 +409,11 @@ function indexLoginHeader() {
     document.writeln("                                    </div>");
     document.writeln("                                    <!-- list2 -->");
     document.writeln("                                    <div class=\'row\'>");
-    document.writeln("                                        <div class=\'col-12 pt-1\'><a href=\'/reb/Features page/AccessFlow.html\'>");
+    document.writeln("                                        <div class=\'col-12 pt-1\'><a href=\'/reb/Features page/AboutUs.html\'><img");
+    document.writeln("                                                    src=\'/reb/img/手機index_img/sidebar/Group 3/6_RENNIBO1.png\' alt=\'\'");
+    document.writeln("                                                    class=\'pl-3\'><span");
+    document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>關於任你博</span></a></div>");
+    document.writeln("                                        <div class=\'col-12 pt-3\'><a href=\'/reb/Features page/AccessFlow.html\'>");
     document.writeln("                                                <img src=\'/reb/img/手機index_img/sidebar/Group 3/1wallet-light.png\' alt=\'\'");
     document.writeln("                                                    class=\'pl-3\'>");
     document.writeln("                                                <span class=\'text-light pl-3 w3-large lp1\'>存取流程</span></a></div>");
@@ -413,10 +421,11 @@ function indexLoginHeader() {
     document.writeln("                                                    src=\'/reb/img/手機index_img/sidebar/Group 3/5_cooperation.png\' alt=\'\'");
     document.writeln("                                                    class=\'pl-3\'><span");
     document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>合營代理</span></a></div>");
+    document.writeln("");
     document.writeln("                                        <div class=\'col-12  pt-3\'><a href=\'/reb/Features page/AboutUs.html\'><img");
     document.writeln("                                                    src=\'/reb/img/手機index_img/sidebar/Group 3/6_RENNIBO1.png\' alt=\'\'");
     document.writeln("                                                    class=\'pl-3\'><span");
-    document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>關於任你博</span></a></div>");
+    document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>品牌介紹</span></a></div>");
     document.writeln("                                        <div class=\'col-12  pt-3\'><a href=\'/reb/page/MainPages.html\'><img");
     document.writeln("                                                    src=\'/reb/img/手機index_img/sidebar/Group 3/7.png\' alt=\'\'");
     document.writeln("                                                    class=\'pl-3\'><span");
@@ -430,7 +439,8 @@ function indexLoginHeader() {
     document.writeln("                                    <div class=\'row\'>");
     document.writeln("                                        <div class=\'col-12 pt-1\'><a href=\'../index.html\' role=\'button\'><img");
     document.writeln("                                                    src=\'../img/手機index_img/sidebar/signOut.png\' alt=\'\'");
-    document.writeln("                                                    class=\'pl-3\'><span class=\'text-light pl-3 w3-large lp1\'>登出</span></a></div>");
+    document.writeln("                                                    class=\'pl-3\'><span");
+    document.writeln("                                                    class=\'text-light pl-3 w3-large lp1\'>登出</span></a></div>");
     document.writeln("                                    </div>");
     document.writeln("                                </div>");
     document.writeln("                            </div>");
